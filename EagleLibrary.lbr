@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -845,8 +845,8 @@
 <symbols>
 <symbol name="LTC6655BHMS8">
 <pin name="VIN" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="GND" x="-12.7" y="0" visible="pin" length="short"/>
-<pin name="SHDN_" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="SHDN_" x="-12.7" y="0" visible="pin" length="short"/>
 <pin name="VOUT_F" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VOUT_S" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
@@ -859,18 +859,18 @@
 <symbol name="TPS61372YKBT">
 <pin name="VIN" x="-15.24" y="5.08" visible="pin" length="short"/>
 <pin name="MODE" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="FB" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VOUT" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-20.32" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 <text x="-12.7" y="-22.86" size="1.778" layer="95">TPS61372YKBT</text>
-<pin name="COMP" x="-15.24" y="-10.16" visible="pin" length="short"/>
-<pin name="GND" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="EN" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="BST" x="-15.24" y="-15.24" visible="pin" length="short"/>
-<pin name="SW" x="-15.24" y="-17.78" visible="pin" length="short"/>
+<pin name="COMP" x="-15.24" y="-17.78" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="EN" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="BST" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SW" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
 <text x="-12.7" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="CONSMA002-SMD-G">
@@ -884,16 +884,16 @@
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="AMPHENOLFCI-10033526-N3212MLF">
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
-<pin name="GND" x="-10.16" y="0" visible="pin" length="short"/>
-<pin name="D+" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="D-" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="ID" x="-10.16" y="-2.54" visible="pin" length="short"/>
-<text x="-7.62" y="-7.62" size="1.778" layer="95">MINI USB JACK</text>
+<pin name="VCC" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="D+" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="D-" x="10.16" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="ID" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="-15.24" size="1.778" layer="95">MINI USB JACK</text>
 <text x="-7.62" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="OPA847">
@@ -911,23 +911,23 @@
 </symbol>
 <symbol name="ADM7154ACPZ">
 <pin name="VIN" x="-12.7" y="5.08" visible="pin" length="short"/>
-<pin name="EN" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" visible="pin" length="short"/>
 <pin name="VOUT" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="REF" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<pin name="REF" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="7.62" width="0.254" layer="94"/>
 <wire x1="15.24" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="-10.16" size="1.778" layer="95">ADM7154ACPZ</text>
-<pin name="VREG" x="-12.7" y="-5.08" visible="pin" length="short"/>
-<pin name="REF_SENSE" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="BYP" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<text x="-10.16" y="-22.86" size="1.778" layer="95">ADM7154ACPZ</text>
+<pin name="VREG" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="REF_SENSE" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="BYP" x="-12.7" y="-10.16" visible="pin" length="short"/>
 <text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="LT3045IDD">
 <pin name="IN" x="-12.7" y="7.62" visible="pin" length="short"/>
-<pin name="EN" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="5.08" visible="pin" length="short"/>
 <pin name="OUT" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="OUTS" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
@@ -935,26 +935,26 @@
 <wire x1="12.7" y1="-5.08" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="-7.62" size="1.778" layer="95">LT3045IDD</text>
-<pin name="ILIM" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="ILIM" x="-12.7" y="0" visible="pin" length="short"/>
 <pin name="PG" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="PGFB" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="-12.7" y="5.08" visible="pin" length="short"/>
-<pin name="SET" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="PGFB" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="SET" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FT231XQ_0">
 <pin name="VCC" x="-10.16" y="7.62" visible="pin" length="short"/>
 <pin name="VCCIO" x="-10.16" y="5.08" visible="pin" length="short"/>
 <pin name="3V3OUT" x="-10.16" y="2.54" visible="pin" length="short"/>
-<pin name="GND" x="-10.16" y="0" visible="pin" length="short"/>
-<pin name="RESET_" x="-10.16" y="-2.54" visible="pin" length="short"/>
-<pin name="USBDM" x="-10.16" y="-7.62" visible="pin" length="short"/>
-<pin name="USBDP" x="-10.16" y="-5.08" visible="pin" length="short"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="RESET_" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="USBDM" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="USBDP" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="-7.62" y="-12.7" size="1.778" layer="95">FT231XQ</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="95">FT231XQ</text>
 <text x="-7.62" y="10.922" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FT231XQ_1">
@@ -1174,32 +1174,42 @@
 </symbol>
 <symbol name="SN74LVC244ARWPR">
 <pin name="VDD" x="-12.7" y="5.08" visible="pin" length="short"/>
-<pin name="1A1" x="-12.7" y="-5.08" visible="pin" length="short"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-30.48" x2="12.7" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-30.48" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="1A1" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-33.02" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-33.02" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="-33.02" size="1.778" layer="95">SN74LVC244ARWPR</text>
-<pin name="1A3" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<text x="-10.16" y="-35.56" size="1.778" layer="95">SN74LVC244ARWPR</text>
+<pin name="1A3" x="-12.7" y="-7.62" visible="pin" length="short"/>
 <pin name="GND" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="1A2" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="1A2" x="-12.7" y="-5.08" visible="pin" length="short"/>
 <text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1A4" x="-12.7" y="-12.7" visible="pin" length="short"/>
-<pin name="1Y1" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="1Y3" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="1Y2" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="1Y4" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="2A1" x="-12.7" y="-20.32" visible="pin" length="short"/>
-<pin name="2A3" x="-12.7" y="-25.4" visible="pin" length="short"/>
-<pin name="2A2" x="-12.7" y="-22.86" visible="pin" length="short"/>
-<pin name="2A4" x="-12.7" y="-27.94" visible="pin" length="short"/>
-<pin name="2Y1" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="2Y3" x="15.24" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="2Y2" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="2Y4" x="15.24" y="-27.94" visible="pin" length="short" rot="R180"/>
-<pin name="1OE_" x="-12.7" y="-2.54" visible="pin" length="short"/>
-<pin name="2OE_" x="-12.7" y="-17.78" visible="pin" length="short"/>
-<text x="-10.16" y="-35.56" size="1.778" layer="95">8x Tristate Buffer</text>
+<pin name="1A4" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="1Y1" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="1Y3" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="1Y2" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="1Y4" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="2A1" x="-12.7" y="-15.24" visible="pin" length="short"/>
+<pin name="2A3" x="-12.7" y="-20.32" visible="pin" length="short"/>
+<pin name="2A2" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="2A4" x="-12.7" y="-22.86" visible="pin" length="short"/>
+<pin name="2Y1" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="2Y3" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="2Y2" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="2Y4" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="1OE_" x="-12.7" y="-27.94" visible="pin" length="short"/>
+<pin name="2OE_" x="-12.7" y="-30.48" visible="pin" length="short"/>
+<text x="-10.16" y="-38.1" size="1.778" layer="95">8x Tristate Buffer</text>
+</symbol>
+<symbol name="INDUCTOR">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1247,7 +1257,7 @@ Synchronous
 <connect gate="G$1" pin="GND" pad="B1 B2 B3"/>
 <connect gate="G$1" pin="MODE" pad="A4"/>
 <connect gate="G$1" pin="SW" pad="C1 C2 C3"/>
-<connect gate="G$1" pin="VIN" pad="D4"/>
+<connect gate="G$1" pin="VIN" pad="A3 D4"/>
 <connect gate="G$1" pin="VOUT" pad="D1 D2 D3"/>
 </connects>
 <package3dinstances>
@@ -1770,6 +1780,61 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17801222/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INDUCTOR" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0402" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
