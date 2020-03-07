@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1231,7 +1231,10 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17604187/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Analog Devices"/>
+<attribute name="PN" value="LTC6655BHMS8"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1264,7 +1267,10 @@ Synchronous
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17639513/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="TPS61372YKBT"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1281,7 +1287,10 @@ Synchronous
 <connect gate="G$1" pin="SIGNAL" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Linx Technologies"/>
+<attribute name="PN" value="CONSMA002-SMD-G"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1301,7 +1310,10 @@ Synchronous
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Amphenol FCI"/>
+<attribute name="PN" value="10033526-N3212MLF"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1329,7 +1341,10 @@ Low noise: 0.85nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17569523/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="OPA847"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1355,7 +1370,10 @@ Low noise: 0.85nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17639004/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Analog Devices"/>
+<attribute name="PN" value="ADM7154ACPZ"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1382,7 +1400,10 @@ Low noise: 0.85nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17630085/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Analog Devices"/>
+<attribute name="PN" value="LT3045IDD"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1420,7 +1441,10 @@ Low noise: 0.85nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17469945/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="FTDI"/>
+<attribute name="PN" value="FT231XQ"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1448,7 +1472,10 @@ Low noise</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17604696/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Analog Devices"/>
+<attribute name="PN" value="LT6200IS6"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1502,7 +1529,10 @@ Low noise</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17466758/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="MSP430I2041"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1523,7 +1553,10 @@ Low noise</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17570478/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Vishay"/>
+<attribute name="PN" value="SI2302CDS"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1553,7 +1586,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17476532/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="OPA855"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1572,7 +1608,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1584,7 +1623,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -1596,7 +1638,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -1608,7 +1653,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1627,7 +1675,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1639,7 +1690,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -1651,7 +1705,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -1663,7 +1720,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1681,7 +1741,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Vishay"/>
+<attribute name="PN" value="SI2369DS"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1704,7 +1767,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17792477/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="TLV1701AIDBVR"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1722,7 +1788,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Taitien"/>
+<attribute name="PN" value="TXETCLSANF-16.384000"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1744,7 +1813,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17798711/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="SN74LVC1G04YZVR"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1782,7 +1854,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17801222/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="SN74LVC244ARWPR"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1801,7 +1876,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1813,7 +1891,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -1825,7 +1906,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -1837,7 +1921,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="" constant="no"/>
+<attribute name="PN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
