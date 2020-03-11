@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
@@ -378,10 +378,10 @@
 <smd name="20" x="-1" y="1.9373" dx="0.8373" dy="0.27" layer="1" roundness="100" rot="R90"/>
 <smd name="21" x="0" y="0" dx="2" dy="2" layer="1" thermals="no"/>
 <text x="-2.032" y="2.7369" size="0.762" layer="25" font="vector">&gt;NAME</text>
-<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.05" layer="51"/>
-<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.05" layer="51"/>
-<wire x1="-2" y1="2" x2="2" y2="2" width="0.05" layer="51"/>
-<wire x1="2" y1="2" x2="2" y2="-2" width="0.05" layer="51"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.05" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.05" layer="21"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.05" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.05" layer="21"/>
 <polygon width="0.05" layer="39">
 <vertex x="2" y="-2"/>
 <vertex x="-2" y="-2"/>
@@ -742,30 +742,30 @@
 &lt;p&gt;Chip package with body size 7.30 X 4.30 X 4.30 mm&lt;/p&gt;</description>
 <smd name="1" x="-3.1212" y="0" dx="2.068" dy="4.6103" layer="1"/>
 <smd name="2" x="3.1212" y="0" dx="2.068" dy="4.6103" layer="1"/>
-<text x="-4.1" y="2.7542" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="4.25" y1="-2.4" x2="-4.25" y2="-2.4" width="0.12" layer="21"/>
-<wire x1="-4.25" y1="-2.4" x2="-4.25" y2="2.4" width="0.12" layer="21"/>
-<wire x1="-4.25" y1="2.4" x2="4.25" y2="2.4" width="0.12" layer="21"/>
-<wire x1="4.25" y1="2.4" x2="4.25" y2="-2.4" width="0.12" layer="21"/>
-<polygon width="0.12" layer="39">
+<text x="-4.1" y="2.7542" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="4.25" y1="-2.4" x2="-4.25" y2="-2.4" width="0.05" layer="21"/>
+<wire x1="-4.25" y1="-2.4" x2="-4.25" y2="2.4" width="0.05" layer="21"/>
+<wire x1="-4.25" y1="2.4" x2="4.25" y2="2.4" width="0.05" layer="21"/>
+<wire x1="4.25" y1="2.4" x2="4.25" y2="-2.4" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
 <vertex x="4.25" y="-2.4"/>
 <vertex x="-4.25" y="-2.4"/>
 <vertex x="-4.25" y="2.4"/>
 <vertex x="4.25" y="2.4"/>
 </polygon>
-<text x="-4.2" y="-3.7458" size="1.27" layer="25">+</text>
+<text x="-1.66" y="-0.0628" size="1.27" layer="25" font="vector" align="center">+</text>
 </package>
 <package name="T55D107M025C0060" urn="urn:adsk.eagle:footprint:17964034/1" locally_modified="yes">
 <description>Chip, 5.80 X 3.20 X 2.70 mm body
 &lt;p&gt;Chip package with body size 5.80 X 3.20 X 2.70 mm&lt;/p&gt;</description>
 <smd name="1" x="-2.3599" y="0" dx="1.9955" dy="3.4153" layer="1"/>
 <smd name="2" x="2.3599" y="0" dx="1.9955" dy="3.4153" layer="1"/>
-<text x="-3.409" y="2.1107" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="3.45" y1="-1.8" x2="-3.45" y2="-1.8" width="0.12" layer="21"/>
-<wire x1="-3.45" y1="-1.8" x2="-3.45" y2="1.8" width="0.12" layer="21"/>
-<wire x1="-3.45" y1="1.8" x2="3.45" y2="1.8" width="0.12" layer="21"/>
-<wire x1="3.45" y1="1.8" x2="3.45" y2="-1.8" width="0.12" layer="21"/>
-<polygon width="0.12" layer="39">
+<text x="-3.409" y="2.1107" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="3.45" y1="-1.8" x2="-3.45" y2="-1.8" width="0.05" layer="21"/>
+<wire x1="-3.45" y1="-1.8" x2="-3.45" y2="1.8" width="0.05" layer="21"/>
+<wire x1="-3.45" y1="1.8" x2="3.45" y2="1.8" width="0.05" layer="21"/>
+<wire x1="3.45" y1="1.8" x2="3.45" y2="-1.8" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
 <vertex x="3.45" y="-1.8"/>
 <vertex x="-3.45" y="-1.8"/>
 <vertex x="-3.45" y="1.8"/>
