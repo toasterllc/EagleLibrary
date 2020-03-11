@@ -473,7 +473,7 @@
 <smd name="32" x="-1.75" y="2.4346" dx="0.86" dy="0.27" layer="1" roundness="100" rot="R90"/>
 <smd name="33" x="0" y="0" dx="2.1" dy="2.1" layer="1" thermals="no"/>
 </package>
-<package name="SI2302CDS" urn="urn:adsk.eagle:footprint:17570489/1" locally_modified="yes">
+<package name="SI2302CDS-T1-GE3" urn="urn:adsk.eagle:footprint:17570489/1" locally_modified="yes">
 <description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.20 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.20 mm&lt;/p&gt;</description>
 <smd name="1" x="-1.0266" y="0.95" dx="1.2982" dy="0.5971" layer="1" roundness="100"/>
@@ -588,7 +588,7 @@
 <vertex x="2.16" y="1.01"/>
 </polygon>
 </package>
-<package name="SI2369DS">
+<package name="SI2369DS-T1-GE3">
 <description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.20 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.20 mm&lt;/p&gt;</description>
 <smd name="1" x="-1.0266" y="0.95" dx="1.2982" dy="0.5971" layer="1" roundness="100"/>
@@ -720,6 +720,75 @@
 <vertex x="-0.5" y="1.7"/>
 </polygon>
 </package>
+<package name="1210" urn="urn:adsk.eagle:footprint:17955894/1" locally_modified="yes">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<smd name="1" x="-1.4754" y="0" dx="1.1646" dy="2.7153" layer="1"/>
+<smd name="2" x="1.4754" y="0" dx="1.1646" dy="2.7153" layer="1"/>
+<text x="-2.068" y="1.6737" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-2.16" y1="1.46" x2="-2.16" y2="-1.46" width="0.05" layer="21"/>
+<wire x1="-2.16" y1="-1.46" x2="2.16" y2="-1.46" width="0.05" layer="21"/>
+<wire x1="2.16" y1="-1.46" x2="2.16" y2="1.46" width="0.05" layer="21"/>
+<wire x1="2.16" y1="1.46" x2="-2.16" y2="1.46" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-2.16" y="1.46"/>
+<vertex x="-2.16" y="-1.46"/>
+<vertex x="2.16" y="-1.46"/>
+<vertex x="2.16" y="1.46"/>
+</polygon>
+</package>
+<package name="293D476X9025E2TE3" urn="urn:adsk.eagle:footprint:17955973/1" locally_modified="yes">
+<description>Chip, 7.30 X 4.30 X 4.30 mm body
+&lt;p&gt;Chip package with body size 7.30 X 4.30 X 4.30 mm&lt;/p&gt;</description>
+<smd name="1" x="-3.1212" y="0" dx="2.068" dy="4.6103" layer="1"/>
+<smd name="2" x="3.1212" y="0" dx="2.068" dy="4.6103" layer="1"/>
+<text x="-4.1" y="2.7542" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="4.25" y1="-2.4" x2="-4.25" y2="-2.4" width="0.12" layer="21"/>
+<wire x1="-4.25" y1="-2.4" x2="-4.25" y2="2.4" width="0.12" layer="21"/>
+<wire x1="-4.25" y1="2.4" x2="4.25" y2="2.4" width="0.12" layer="21"/>
+<wire x1="4.25" y1="2.4" x2="4.25" y2="-2.4" width="0.12" layer="21"/>
+<polygon width="0.12" layer="39">
+<vertex x="4.25" y="-2.4"/>
+<vertex x="-4.25" y="-2.4"/>
+<vertex x="-4.25" y="2.4"/>
+<vertex x="4.25" y="2.4"/>
+</polygon>
+<text x="-4.2" y="-3.7458" size="1.27" layer="25">+</text>
+</package>
+<package name="T55D107M025C0060" urn="urn:adsk.eagle:footprint:17964034/1" locally_modified="yes">
+<description>Chip, 5.80 X 3.20 X 2.70 mm body
+&lt;p&gt;Chip package with body size 5.80 X 3.20 X 2.70 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.3599" y="0" dx="1.9955" dy="3.4153" layer="1"/>
+<smd name="2" x="2.3599" y="0" dx="1.9955" dy="3.4153" layer="1"/>
+<text x="-3.409" y="2.1107" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="3.45" y1="-1.8" x2="-3.45" y2="-1.8" width="0.12" layer="21"/>
+<wire x1="-3.45" y1="-1.8" x2="-3.45" y2="1.8" width="0.12" layer="21"/>
+<wire x1="-3.45" y1="1.8" x2="3.45" y2="1.8" width="0.12" layer="21"/>
+<wire x1="3.45" y1="1.8" x2="3.45" y2="-1.8" width="0.12" layer="21"/>
+<polygon width="0.12" layer="39">
+<vertex x="3.45" y="-1.8"/>
+<vertex x="-3.45" y="-1.8"/>
+<vertex x="-3.45" y="1.8"/>
+<vertex x="3.45" y="1.8"/>
+</polygon>
+</package>
+<package name="SRN8040TA-4R7M">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.825" y="0" dx="2.85" dy="6.6" layer="1"/>
+<smd name="2" x="2.825" y="0" dx="2.85" dy="6.6" layer="1"/>
+<text x="-4.168" y="3.7737" size="1.524" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-4.36" y1="3.4" x2="-4.36" y2="-3.4" width="0.05" layer="21"/>
+<wire x1="-4.36" y1="-3.4" x2="4.36" y2="-3.4" width="0.05" layer="21"/>
+<wire x1="4.36" y1="-3.4" x2="4.36" y2="3.4" width="0.05" layer="21"/>
+<wire x1="4.36" y1="3.4" x2="-4.36" y2="3.4" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-4.36" y="3.4"/>
+<vertex x="-4.36" y="-3.4"/>
+<vertex x="4.36" y="-3.4"/>
+<vertex x="4.36" y="3.4"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -782,7 +851,7 @@
 <description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.20 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.20 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="SI2302CDS"/>
+<packageinstance name="SI2302CDS-T1-GE3"/>
 </packageinstances>
 </package3d>
 <package3d name="SON50P200X200X80-9T90X160N" urn="urn:adsk.eagle:package:17476532/1" type="model">
@@ -839,6 +908,27 @@
 &lt;p&gt;20-pin QFN package with 0.40 mm pitch with body size 3.30 X 2.50 X 0.50 mm and thermal pad size 1.90 X 1.14 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SN74LVC244ARWPR"/>
+</packageinstances>
+</package3d>
+<package3d name="RESC3225X70N" urn="urn:adsk.eagle:package:17955780/1" type="model">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="1210"/>
+</packageinstances>
+</package3d>
+<package3d name="RESC7343X430N" urn="urn:adsk.eagle:package:17955961/1" type="model">
+<description>Chip, 7.30 X 4.30 X 4.30 mm body
+&lt;p&gt;Chip package with body size 7.30 X 4.30 X 4.30 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="293D476X9025E2TE3"/>
+</packageinstances>
+</package3d>
+<package3d name="RESC5832X270N" urn="urn:adsk.eagle:package:17964015/1" type="model">
+<description>Chip, 5.80 X 3.20 X 2.70 mm body
+&lt;p&gt;Chip package with body size 5.80 X 3.20 X 2.70 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="T55D107M025C0060"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1055,7 +1145,7 @@
 <text x="-10.16" y="-15.24" size="1.778" layer="95">MSP430I2041</text>
 <text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="SI2302CDS">
+<symbol name="SI2302CDS-T1-GE3">
 <wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -1115,7 +1205,7 @@
 <text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.524" y="0.381" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="SI2369DS">
+<symbol name="SI2369DS-T1-GE3">
 <wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -1210,6 +1300,21 @@
 <pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CAPACITOR_POLARIZED">
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" swaplevel="1" rot="R90"/>
+<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="0.381" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-2.032" x2="0" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.032" x2="-1.27" y2="-1.524" width="0.508" layer="94" curve="-90"/>
+<wire x1="-1.27" y1="-1.524" x2="0" y2="-1.524" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.524" x2="1.27" y2="-1.524" width="0.508" layer="94"/>
+<wire x1="1.27" y1="-1.524" x2="1.778" y2="-2.032" width="0.508" layer="94" curve="-90"/>
+<text x="-2.032" y="-0.508" size="1.778" layer="94">+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1537,13 +1642,13 @@ Low noise</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SI2302CDS" prefix="Q">
+<deviceset name="SI2302CDS-T1-GE3" prefix="Q">
 <description>NMOS MOSFET transistor</description>
 <gates>
-<gate name="G$1" symbol="SI2302CDS" x="0" y="0"/>
+<gate name="G$1" symbol="SI2302CDS-T1-GE3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SI2302CDS">
+<device name="" package="SI2302CDS-T1-GE3">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -1555,7 +1660,7 @@ Low noise</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Vishay"/>
-<attribute name="PN" value="SI2302CDS"/>
+<attribute name="PN" value="SI2302CDS-T1-GE3"/>
 </technology>
 </technologies>
 </device>
@@ -1608,10 +1713,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1623,10 +1725,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -1638,10 +1737,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -1653,10 +1749,19 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1675,10 +1780,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1690,10 +1792,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -1705,10 +1804,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -1720,21 +1816,30 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SI2369DS" prefix="Q">
+<deviceset name="SI2369DS-T1-GE3" prefix="Q">
 <description>PMOS MOSFET transistor</description>
 <gates>
-<gate name="G$1" symbol="SI2369DS" x="0" y="0"/>
+<gate name="G$1" symbol="SI2369DS-T1-GE3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SI2369DS">
+<device name="" package="SI2369DS-T1-GE3">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -1743,7 +1848,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Vishay"/>
-<attribute name="PN" value="SI2369DS"/>
+<attribute name="PN" value="SI2369DS-T1-GE3"/>
 </technology>
 </technologies>
 </device>
@@ -1876,10 +1981,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0603" package="0603">
@@ -1891,10 +1993,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -1906,10 +2005,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -1921,9 +2017,80 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
 </package3dinstances>
 <technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="293D476X9025E2TE3" prefix="C">
+<description>47 µF Tantalum Capacitor</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="293D476X9025E2TE3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17955961/1"/>
+</package3dinstances>
+<technologies>
 <technology name="">
-<attribute name="MFG" value="" constant="no"/>
-<attribute name="PN" value="" constant="no"/>
+<attribute name="MFG" value="Vishay"/>
+<attribute name="PN" value="293D476X9025E2TE3"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="T55D107M025C0060" prefix="C">
+<description>100 µF Tantalum Capacitor</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="T55D107M025C0060">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17964015/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRN8040TA-4R7M" prefix="L">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRN8040TA-4R7M">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Bourns"/>
+<attribute name="PN" value="SRN8040TA-4R7M"/>
 </technology>
 </technologies>
 </device>
