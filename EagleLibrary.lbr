@@ -2989,6 +2989,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="SRN8040TA-4R7M" prefix="L">
+<description>4.7µH Inductor</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -3048,7 +3049,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="W989D6DBGX6I" prefix="U">
-<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<description>512Mbit SDRAM</description>
 <gates>
 <gate name="A" symbol="W989D6DBGX6I-A" x="0" y="-15.24"/>
 <gate name="B" symbol="W989D6DBGX6I-B" x="37.78" y="0"/>
@@ -3121,7 +3122,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="TPS63805YFFR" prefix="U">
-<description>Conv DC-DC 1.3V to 5.5V Step Down/Step Up Single-Out 1.8V to 5V 2A 15-Pin DSBGA T/R</description>
+<description>Buck-Boost Converter</description>
 <gates>
 <gate name="G$1" symbol="TPS63805YFF" x="0" y="0"/>
 </gates>
@@ -3149,7 +3150,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="TPS6280XYKAR" prefix="U">
-<description>STEP-DOWN CONVERTER</description>
+<description>Step-Down Converter</description>
 <gates>
 <gate name="G$1" symbol="TPS6280XYKA" x="0" y="0"/>
 </gates>
@@ -3173,6 +3174,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="TC2050-NL" prefix="TC">
+<description>TagConnect 10-pin Receptacle</description>
 <gates>
 <gate name="G$1" symbol="TC2050-NL" x="0" y="0"/>
 </gates>
@@ -3197,6 +3199,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="LED" prefix="LED" uservalue="yes">
+<description>LED</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -3216,6 +3219,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR-TESTBED" prefix="L" uservalue="yes">
+<description>Testbed permitting multiple inductor sizes</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -3235,6 +3239,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="GD25LQ80CEIGR" prefix="U">
+<description>SPI Flash</description>
 <gates>
 <gate name="G$1" symbol="GD25LQ80CEIGR" x="7.62" y="-12.7"/>
 </gates>
@@ -3263,7 +3268,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="SIT8021AI-J4-18S-12.000000E" prefix="X">
-<description>MEMS OSC XO 12.0000MHZ LVCMOS</description>
+<description>12MHz MEMS Oscillator</description>
 <gates>
 <gate name="G$1" symbol="SIT8021AI-J4-18S-12.000000E" x="0" y="0"/>
 </gates>
@@ -3285,6 +3290,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="ICE40HX4K-BG121" prefix="U">
+<description>Lattice ICE40 FPGA</description>
 <gates>
 <gate name="A" symbol="ICE40HX4K-BG121-A" x="-71.12" y="2.54"/>
 <gate name="B" symbol="ICE40HX4K-BG121-B" x="-33.02" y="2.54"/>
@@ -3430,7 +3436,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </devices>
 </deviceset>
 <deviceset name="HEADER" prefix="H">
-<description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
+<description>Header</description>
 <gates>
 <gate name="G$1" symbol="2X10_HEADER" x="0" y="0"/>
 </gates>
