@@ -1248,8 +1248,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <package name="SOLDER-JUMPER">
 <description>Chip, 1.00 X 0.50 X 0.50 mm body
 &lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.50 mm&lt;/p&gt;</description>
-<smd name="1" x="-0.4" y="0" dx="0.7" dy="0.6" layer="1" cream="no"/>
-<smd name="2" x="0.4" y="0" dx="0.7" dy="0.6" layer="1" cream="no"/>
+<smd name="1" x="-0.4" y="0" dx="0.65" dy="0.6" layer="1" cream="no"/>
+<smd name="2" x="0.4" y="0" dx="0.65" dy="0.6" layer="1" cream="no"/>
 <text x="-0.754" y="0.556" size="0.508" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-0.85" y1="0.4" x2="-0.85" y2="-0.4" width="0.05" layer="21"/>
 <wire x1="-0.85" y1="-0.4" x2="0.85" y2="-0.4" width="0.05" layer="21"/>
@@ -1261,6 +1261,33 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.85" y="-0.4"/>
 <vertex x="0.85" y="0.4"/>
 </polygon>
+</package>
+<package name="BGA8C40P2X4_163X167X30N" urn="urn:adsk.eagle:footprint:18764049/1">
+<description>8-BGA, collapsing, 0.40 mm pitch, 1.64 X 1.68 X 0.30 mm body
+&lt;p&gt;8-pin collapsing BGA package with 0.40 mm col pitch and 0.40 mm row pitch with body size 1.64 X 1.68 X 0.30 mm&lt;/p&gt;</description>
+<circle x="-1.3425" y="0.6" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.8385" y1="0.4093" x2="-0.8385" y2="0.8185" width="0.12" layer="21"/>
+<wire x1="-0.8385" y1="0.8185" x2="-0.4293" y2="0.8185" width="0.12" layer="21"/>
+<wire x1="0.8385" y1="0.4093" x2="0.8385" y2="0.8185" width="0.12" layer="21"/>
+<wire x1="0.8385" y1="0.8185" x2="0.4293" y2="0.8185" width="0.12" layer="21"/>
+<wire x1="0.8385" y1="-0.4093" x2="0.8385" y2="-0.8185" width="0.12" layer="21"/>
+<wire x1="0.8385" y1="-0.8185" x2="0.4293" y2="-0.8185" width="0.12" layer="21"/>
+<wire x1="-0.8385" y1="-0.4093" x2="-0.8385" y2="-0.8185" width="0.12" layer="21"/>
+<wire x1="-0.8385" y1="-0.8185" x2="-0.4293" y2="-0.8185" width="0.12" layer="21"/>
+<wire x1="0.8385" y1="-0.8185" x2="-0.8385" y2="-0.8185" width="0.12" layer="51"/>
+<wire x1="-0.8385" y1="-0.8185" x2="-0.8385" y2="0.8185" width="0.12" layer="51"/>
+<wire x1="-0.8385" y1="0.8185" x2="0.8385" y2="0.8185" width="0.12" layer="51"/>
+<wire x1="0.8385" y1="0.8185" x2="0.8385" y2="-0.8185" width="0.12" layer="51"/>
+<smd name="A1" x="-0.2" y="0.6" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="A2" x="0.2" y="0.6" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="B1" x="-0.2" y="0.2" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="B2" x="0.2" y="0.2" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="C1" x="-0.2" y="-0.2" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="C2" x="0.2" y="-0.2" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="D1" x="-0.2" y="-0.6" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<smd name="D2" x="0.2" y="-0.6" dx="0.15" dy="0.15" layer="1" roundness="100" thermals="no"/>
+<text x="0" y="1.485" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.4535" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -1416,6 +1443,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;121-pin collapsing BGA package with 0.80 mm col pitch and 0.80 mm row pitch with body size 9.00 X 9.00 X 1.00 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="ICE40HX4K-BG121"/>
+</packageinstances>
+</package3d>
+<package3d name="BGA8C40P2X4_163X167X30N" urn="urn:adsk.eagle:package:18763743/1" type="model">
+<description>8-BGA, collapsing, 0.40 mm pitch, 1.64 X 1.68 X 0.30 mm body
+&lt;p&gt;8-pin collapsing BGA package with 0.40 mm col pitch and 0.40 mm row pitch with body size 1.64 X 1.68 X 0.30 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="BGA8C40P2X4_163X167X30N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2220,6 +2254,16 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="-3.81" y="5.08" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
 <pin name="2" x="0" y="-2.54" visible="pad" length="short" rot="R90"/>
+</symbol>
+<symbol name="TEST">
+<pin name="P$1" x="-2.54" y="0" length="middle"/>
+<pin name="P$2" x="-2.54" y="-2.54" length="middle"/>
+<pin name="P$3" x="-2.54" y="-5.08" length="middle"/>
+<pin name="P$4" x="-2.54" y="-7.62" length="middle"/>
+<pin name="P$5" x="-2.54" y="-10.16" length="middle"/>
+<pin name="P$6" x="-2.54" y="-12.7" length="middle"/>
+<pin name="P$7" x="-2.54" y="-15.24" length="middle"/>
+<pin name="P$8" x="-2.54" y="-17.78" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3194,7 +3238,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes">
+<deviceset name="LED" prefix="LED">
 <description>LED</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -3470,6 +3514,31 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST">
+<gates>
+<gate name="G$1" symbol="TEST" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="TEST" package="BGA8C40P2X4_163X167X30N">
+<connects>
+<connect gate="G$1" pin="P$1" pad="A1"/>
+<connect gate="G$1" pin="P$2" pad="A2"/>
+<connect gate="G$1" pin="P$3" pad="B1"/>
+<connect gate="G$1" pin="P$4" pad="B2"/>
+<connect gate="G$1" pin="P$5" pad="C1"/>
+<connect gate="G$1" pin="P$6" pad="C2"/>
+<connect gate="G$1" pin="P$7" pad="D1"/>
+<connect gate="G$1" pin="P$8" pad="D2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18763743/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
