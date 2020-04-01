@@ -1245,40 +1245,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="12.7" y1="-3" x2="-12.7" y2="-3" width="0.05" layer="21"/>
 <wire x1="-12.7" y1="-3" x2="-12.7" y2="3" width="0.05" layer="21"/>
 </package>
-<package name="JS202011JCQN">
-<smd name="1" x="-2.5" y="1.2" dx="1" dy="1.6" layer="1"/>
-<text x="-4.501459375" y="2.432559375" size="0.889" layer="25" font="vector">&gt;NAME</text>
-<wire x1="4.5" y1="-1.8" x2="-4.5" y2="-1.8" width="0.05" layer="21"/>
-<wire x1="-4.5" y1="-1.8" x2="-4.5" y2="1.8" width="0.05" layer="21"/>
-<wire x1="-4.5" y1="1.8" x2="4.5" y2="1.8" width="0.05" layer="21"/>
-<wire x1="4.5" y1="1.8" x2="4.5" y2="-1.8" width="0.05" layer="21"/>
-<polygon width="0.05" layer="39">
-<vertex x="4.5" y="-1.8"/>
-<vertex x="-4.5" y="-1.8"/>
-<vertex x="-4.5" y="1.8"/>
-<vertex x="4.5" y="1.8"/>
-</polygon>
-<smd name="2" x="0" y="1.2" dx="1" dy="1.6" layer="1"/>
-<smd name="3" x="2.5" y="1.2" dx="1" dy="1.6" layer="1"/>
-<smd name="5" x="-2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
-<smd name="6" x="0" y="-1.2" dx="1" dy="1.6" layer="1"/>
-<smd name="7" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
-</package>
-<package name="M50-3630242">
-<smd name="1" x="-0.635" y="1.5" dx="0.65" dy="3" layer="1"/>
-<text x="-1.201459375" y="3.232559375" size="0.635" layer="25" font="vector">&gt;NAME</text>
-<wire x1="1.1" y1="-3.1" x2="-1.1" y2="-3.1" width="0.05" layer="21"/>
-<wire x1="-1.1" y1="-3.1" x2="-1.1" y2="3.1" width="0.05" layer="21"/>
-<wire x1="-1.1" y1="3.1" x2="1.1" y2="3.1" width="0.05" layer="21"/>
-<wire x1="1.1" y1="3.1" x2="1.1" y2="-3.1" width="0.05" layer="21"/>
-<polygon width="0.05" layer="39">
-<vertex x="1.1" y="-3.1"/>
-<vertex x="-1.1" y="-3.1"/>
-<vertex x="-1.1" y="3.1"/>
-<vertex x="1.1" y="3.1"/>
-</polygon>
-<smd name="2" x="0.635" y="-1.5" dx="0.65" dy="3" layer="1"/>
-</package>
 <package name="SOLDER-JUMPER">
 <description>Chip, 1.00 X 0.50 X 0.50 mm body
 &lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.50 mm&lt;/p&gt;</description>
@@ -3490,30 +3456,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JS202011JCQN" prefix="S">
-<gates>
-<gate name="A" symbol="SWITCH" x="0" y="7.62"/>
-<gate name="B" symbol="SWITCH" x="0" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="JS202011JCQN">
-<connects>
-<connect gate="A" pin="X" pad="2"/>
-<connect gate="A" pin="Y1" pad="1"/>
-<connect gate="A" pin="Y2" pad="3"/>
-<connect gate="B" pin="X" pad="6"/>
-<connect gate="B" pin="Y1" pad="5"/>
-<connect gate="B" pin="Y2" pad="7"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MFG" value="C&amp;K"/>
-<attribute name="PN" value="JS202011JCQN"/>
-</technology>
 </technologies>
 </device>
 </devices>
