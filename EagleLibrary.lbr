@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1409,6 +1409,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="10.975" y="7.435"/>
 </polygon>
 </package>
+<package name="TEST-POINT">
+<smd name="X" x="0" y="0" dx="0.4" dy="0.4" layer="1" roundness="100"/>
+<text x="0" y="0.327" size="0.508" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2479,6 +2483,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="DAT0" x="20.32" y="-10.16" visible="pin" length="short" rot="R180"/>
 <pin name="CLK" x="-2.54" y="-15.24" visible="pin" length="short" function="clk"/>
 <pin name="CMD" x="-2.54" y="-10.16" visible="pin" length="short"/>
+</symbol>
+<symbol name="TEST-POINT">
+<circle x="6.35" y="0" radius="1.27" width="0.254" layer="94"/>
+<pin name="X" x="0" y="0" visible="off" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3848,6 +3856,21 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <attribute name="MFG" value="Molex"/>
 <attribute name="PN" value="105162-0001"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="TP">
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEST-POINT">
+<connects>
+<connect gate="G$1" pin="X" pad="X"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
