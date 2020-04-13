@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1636,6 +1636,31 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0" y="10.16"/>
 </polygon>
 </package>
+<package name="74LV1T12XGXH">
+<description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.20 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.20 mm&lt;/p&gt;</description>
+<smd name="1" x="-0.24" y="0.24" dx="0.2" dy="0.2" layer="1"/>
+<text x="-0.40358125" y="0.557059375" size="0.508" layer="25" font="vector">&gt;NAME</text>
+<smd name="3" x="0" y="0" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="5" x="0.24" y="0.24" dx="0.22" dy="0.22" layer="1"/>
+<smd name="2" x="-0.24" y="-0.24" dx="0.22" dy="0.22" layer="1"/>
+<smd name="4" x="0.24" y="-0.24" dx="0.22" dy="0.22" layer="1"/>
+<wire x1="-0.4" y1="0.4" x2="-0.4" y2="-0.4" width="0.05" layer="21"/>
+<wire x1="-0.4" y1="-0.4" x2="0.4" y2="-0.4" width="0.05" layer="21"/>
+<wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.05" layer="21"/>
+<wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-0.4" y="0.4"/>
+<vertex x="-0.4" y="-0.4"/>
+<vertex x="0.4" y="-0.4"/>
+<vertex x="0.4" y="0.4"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-0.4" y="0.4"/>
+<vertex x="-0.4" y="0"/>
+<vertex x="0" y="0.4"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2922,6 +2947,38 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="2" x="-2.54" y="-5.08" visible="pad" length="short" swaplevel="1"/>
 <pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" swaplevel="1"/>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="74LV1T125GXH">
+<wire x1="15.24" y1="0" x2="15.24" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="A" x="-2.54" y="-12.7" visible="pin" length="short" direction="in"/>
+<pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-17.78" size="1.778" layer="95">&gt;PN</text>
+<pin name="Y" x="17.78" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="EN_" x="-2.54" y="-7.62" visible="pin" length="short" direction="in"/>
+<wire x1="5.08" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="9.144" y2="-11.684" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="9.144" y2="-13.716" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="74LV1T126GXH">
+<wire x1="15.24" y1="0" x2="15.24" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="A" x="-2.54" y="-12.7" visible="pin" length="short" direction="in"/>
+<pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-17.78" size="1.778" layer="95">&gt;PN</text>
+<pin name="Y" x="17.78" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short" direction="in"/>
+<wire x1="5.08" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="9.144" y2="-11.684" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="9.144" y2="-13.716" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4597,6 +4654,50 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </package3dinstances>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LV1T125GXH" prefix="U">
+<gates>
+<gate name="G$1" symbol="74LV1T125GXH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="74LV1T12XGXH">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="EN_" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Nexperia"/>
+<attribute name="PN" value="74LV1T125GXH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LV1T126GXH" prefix="U">
+<gates>
+<gate name="G$1" symbol="74LV1T126GXH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="74LV1T12XGXH">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Nexperia"/>
+<attribute name="PN" value="74LV1T126GXH"/>
+</technology>
 </technologies>
 </device>
 </devices>
