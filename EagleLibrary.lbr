@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1235,15 +1235,21 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pad name="19" x="1.73" y="-1.27" drill="0.9144" rot="R90"/>
 <pad name="20" x="4.27" y="-1.27" drill="0.9144" rot="R90"/>
 <text x="0.09" y="0.227" size="1.016" layer="25" font="vector">&gt;NAME</text>
-<text x="-0.41" y="-24.122" size="1.016" layer="21" font="vector" rot="R180">1</text>
-<wire x1="0" y1="-25.4" x2="0" y2="0" width="0.05" layer="39"/>
-<wire x1="0" y1="0" x2="6" y2="0" width="0.05" layer="39"/>
-<wire x1="6" y1="0" x2="6" y2="-25.4" width="0.05" layer="39"/>
-<wire x1="6" y1="-25.4" x2="0" y2="-25.4" width="0.05" layer="39"/>
 <wire x1="0" y1="-25.4" x2="0" y2="0" width="0.05" layer="21"/>
 <wire x1="0" y1="0" x2="6" y2="0" width="0.05" layer="21"/>
 <wire x1="6" y1="0" x2="6" y2="-25.4" width="0.05" layer="21"/>
 <wire x1="6" y1="-25.4" x2="0" y2="-25.4" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="6" y="-25.4"/>
+<vertex x="0" y="-25.4"/>
+<vertex x="0" y="0"/>
+<vertex x="6" y="0"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="0" y="-25.4"/>
+<vertex x="1.4" y="-25.4"/>
+<vertex x="0" y="-24"/>
+</polygon>
 </package>
 <package name="SOLDER-JUMPER">
 <description>Chip, 1.00 X 0.50 X 0.50 mm body
@@ -1601,6 +1607,34 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0" y="-20.56"/>
 <vertex x="0" y="0"/>
 </polygon>
+<polygon width="0.05" layer="21">
+<vertex x="9.25" y="-20.561"/>
+<vertex x="9.25" y="-19.161"/>
+<vertex x="7.85" y="-20.561"/>
+</polygon>
+</package>
+<package name="HEADER-1X3" urn="urn:adsk.eagle:footprint:19124831/1" locally_modified="yes">
+<description>Single-row, 3-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
+&lt;p&gt;Single-row (1X3), 3-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) col pitch, 0.66 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="0" width="0.05" layer="21"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.05" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="10.16" width="0.05" layer="21"/>
+<wire x1="0" y1="10.16" x2="5.08" y2="10.16" width="0.05" layer="21"/>
+<pad name="1" x="2.54" y="2.54" drill="1.1334" diameter="1.7334" rot="R90"/>
+<pad name="2" x="2.54" y="5.08" drill="1.1334" diameter="1.7334" rot="R90"/>
+<pad name="3" x="2.54" y="7.62" drill="1.1334" diameter="1.7334" rot="R90"/>
+<text x="0.109" y="10.564" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="1.4" y="0"/>
+<vertex x="0" y="1.4"/>
+</polygon>
+<polygon width="0.05" layer="39">
+<vertex x="5.08" y="10.16"/>
+<vertex x="5.08" y="0"/>
+<vertex x="0" y="0"/>
+<vertex x="0" y="10.16"/>
+</polygon>
 </package>
 </packages>
 <packages3d>
@@ -1805,6 +1839,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;Double-row (2X5), 10-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 20.36 X 9.10 X 15.09 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="WURTH-61201021621"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRV3W66P254_1X3_1016X508X838B" urn="urn:adsk.eagle:package:19124821/1" type="model">
+<description>Single-row, 3-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
+&lt;p&gt;Single-row (1X3), 3-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) col pitch, 0.66 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="HEADER-1X3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2540,49 +2581,49 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </symbol>
 <symbol name="HEADER-2X10">
 <wire x1="7.62" y1="-27.94" x2="0" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-20.955" x2="1.905" y2="-19.685" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-23.495" x2="1.905" y2="-22.225" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-26.035" x2="1.905" y2="-24.765" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-19.685" x2="5.715" y2="-20.955" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-22.225" x2="5.715" y2="-23.495" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-24.765" x2="5.715" y2="-26.035" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-15.875" x2="1.905" y2="-14.605" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-18.415" x2="1.905" y2="-17.145" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-14.605" x2="5.715" y2="-15.875" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-17.145" x2="5.715" y2="-18.415" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-8.255" x2="1.905" y2="-6.985" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-10.795" x2="1.905" y2="-9.525" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-13.335" x2="1.905" y2="-12.065" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-6.985" x2="5.715" y2="-8.255" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-9.525" x2="5.715" y2="-10.795" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-12.065" x2="5.715" y2="-13.335" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-20.955" x2="2.54" y2="-19.685" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-23.495" x2="2.54" y2="-22.225" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-26.035" x2="2.54" y2="-24.765" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-19.685" x2="5.08" y2="-20.955" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-22.225" x2="5.08" y2="-23.495" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-24.765" x2="5.08" y2="-26.035" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-15.875" x2="2.54" y2="-14.605" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-18.415" x2="2.54" y2="-17.145" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-14.605" x2="5.08" y2="-15.875" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-17.145" x2="5.08" y2="-18.415" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-8.255" x2="2.54" y2="-6.985" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-10.795" x2="2.54" y2="-9.525" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-13.335" x2="2.54" y2="-12.065" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-6.985" x2="5.08" y2="-8.255" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-9.525" x2="5.08" y2="-10.795" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-12.065" x2="5.08" y2="-13.335" width="0.254" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-27.94" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-3.175" x2="1.905" y2="-1.905" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-5.715" x2="1.905" y2="-4.445" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-1.905" x2="5.715" y2="-3.175" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-4.445" x2="5.715" y2="-5.715" width="0.254" layer="94" curve="-180" cap="flat"/>
-<pin name="1" x="-3.81" y="-25.4" visible="pad" length="middle" swaplevel="1"/>
-<pin name="2" x="11.43" y="-25.4" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="3" x="-3.81" y="-22.86" visible="pad" length="middle" swaplevel="1"/>
-<pin name="4" x="11.43" y="-22.86" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="5" x="-3.81" y="-20.32" visible="pad" length="middle" swaplevel="1"/>
-<pin name="6" x="11.43" y="-20.32" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="7" x="-3.81" y="-17.78" visible="pad" length="middle" swaplevel="1"/>
-<pin name="8" x="11.43" y="-17.78" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="9" x="-3.81" y="-15.24" visible="pad" length="middle" swaplevel="1"/>
-<pin name="10" x="11.43" y="-15.24" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="11" x="-3.81" y="-12.7" visible="pad" length="middle" swaplevel="1"/>
-<pin name="12" x="11.43" y="-12.7" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="13" x="-3.81" y="-10.16" visible="pad" length="middle" swaplevel="1"/>
-<pin name="14" x="11.43" y="-10.16" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="15" x="-3.81" y="-7.62" visible="pad" length="middle" swaplevel="1"/>
-<pin name="16" x="11.43" y="-7.62" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="17" x="-3.81" y="-5.08" visible="pad" length="middle" swaplevel="1"/>
-<pin name="18" x="11.43" y="-5.08" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="19" x="-3.81" y="-2.54" visible="pad" length="middle" swaplevel="1"/>
-<pin name="20" x="11.43" y="-2.54" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="-4.445" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-1.905" x2="5.08" y2="-3.175" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-4.445" x2="5.08" y2="-5.715" width="0.254" layer="94" curve="-180" cap="flat"/>
+<pin name="1" x="-2.54" y="-25.4" visible="pad" length="short" swaplevel="1"/>
+<pin name="2" x="10.16" y="-25.4" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="3" x="-2.54" y="-22.86" visible="pad" length="short" swaplevel="1"/>
+<pin name="4" x="10.16" y="-22.86" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="5" x="-2.54" y="-20.32" visible="pad" length="short" swaplevel="1"/>
+<pin name="6" x="10.16" y="-20.32" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="7" x="-2.54" y="-17.78" visible="pad" length="short" swaplevel="1"/>
+<pin name="8" x="10.16" y="-17.78" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="9" x="-2.54" y="-15.24" visible="pad" length="short" swaplevel="1"/>
+<pin name="10" x="10.16" y="-15.24" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="11" x="-2.54" y="-12.7" visible="pad" length="short" swaplevel="1"/>
+<pin name="12" x="10.16" y="-12.7" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="13" x="-2.54" y="-10.16" visible="pad" length="short" swaplevel="1"/>
+<pin name="14" x="10.16" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="15" x="-2.54" y="-7.62" visible="pad" length="short" swaplevel="1"/>
+<pin name="16" x="10.16" y="-7.62" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="17" x="-2.54" y="-5.08" visible="pad" length="short" swaplevel="1"/>
+<pin name="18" x="10.16" y="-5.08" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="19" x="-2.54" y="-2.54" visible="pad" length="short" swaplevel="1"/>
+<pin name="20" x="10.16" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SWITCH">
@@ -2844,29 +2885,42 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </symbol>
 <symbol name="WURTH-61201021621">
 <wire x1="7.62" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-8.255" x2="1.905" y2="-6.985" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-10.795" x2="1.905" y2="-9.525" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-13.335" x2="1.905" y2="-12.065" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-6.985" x2="5.715" y2="-8.255" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-9.525" x2="5.715" y2="-10.795" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-12.065" x2="5.715" y2="-13.335" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-8.255" x2="2.54" y2="-6.985" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-10.795" x2="2.54" y2="-9.525" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-13.335" x2="2.54" y2="-12.065" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-6.985" x2="5.08" y2="-8.255" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-9.525" x2="5.08" y2="-10.795" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-12.065" x2="5.08" y2="-13.335" width="0.254" layer="94" curve="-180" cap="flat"/>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-15.24" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-3.175" x2="1.905" y2="-1.905" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.905" y1="-5.715" x2="1.905" y2="-4.445" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-1.905" x2="5.715" y2="-3.175" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="5.715" y1="-4.445" x2="5.715" y2="-5.715" width="0.254" layer="94" curve="-180" cap="flat"/>
-<pin name="1" x="11.43" y="-12.7" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="2" x="-3.81" y="-12.7" visible="pad" length="middle" swaplevel="1"/>
-<pin name="3" x="11.43" y="-10.16" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="4" x="-3.81" y="-10.16" visible="pad" length="middle" swaplevel="1"/>
-<pin name="5" x="11.43" y="-7.62" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="6" x="-3.81" y="-7.62" visible="pad" length="middle" swaplevel="1"/>
-<pin name="7" x="11.43" y="-5.08" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="8" x="-3.81" y="-5.08" visible="pad" length="middle" swaplevel="1"/>
-<pin name="9" x="11.43" y="-2.54" visible="pad" length="middle" swaplevel="1" rot="R180"/>
-<pin name="10" x="-3.81" y="-2.54" visible="pad" length="middle" swaplevel="1"/>
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="-4.445" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-1.905" x2="5.08" y2="-3.175" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="5.08" y1="-4.445" x2="5.08" y2="-5.715" width="0.254" layer="94" curve="-180" cap="flat"/>
+<pin name="1" x="10.16" y="-12.7" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="2" x="-2.54" y="-12.7" visible="pad" length="short" swaplevel="1"/>
+<pin name="3" x="10.16" y="-10.16" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="4" x="-2.54" y="-10.16" visible="pad" length="short" swaplevel="1"/>
+<pin name="5" x="10.16" y="-7.62" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="6" x="-2.54" y="-7.62" visible="pad" length="short" swaplevel="1"/>
+<pin name="7" x="10.16" y="-5.08" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="8" x="-2.54" y="-5.08" visible="pad" length="short" swaplevel="1"/>
+<pin name="9" x="10.16" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<pin name="10" x="-2.54" y="-2.54" visible="pad" length="short" swaplevel="1"/>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="HEADER-1X3">
+<wire x1="5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="-4.445" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="-8.255" x2="2.54" y2="-6.985" width="0.254" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="-7.62" visible="pad" length="short" swaplevel="1"/>
+<pin name="2" x="-2.54" y="-5.08" visible="pad" length="short" swaplevel="1"/>
+<pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" swaplevel="1"/>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
@@ -4072,7 +4126,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER" prefix="H">
+<deviceset name="HEADER-2X10" prefix="H">
 <description>Header</description>
 <gates>
 <gate name="G$1" symbol="HEADER-2X10" x="0" y="0"/>
@@ -4523,6 +4577,26 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <attribute name="MFG" value="Wurth Elektronik"/>
 <attribute name="PN" value="61201021621"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HEADER-1X3" prefix="H">
+<gates>
+<gate name="G$1" symbol="HEADER-1X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HEADER-1X3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19124821/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
