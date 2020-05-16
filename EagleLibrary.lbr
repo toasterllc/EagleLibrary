@@ -1872,6 +1872,75 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-0.1" y="0.4"/>
 </polygon>
 </package>
+<package name="TI-ADS4146" urn="urn:adsk.eagle:footprint:20278324/1" locally_modified="yes">
+<description>48-QFN, 0.50 mm pitch, 7.00 X 7.00 X 1.00 mm body, 5.60 X 5.60 mm thermal pad
+&lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 7.00 X 7.00 X 1.00 mm and thermal pad size 5.60 X 5.60 mm&lt;/p&gt;</description>
+<smd name="1" x="-3.4346" y="2.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="2" x="-3.4346" y="2.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="3" x="-3.4346" y="1.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="4" x="-3.4346" y="1.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="5" x="-3.4346" y="0.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="6" x="-3.4346" y="0.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="7" x="-3.4346" y="-0.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="8" x="-3.4346" y="-0.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="9" x="-3.4346" y="-1.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="10" x="-3.4346" y="-1.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="11" x="-3.4346" y="-2.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="12" x="-3.4346" y="-2.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="13" x="-2.75" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="-2.25" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="-1.75" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="-1.25" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="17" x="-0.75" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="18" x="-0.25" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="19" x="0.25" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="20" x="0.75" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="21" x="1.25" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="22" x="1.75" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="23" x="2.25" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="24" x="2.75" y="-3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="25" x="3.4346" y="-2.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="26" x="3.4346" y="-2.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="27" x="3.4346" y="-1.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="28" x="3.4346" y="-1.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="29" x="3.4346" y="-0.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="30" x="3.4346" y="-0.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="31" x="3.4346" y="0.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="32" x="3.4346" y="0.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="33" x="3.4346" y="1.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="34" x="3.4346" y="1.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="35" x="3.4346" y="2.25" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="36" x="3.4346" y="2.75" dx="0.86" dy="0.264" layer="1" roundness="100"/>
+<smd name="37" x="2.75" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="38" x="2.25" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="39" x="1.75" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="40" x="1.25" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="41" x="0.75" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="42" x="0.25" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="43" x="-0.25" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="44" x="-0.75" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="45" x="-1.25" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="46" x="-1.75" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="47" x="-2.25" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="48" x="-2.75" y="3.4346" dx="0.86" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="49" x="0" y="0" dx="5.6" dy="5.6" layer="1" thermals="no"/>
+<text x="-3.4" y="4.2996" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="3.55" y1="-3.55" x2="-3.55" y2="-3.55" width="0.05" layer="21"/>
+<wire x1="-3.55" y1="-3.55" x2="-3.55" y2="3.55" width="0.05" layer="21"/>
+<wire x1="-3.55" y1="3.55" x2="3.55" y2="3.55" width="0.05" layer="21"/>
+<wire x1="3.55" y1="3.55" x2="3.55" y2="-3.55" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="3.55" y="-3.55"/>
+<vertex x="-3.55" y="-3.55"/>
+<vertex x="-3.55" y="3.55"/>
+<vertex x="3.55" y="3.55"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-3.55" y="3.55"/>
+<vertex x="-3.55" y="2.5"/>
+<vertex x="-2.5" y="3.55"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2124,6 +2193,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;SODFL package with 1.00 mm span with body size 1.00 X 0.60 X 0.50 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SODFL1006X50N"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN50P700X700X100-49T560N" urn="urn:adsk.eagle:package:20278237/1" type="model">
+<description>48-QFN, 0.50 mm pitch, 7.00 X 7.00 X 1.00 mm body, 5.60 X 5.60 mm thermal pad
+&lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 7.00 X 7.00 X 1.00 mm and thermal pad size 5.60 X 5.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TI-ADS4146"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3330,6 +3406,64 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="5.08" y1="1.524" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="-1.524" width="0.254" layer="94"/>
 <text x="-0.508" y="3.556" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="TI-ADS4146-A">
+<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-16.002" size="1.778" layer="95" align="top-left">&gt;PN</text>
+<pin name="AVDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="AGND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="DRVDD" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="DRGND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+</symbol>
+<symbol name="TI-ADS4146-B">
+<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<pin name="RESET" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="SCLK" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="SDATA" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="SEN" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="OE" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="DFS" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="OVR_SDOUT" x="30.48" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="-17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<text x="0" y="-18.542" size="1.778" layer="95" align="top-left">&gt;PN</text>
+<text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="TI-ADS4146-C">
+<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<pin name="CLKP" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="CLKM" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="INP" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="INM" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="VCM" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="CLKOUT" x="25.4" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="D0" x="25.4" y="-48.26" visible="pin" length="short" rot="R180"/>
+<pin name="D1" x="25.4" y="-45.72" visible="pin" length="short" rot="R180"/>
+<pin name="D2" x="25.4" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="D3" x="25.4" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="D4" x="25.4" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="D5" x="25.4" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="D6" x="25.4" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="D7" x="25.4" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="D8" x="25.4" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="D9" x="25.4" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="D10" x="25.4" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="D11" x="25.4" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="D12" x="25.4" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="D13" x="25.4" y="-15.24" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="-50.8" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-50.8" x2="0" y2="-50.8" width="0.254" layer="94"/>
+<text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-51.562" size="1.778" layer="95" align="top-left">&gt;PN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5242,6 +5376,58 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="Skyworks"/>
 <attribute name="PN" value="SMS3922-040LF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-ADS4146" prefix="U">
+<gates>
+<gate name="A" symbol="TI-ADS4146-A" x="0" y="0"/>
+<gate name="B" symbol="TI-ADS4146-B" x="25.4" y="0"/>
+<gate name="C" symbol="TI-ADS4146-C" x="66.04" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-ADS4146">
+<connects>
+<connect gate="A" pin="AGND" pad="9 12 14 17 19 25"/>
+<connect gate="A" pin="AVDD" pad="8 18 20 22 24 26"/>
+<connect gate="A" pin="DRGND" pad="1 36 49"/>
+<connect gate="A" pin="DRVDD" pad="2 35"/>
+<connect gate="B" pin="DFS" pad="6"/>
+<connect gate="B" pin="OE" pad="7"/>
+<connect gate="B" pin="OVR_SDOUT" pad="3"/>
+<connect gate="B" pin="RESET" pad="30"/>
+<connect gate="B" pin="SCLK" pad="29"/>
+<connect gate="B" pin="SDATA" pad="28"/>
+<connect gate="B" pin="SEN" pad="27"/>
+<connect gate="C" pin="CLKM" pad="11"/>
+<connect gate="C" pin="CLKOUT" pad="5"/>
+<connect gate="C" pin="CLKP" pad="10"/>
+<connect gate="C" pin="D0" pad="33"/>
+<connect gate="C" pin="D1" pad="34"/>
+<connect gate="C" pin="D10" pad="45"/>
+<connect gate="C" pin="D11" pad="46"/>
+<connect gate="C" pin="D12" pad="47"/>
+<connect gate="C" pin="D13" pad="48"/>
+<connect gate="C" pin="D2" pad="37"/>
+<connect gate="C" pin="D3" pad="38"/>
+<connect gate="C" pin="D4" pad="39"/>
+<connect gate="C" pin="D5" pad="40"/>
+<connect gate="C" pin="D6" pad="41"/>
+<connect gate="C" pin="D7" pad="42"/>
+<connect gate="C" pin="D8" pad="43"/>
+<connect gate="C" pin="D9" pad="44"/>
+<connect gate="C" pin="INM" pad="16"/>
+<connect gate="C" pin="INP" pad="15"/>
+<connect gate="C" pin="VCM" pad="13"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20278237/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
 </technology>
 </technologies>
 </device>
