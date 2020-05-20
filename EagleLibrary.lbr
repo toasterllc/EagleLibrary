@@ -1941,6 +1941,24 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-2.5" y="3.55"/>
 </polygon>
 </package>
+<package name="ON-WLCSP4" urn="urn:adsk.eagle:footprint:20296034/1" locally_modified="yes">
+<description>4-BGA, collapsing, 0.35 mm pitch, 0.64 X 0.64 X 0.33 mm body
+&lt;p&gt;4-pin collapsing BGA package with 0.35 mm col pitch and 0.35 mm row pitch with body size 0.64 X 0.64 X 0.33 mm&lt;/p&gt;</description>
+<wire x1="0.335" y1="-0.335" x2="-0.335" y2="-0.335" width="0.05" layer="21"/>
+<wire x1="-0.335" y1="-0.335" x2="-0.335" y2="0.335" width="0.05" layer="21"/>
+<wire x1="-0.335" y1="0.335" x2="0.335" y2="0.335" width="0.05" layer="21"/>
+<wire x1="0.335" y1="0.335" x2="0.335" y2="-0.335" width="0.05" layer="21"/>
+<smd name="A1" x="-0.175" y="0.175" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="A2" x="0.175" y="0.175" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="B1" x="-0.175" y="-0.175" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="B2" x="0.175" y="-0.175" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<text x="-0.28701875" y="0.4123" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="21">
+<vertex x="-0.335" y="0.335"/>
+<vertex x="-0.335" y="-0.1"/>
+<vertex x="0.1" y="0.335"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2200,6 +2218,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 7.00 X 7.00 X 1.00 mm and thermal pad size 5.60 X 5.60 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="TI-ADS4146"/>
+</packageinstances>
+</package3d>
+<package3d name="BGA4C35P2X2_64X64X33N" urn="urn:adsk.eagle:package:20296028/1" type="model">
+<description>4-BGA, collapsing, 0.35 mm pitch, 0.64 X 0.64 X 0.33 mm body
+&lt;p&gt;4-pin collapsing BGA package with 0.35 mm col pitch and 0.35 mm row pitch with body size 0.64 X 0.64 X 0.33 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="ON-WLCSP4"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3444,26 +3469,50 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="INM" x="-2.54" y="-5.08" visible="pin" length="short"/>
 <pin name="VCM" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="CLKOUT" x="25.4" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="D0" x="25.4" y="-48.26" visible="pin" length="short" rot="R180"/>
-<pin name="D1" x="25.4" y="-45.72" visible="pin" length="short" rot="R180"/>
-<pin name="D2" x="25.4" y="-43.18" visible="pin" length="short" rot="R180"/>
-<pin name="D3" x="25.4" y="-40.64" visible="pin" length="short" rot="R180"/>
-<pin name="D4" x="25.4" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="D5" x="25.4" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="D6" x="25.4" y="-33.02" visible="pin" length="short" rot="R180"/>
-<pin name="D7" x="25.4" y="-30.48" visible="pin" length="short" rot="R180"/>
-<pin name="D8" x="25.4" y="-27.94" visible="pin" length="short" rot="R180"/>
-<pin name="D9" x="25.4" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="D10" x="25.4" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="D11" x="25.4" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="D12" x="25.4" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="D13" x="25.4" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="D0" x="25.4" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="D1" x="25.4" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="D2" x="25.4" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="D3" x="25.4" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="D4" x="25.4" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="D5" x="25.4" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="D6" x="25.4" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="D7" x="25.4" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="D8" x="25.4" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="D9" x="25.4" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="D10" x="25.4" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="D11" x="25.4" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="D12" x="25.4" y="-45.72" visible="pin" length="short" rot="R180"/>
+<pin name="D13" x="25.4" y="-48.26" visible="pin" length="short" rot="R180"/>
 <wire x1="0" y1="-50.8" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
 <wire x1="22.86" y1="0" x2="22.86" y2="-50.8" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-50.8" x2="0" y2="-50.8" width="0.254" layer="94"/>
 <text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-51.562" size="1.778" layer="95" align="top-left">&gt;PN</text>
+</symbol>
+<symbol name="ON-NCP148">
+<pin name="IN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="OUT" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-12.7" size="1.778" layer="95">&gt;PN</text>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+</symbol>
+<symbol name="ON-NCP167">
+<pin name="IN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="OUT" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-12.7" size="1.778" layer="95">&gt;PN</text>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5428,6 +5477,52 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ON-NCP148" prefix="U">
+<gates>
+<gate name="G$1" symbol="ON-NCP148" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ON-WLCSP4">
+<connects>
+<connect gate="G$1" pin="EN" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="B2"/>
+<connect gate="G$1" pin="IN" pad="A1"/>
+<connect gate="G$1" pin="OUT" pad="A2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20296028/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="ON Semiconductor"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ON-NCP167" prefix="U">
+<gates>
+<gate name="G$1" symbol="ON-NCP167" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ON-WLCSP4">
+<connects>
+<connect gate="G$1" pin="EN" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="B2"/>
+<connect gate="G$1" pin="IN" pad="A1"/>
+<connect gate="G$1" pin="OUT" pad="A2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20296028/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="ON Semiconductor"/>
 </technology>
 </technologies>
 </device>
