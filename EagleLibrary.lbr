@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1959,6 +1959,138 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.1" y="0.335"/>
 </polygon>
 </package>
+<package name="TI-TLV62085RLT">
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.05" layer="21"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.05" layer="21"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.05" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.05" layer="21"/>
+<smd name="1" x="-0.9" y="0.75" dx="0.6" dy="0.25" layer="1"/>
+<text x="-0.943559375" y="1.196640625" size="0.508" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="21">
+<vertex x="-1" y="1"/>
+<vertex x="-1" y="0.5"/>
+<vertex x="-0.5" y="1"/>
+</polygon>
+<polygon width="0.05" layer="39">
+<vertex x="1" y="-1"/>
+<vertex x="-1" y="-1"/>
+<vertex x="-1" y="1"/>
+<vertex x="1" y="1"/>
+</polygon>
+<smd name="2" x="-0.9" y="0.25" dx="0.6" dy="0.25" layer="1" roundness="100"/>
+<smd name="3" x="-0.9" y="-0.25" dx="0.6" dy="0.25" layer="1" roundness="100"/>
+<smd name="4" x="-0.9" y="-0.75" dx="0.6" dy="0.25" layer="1" roundness="100"/>
+<smd name="7" x="0.45" y="0.6" dx="1.5" dy="0.3" layer="1"/>
+<smd name="6" x="0.45" y="0" dx="1.5" dy="0.3" layer="1"/>
+<smd name="5" x="0.45" y="-0.6" dx="1.5" dy="0.3" layer="1"/>
+</package>
+<package name="TI-TPS62175DQC" urn="urn:adsk.eagle:footprint:20605888/1" locally_modified="yes">
+<description>10-SON (DFN), 0.50 mm pitch, 3.00 X 2.00 X 0.80 mm body, 2.40 X 0.84 mm thermal pad
+&lt;p&gt;10-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 2.00 X 0.80 mm and thermal pad size 2.40 X 0.84 mm&lt;/p&gt;</description>
+<smd name="1" x="-0.9956" y="1" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="2" x="-0.9956" y="0.5" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="3" x="-0.9956" y="0" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="4" x="-0.9956" y="-0.5" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="5" x="-0.9956" y="-1" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="6" x="0.9956" y="-1" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="7" x="0.9956" y="-0.5" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="8" x="0.9956" y="0" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="9" x="0.9956" y="0.5" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="10" x="0.9956" y="1" dx="0.738" dy="0.27" layer="1" roundness="100"/>
+<smd name="11" x="0" y="0" dx="0.84" dy="2.4" layer="1" thermals="no"/>
+<text x="-0.924459375" y="1.756359375" size="0.762" layer="25" font="vector">&gt;NAME</text>
+<wire x1="1.05" y1="-1.55" x2="-1.05" y2="-1.55" width="0.05" layer="21"/>
+<wire x1="-1.05" y1="-1.55" x2="-1.05" y2="1.55" width="0.05" layer="21"/>
+<wire x1="-1.05" y1="1.55" x2="1.05" y2="1.55" width="0.05" layer="21"/>
+<wire x1="1.05" y1="1.55" x2="1.05" y2="-1.55" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="1.05" y="-1.55"/>
+<vertex x="-1.05" y="-1.55"/>
+<vertex x="-1.05" y="1.55"/>
+<vertex x="1.05" y="1.55"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-1.05" y="1.55"/>
+<vertex x="-1.05" y="0.75"/>
+<vertex x="-0.25" y="1.55"/>
+</polygon>
+</package>
+<package name="TI-TPS6284XYBG" urn="urn:adsk.eagle:footprint:20605919/1" locally_modified="yes">
+<description>6-BGA, collapsing, 0.40 mm pitch, 1.47 X 0.97 X 0.50 mm body
+&lt;p&gt;6-pin collapsing BGA package with 0.40 mm col pitch and 0.40 mm row pitch with body size 1.47 X 0.97 X 0.50 mm&lt;/p&gt;</description>
+<wire x1="0.499" y1="-0.749" x2="-0.499" y2="-0.749" width="0.05" layer="39"/>
+<wire x1="-0.499" y1="-0.749" x2="-0.499" y2="0.749" width="0.05" layer="39"/>
+<wire x1="-0.499" y1="0.749" x2="0.499" y2="0.749" width="0.05" layer="39"/>
+<wire x1="0.499" y1="0.749" x2="0.499" y2="-0.749" width="0.05" layer="39"/>
+<smd name="A1" x="-0.2" y="0.4" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="A2" x="0.2" y="0.4" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="B1" x="-0.2" y="0" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="B2" x="0.2" y="0" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="C1" x="-0.2" y="-0.4" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<smd name="C2" x="0.2" y="-0.4" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
+<text x="-0.424" y="0.863" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<wire x1="0.499" y1="-0.749" x2="-0.499" y2="-0.749" width="0.05" layer="21"/>
+<wire x1="-0.499" y1="-0.749" x2="-0.499" y2="0.749" width="0.05" layer="21"/>
+<wire x1="-0.499" y1="0.749" x2="0.499" y2="0.749" width="0.05" layer="21"/>
+<wire x1="0.499" y1="0.749" x2="0.499" y2="-0.749" width="0.05" layer="21"/>
+<polygon width="0.05" layer="21">
+<vertex x="-0.499" y="0.749"/>
+<vertex x="-0.499" y="0.249"/>
+<vertex x="0.001" y="0.749"/>
+</polygon>
+</package>
+<package name="TI-SN6505X" urn="urn:adsk.eagle:footprint:20606491/1" locally_modified="yes">
+<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<smd name="1" x="-1.2533" y="0.95" dx="1.2088" dy="0.5839" layer="1" roundness="100"/>
+<smd name="2" x="-1.2533" y="0" dx="1.2088" dy="0.5839" layer="1" roundness="100"/>
+<smd name="3" x="-1.2533" y="-0.95" dx="1.2088" dy="0.5839" layer="1" roundness="100"/>
+<smd name="4" x="1.2533" y="-0.95" dx="1.2088" dy="0.5839" layer="1" roundness="100"/>
+<smd name="5" x="1.2533" y="0" dx="1.2088" dy="0.5839" layer="1" roundness="100"/>
+<smd name="6" x="1.2533" y="0.95" dx="1.2088" dy="0.5839" layer="1" roundness="100"/>
+<text x="-0.762" y="1.7419" size="0.762" layer="25" font="vector">&gt;NAME</text>
+<wire x1="0.875" y1="-1.525" x2="-0.875" y2="-1.525" width="0.05" layer="21"/>
+<wire x1="-0.875" y1="-1.525" x2="-0.875" y2="1.525" width="0.05" layer="21"/>
+<wire x1="-0.875" y1="1.525" x2="0.875" y2="1.525" width="0.05" layer="21"/>
+<wire x1="0.875" y1="1.525" x2="0.875" y2="-1.525" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="0.875" y="-1.525"/>
+<vertex x="-0.875" y="-1.525"/>
+<vertex x="-0.875" y="1.525"/>
+<vertex x="0.875" y="1.525"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-0.875" y="1.525"/>
+<vertex x="-0.875" y="0.525"/>
+<vertex x="0.025" y="1.525"/>
+</polygon>
+</package>
+<package name="WURTH-750315371">
+<description>6-SON (DFN), 0.50 mm pitch, 1.45 X 1.00 X 0.60 mm body
+&lt;p&gt;6-pin SON (DFN) package with 0.50 mm pitch with body size 1.45 X 1.00 X 0.60 mm&lt;/p&gt;</description>
+<wire x1="5.62" y1="-2.54" x2="-5.62" y2="-2.54" width="0.05" layer="21"/>
+<wire x1="-5.62" y1="-2.54" x2="-5.62" y2="2.54" width="0.05" layer="21"/>
+<wire x1="-5.62" y1="2.54" x2="5.62" y2="2.54" width="0.05" layer="21"/>
+<wire x1="5.62" y1="2.54" x2="5.62" y2="-2.54" width="0.05" layer="21"/>
+<smd name="1" x="-5.62" y="2.54" dx="1.2" dy="0.8" layer="1" roundness="100"/>
+<text x="-4.42738125" y="2.993440625" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="5.62" y="-2.54"/>
+<vertex x="-5.62" y="-2.54"/>
+<vertex x="-5.62" y="2.54"/>
+<vertex x="5.62" y="2.54"/>
+</polygon>
+<smd name="2" x="-5.62" y="0" dx="1.2" dy="0.8" layer="1" roundness="100"/>
+<smd name="3" x="-5.62" y="-2.54" dx="1.2" dy="0.8" layer="1" roundness="100"/>
+<smd name="6" x="5.62" y="2.54" dx="1.2" dy="0.8" layer="1" roundness="100"/>
+<smd name="5" x="5.62" y="0" dx="1.2" dy="0.8" layer="1" roundness="100"/>
+<smd name="4" x="5.62" y="-2.54" dx="1.2" dy="0.8" layer="1" roundness="100"/>
+<polygon width="0.05" layer="21">
+<vertex x="-5.62" y="2.54"/>
+<vertex x="-5.62" y="1.44"/>
+<vertex x="-4.52" y="2.54"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2227,6 +2359,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <packageinstance name="ON-WLCSP4"/>
 </packageinstances>
 </package3d>
+<package3d name="SON50P200X300X80-11T84X240N" urn="urn:adsk.eagle:package:20605874/1" type="model">
+<description>10-SON (DFN), 0.50 mm pitch, 3.00 X 2.00 X 0.80 mm body, 2.40 X 0.84 mm thermal pad
+&lt;p&gt;10-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 2.00 X 0.80 mm and thermal pad size 2.40 X 0.84 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TI-TPS62175DQC"/>
+</packageinstances>
+</package3d>
+<package3d name="BGA6C40P2X3_146X96X50N" urn="urn:adsk.eagle:package:20605912/1" type="model">
+<description>6-BGA, collapsing, 0.40 mm pitch, 1.47 X 0.97 X 0.50 mm body
+&lt;p&gt;6-pin collapsing BGA package with 0.40 mm col pitch and 0.40 mm row pitch with body size 1.47 X 0.97 X 0.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TI-TPS6284XYBG"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P280X145-6N" urn="urn:adsk.eagle:package:20606339/1" type="model">
+<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TI-SN6505X"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="LTC6655BHMS8">
@@ -2311,7 +2464,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="BYP" x="-12.7" y="-10.16" visible="pin" length="short"/>
 <text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="LT3045XDD">
+<symbol name="LT-LT3045XDD">
 <pin name="IN" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
 <pin name="OUT" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
@@ -3354,7 +3507,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="PGOOD" x="25.4" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="SS" x="25.4" y="-27.94" visible="pin" length="short" rot="R180"/>
 </symbol>
-<symbol name="LT3094XDD">
+<symbol name="LT-LT3094XDD">
 <pin name="IN" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
 <pin name="OUT" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
@@ -3513,6 +3666,87 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="-12.7" size="1.778" layer="95">&gt;PN</text>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 <pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+</symbol>
+<symbol name="TI-TLV62085">
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<pin name="FB" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SW" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="VOS" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="PG" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="TI-TPS62175">
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="PGND" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<pin name="FB" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="SW" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="VOS" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="PG" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SLEEP" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="AGND" x="-2.54" y="-15.24" visible="pin" length="short"/>
+</symbol>
+<symbol name="TI-TPS6284XYBG">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SW" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="VOS" x="22.86" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-17.9041" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="VSET" x="22.86" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
+</symbol>
+<symbol name="TI-SN6505X">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="D2" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="VCC" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-17.9041" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="D1" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="CLK" x="-2.54" y="-12.7" visible="pin" length="short"/>
+</symbol>
+<symbol name="WURTH-750315371">
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="2" x="0" y="-7.62" visible="off" length="short"/>
+<pin name="1" x="0" y="0" visible="off" length="short"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="2.54" y1="-15.24" x2="2.54" y2="-12.7" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-10.16" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<pin name="3" x="0" y="-15.24" visible="off" length="short"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-10.16" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-12.7" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-15.24" width="0.254" layer="94" curve="-180"/>
+<pin name="5" x="10.16" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="4" x="10.16" y="-15.24" visible="off" length="short" rot="R180"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="-5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<pin name="6" x="10.16" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3681,10 +3915,10 @@ Low noise: 0.85nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT3045XDD" prefix="U">
+<deviceset name="LT-LT3045XDD" prefix="U">
 <description>Low noise LDO</description>
 <gates>
-<gate name="G$1" symbol="LT3045XDD" x="0" y="0"/>
+<gate name="G$1" symbol="LT-LT3045XDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LT3045XDD">
@@ -5260,9 +5494,9 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT3094XDD" prefix="U">
+<deviceset name="LT-LT3094XDD" prefix="U">
 <gates>
-<gate name="G$1" symbol="LT3094XDD" x="0" y="0"/>
+<gate name="G$1" symbol="LT-LT3094XDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LT3094XDD">
@@ -5523,6 +5757,130 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="ON Semiconductor"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TLV62085">
+<gates>
+<gate name="G$1" symbol="TI-TLV62085" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TLV62085RLT">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="PG" pad="2"/>
+<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="7"/>
+<connect gate="G$1" pin="VOS" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TPS62175" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TPS62175" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TPS62175DQC">
+<connects>
+<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="PG" pad="7"/>
+<connect gate="G$1" pin="PGND" pad="1 11"/>
+<connect gate="G$1" pin="SLEEP" pad="8"/>
+<connect gate="G$1" pin="SW" pad="9"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VOS" pad="10"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20605874/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TPS6284XYBG" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TPS6284XYBG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TPS6284XYBG">
+<connects>
+<connect gate="G$1" pin="EN" pad="C1"/>
+<connect gate="G$1" pin="GND" pad="A1"/>
+<connect gate="G$1" pin="SW" pad="B2"/>
+<connect gate="G$1" pin="VIN" pad="B1"/>
+<connect gate="G$1" pin="VOS" pad="A2"/>
+<connect gate="G$1" pin="VSET" pad="C2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20605912/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-SN6505X" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-SN6505X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-SN6505X">
+<connects>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="D1" pad="1"/>
+<connect gate="G$1" pin="D2" pad="3"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20606339/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WURTH-750315371" prefix="T">
+<gates>
+<gate name="G$1" symbol="WURTH-750315371" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WURTH-750315371">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Wurth"/>
+<attribute name="PN" value="750315371"/>
 </technology>
 </technologies>
 </device>
