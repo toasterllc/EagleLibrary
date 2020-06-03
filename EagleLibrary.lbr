@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -2113,6 +2113,33 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-0.8" y="0.89"/>
 </polygon>
 </package>
+<package name="TI-TPS6224XDRV" urn="urn:adsk.eagle:footprint:20768407/1" locally_modified="yes">
+<description>6-SON (DFN), 0.65 mm pitch, 2.00 X 2.00 X 0.80 mm body, 1.60 X 1.00 mm thermal pad
+&lt;p&gt;6-pin SON (DFN) package with 0.65 mm pitch with body size 2.00 X 2.00 X 0.80 mm and thermal pad size 1.60 X 1.00 mm&lt;/p&gt;</description>
+<smd name="1" x="-1.0206" y="0.65" dx="0.688" dy="0.32" layer="1" roundness="100"/>
+<smd name="2" x="-1.0206" y="0" dx="0.688" dy="0.32" layer="1" roundness="100"/>
+<smd name="3" x="-1.0206" y="-0.65" dx="0.688" dy="0.32" layer="1" roundness="100"/>
+<smd name="4" x="1.0206" y="-0.65" dx="0.688" dy="0.32" layer="1" roundness="100"/>
+<smd name="5" x="1.0206" y="0" dx="0.688" dy="0.32" layer="1" roundness="100"/>
+<smd name="6" x="1.0206" y="0.65" dx="0.688" dy="0.32" layer="1" roundness="100"/>
+<smd name="7" x="0" y="0" dx="1" dy="1.6" layer="1" thermals="no"/>
+<text x="-1.143" y="1.31" size="0.762" layer="25" font="vector">&gt;NAME</text>
+<wire x1="1.05" y1="-1.05" x2="-1.05" y2="-1.05" width="0.05" layer="21"/>
+<wire x1="-1.05" y1="-1.05" x2="-1.05" y2="1.05" width="0.05" layer="21"/>
+<wire x1="-1.05" y1="1.05" x2="1.05" y2="1.05" width="0.05" layer="21"/>
+<wire x1="1.05" y1="1.05" x2="1.05" y2="-1.05" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="1.05" y="-1.05"/>
+<vertex x="-1.05" y="-1.05"/>
+<vertex x="-1.05" y="1.05"/>
+<vertex x="1.05" y="1.05"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-1.05" y="1.05"/>
+<vertex x="-1.05" y="0.35"/>
+<vertex x="-0.35" y="1.05"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2400,6 +2427,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="TI-SN6505X"/>
+</packageinstances>
+</package3d>
+<package3d name="SON65P200X200X80-7T100X160N" urn="urn:adsk.eagle:package:20768387/1" type="model">
+<description>6-SON (DFN), 0.65 mm pitch, 2.00 X 2.00 X 0.80 mm body, 1.60 X 1.00 mm thermal pad
+&lt;p&gt;6-pin SON (DFN) package with 0.65 mm pitch with body size 2.00 X 2.00 X 0.80 mm and thermal pad size 1.60 X 1.00 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TI-TPS6224XDRV"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3721,7 +3755,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="SLEEP" x="-2.54" y="-7.62" visible="pin" length="short"/>
 <pin name="AGND" x="-2.54" y="-15.24" visible="pin" length="short"/>
 </symbol>
-<symbol name="TI-TPS6284XYBG">
+<symbol name="TI-TPS6284X">
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
@@ -3773,6 +3807,20 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="-20.32" size="1.778" layer="95" align="top-left">&gt;PN</text>
 <wire x1="4.572" y1="1.016" x2="4.572" y2="-16.256" width="0.254" layer="94"/>
 <wire x1="5.588" y1="1.016" x2="5.588" y2="-16.256" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TI-TPS6224X">
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SW" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="FB" x="22.86" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="MODE" x="-2.54" y="-17.78" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5839,9 +5887,9 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TI-TPS6284XYBG" prefix="U">
+<deviceset name="TI-TPS6284X" prefix="U">
 <gates>
-<gate name="G$1" symbol="TI-TPS6284XYBG" x="0" y="0"/>
+<gate name="G$1" symbol="TI-TPS6284X" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TI-TPS6284XYBG">
@@ -5926,6 +5974,31 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="Diodes Incorporated"/>
 <attribute name="PN" value="DFLS130L"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TPS6224X" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TPS6224X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TPS6224XDRV">
+<connects>
+<connect gate="G$1" pin="EN" pad="4"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6 7"/>
+<connect gate="G$1" pin="MODE" pad="2"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20768387/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
 </technology>
 </technologies>
 </device>
