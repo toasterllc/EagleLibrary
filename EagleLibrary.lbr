@@ -2191,6 +2191,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="5" y="5"/>
 </polygon>
 </package>
+<package name="ABRACON-ASPI-6045S-2R7N-T">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.25" y="0" dx="1.7" dy="5.7" layer="1"/>
+<smd name="2" x="2.25" y="0" dx="1.7" dy="5.7" layer="1"/>
+<text x="-2.814" y="3.2737" size="1.524" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.05" layer="21"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.05" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.05" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-3" y="3"/>
+<vertex x="-3" y="-3"/>
+<vertex x="3" y="-3"/>
+<vertex x="3" y="3"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -3809,17 +3826,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </symbol>
 <symbol name="TI-TPS6284X">
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-15.24" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="SW" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="-15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SW" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<pin name="VOS" x="22.86" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="VOS" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
 <text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="0.075" y="-17.9041" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
-<pin name="VSET" x="22.86" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="VSET" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
 </symbol>
 <symbol name="TI-SN6505X">
 <wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
@@ -3862,17 +3879,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </symbol>
 <symbol name="TI-TPS6224X">
 <wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="-20.32" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-20.32" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="SW" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="-20.32" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SW" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
-<pin name="FB" x="22.86" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-2.54" y="-17.78" visible="pin" length="short"/>
-<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="MODE" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="MODE" x="-2.54" y="-7.62" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6110,6 +6127,26 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="Bourns"/>
 <attribute name="PN" value="SRN1060-100M"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABRACON-ASPI-6045S-2R7N-T" prefix="L" uservalue="yes">
+<description>4.7µH Inductor</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABRACON-ASPI-6045S-2R7N-T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Abracon"/>
+<attribute name="PN" value="ASPI-6045S-2R7N-T"/>
 </technology>
 </technologies>
 </device>
