@@ -654,7 +654,7 @@
 <vertex x="1.3" y="-1.6"/>
 <vertex x="1.3" y="1.6"/>
 </polygon>
-<text x="-1.27" y="-3.81" size="1.27" layer="21">THIS FOOTPRINT IS WRONG, NEEDS FIXING</text>
+<text x="-1.27" y="-3.81" size="1.27" layer="21">THIS PIN ORIENTATION IS WRONG, NEEDS FIXING</text>
 </package>
 <package name="SN74LVC1G04YZVR" urn="urn:adsk.eagle:footprint:17798723/1" locally_modified="yes">
 <description>4-BGA, collapsing, 0.50 mm pitch, 0.89 X 0.89 X 0.50 mm body
@@ -2138,6 +2138,57 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-1.05" y="1.05"/>
 <vertex x="-1.05" y="0.35"/>
 <vertex x="-0.35" y="1.05"/>
+</polygon>
+</package>
+<package name="TAIYOYUDEN-NRS5024T1R5NMGJ">
+<description>Molded Body, 3.50 X 2.80 X 2.00 mm body
+&lt;p&gt;Molded Body package with body size 3.50 X 2.80 X 2.00 mm&lt;/p&gt;</description>
+<wire x1="2.45" y1="-2.45" x2="-2.45" y2="-2.45" width="0.05" layer="21"/>
+<wire x1="-2.45" y1="-2.45" x2="-2.45" y2="2.45" width="0.05" layer="21"/>
+<wire x1="-2.45" y1="2.45" x2="2.45" y2="2.45" width="0.05" layer="21"/>
+<wire x1="2.45" y1="2.45" x2="2.45" y2="-2.45" width="0.05" layer="21"/>
+<smd name="1" x="-1.8" y="0" dx="1.5" dy="4" layer="1" roundness="50"/>
+<smd name="2" x="1.8" y="0" dx="1.5" dy="4" layer="1" roundness="50"/>
+<text x="-2.299" y="2.691" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="2.45" y="-2.45"/>
+<vertex x="-2.45" y="-2.45"/>
+<vertex x="-2.45" y="2.45"/>
+<vertex x="2.45" y="2.45"/>
+</polygon>
+</package>
+<package name="TAIYOYUDEN-NRS8040T4R7NJGJ">
+<description>Molded Body, 3.50 X 2.80 X 2.00 mm body
+&lt;p&gt;Molded Body package with body size 3.50 X 2.80 X 2.00 mm&lt;/p&gt;</description>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.05" layer="21"/>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.05" layer="21"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.05" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.05" layer="21"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="7.5" layer="1" roundness="50"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="7.5" layer="1" roundness="50"/>
+<text x="-3.799" y="4.191" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="4" y="-4"/>
+<vertex x="-4" y="-4"/>
+<vertex x="-4" y="4"/>
+<vertex x="4" y="4"/>
+</polygon>
+</package>
+<package name="BOURNS-SRN1060-100M">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<smd name="1" x="-3.3" y="0" dx="3.5" dy="10.2" layer="1"/>
+<smd name="2" x="3.3" y="0" dx="3.5" dy="10.2" layer="1"/>
+<text x="-4.514" y="5.5737" size="1.524" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-5" y1="5" x2="-5" y2="-5" width="0.05" layer="21"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.05" layer="21"/>
+<wire x1="5" y1="-5" x2="5" y2="5" width="0.05" layer="21"/>
+<wire x1="5" y1="5" x2="-5" y2="5" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-5" y="5"/>
+<vertex x="-5" y="-5"/>
+<vertex x="5" y="-5"/>
+<vertex x="5" y="5"/>
 </polygon>
 </package>
 </packages>
@@ -3744,7 +3795,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="17.78" y1="-20.32" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
-<pin name="PGND" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<pin name="PGND" x="-2.54" y="-15.24" visible="pin" length="short"/>
 <pin name="FB" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="SW" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
@@ -3752,8 +3803,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
 <pin name="PG" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="SLEEP" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="AGND" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="SLEEP" x="20.32" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="AGND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="NC" x="-2.54" y="-17.78" visible="pin" length="short"/>
 </symbol>
 <symbol name="TI-TPS6284X">
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
@@ -3817,10 +3869,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
-<pin name="FB" x="22.86" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="FB" x="22.86" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-17.78" visible="pin" length="short"/>
 <pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="MODE" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<pin name="MODE" x="-2.54" y="-12.7" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4576,7 +4628,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BOURNS-SRN8040TA-4R7M" prefix="L">
+<deviceset name="BOURNS-SRN8040TA-4R7M" prefix="L" uservalue="yes">
 <description>4.7µH Inductor</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -5866,11 +5918,12 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <devices>
 <device name="" package="TI-TPS62175DQC">
 <connects>
-<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="AGND" pad="6 11"/>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="NC" pad="4"/>
 <connect gate="G$1" pin="PG" pad="7"/>
-<connect gate="G$1" pin="PGND" pad="1 11"/>
+<connect gate="G$1" pin="PGND" pad="1"/>
 <connect gate="G$1" pin="SLEEP" pad="8"/>
 <connect gate="G$1" pin="SW" pad="9"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
@@ -5999,6 +6052,64 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TAIYOYUDEN-NRS5024T1R5NMGJ" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TAIYOYUDEN-NRS5024T1R5NMGJ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Taiyo Yuden"/>
+<attribute name="PN" value="NRS5024T1R5NMGJ"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TAIYOYUDEN-NRS8040T4R7NJGJ" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TAIYOYUDEN-NRS8040T4R7NJGJ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Taiyo Yuden"/>
+<attribute name="PN" value="NRS8040T4R7NJGJ"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BOURNS-SRN1060-100M" prefix="L" uservalue="yes">
+<description>4.7µH Inductor</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BOURNS-SRN1060-100M">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Bourns"/>
+<attribute name="PN" value="SRN1060-100M"/>
 </technology>
 </technologies>
 </device>
