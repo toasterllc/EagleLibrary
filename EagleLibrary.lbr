@@ -322,7 +322,7 @@
 <vertex x="-0.9" y="1.55"/>
 </polygon>
 </package>
-<package name="LT3045XDD" urn="urn:adsk.eagle:footprint:17630123/1" locally_modified="yes">
+<package name="LT-LT3045XDD" urn="urn:adsk.eagle:footprint:17630123/1" locally_modified="yes">
 <description>10-SON (DFN), 0.50 mm pitch, 3.00 X 3.00 X 0.85 mm body, 2.38 X 1.65 mm thermal pad
 &lt;p&gt;10-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 3.00 X 0.85 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
 <smd name="1" x="-1.4346" y="1" dx="0.86" dy="0.27" layer="1" roundness="100"/>
@@ -1699,7 +1699,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-0.95" y="2.55"/>
 </polygon>
 </package>
-<package name="LT3094XDD" urn="urn:adsk.eagle:footprint:20155915/1" locally_modified="yes">
+<package name="LT-LT3094XDD" urn="urn:adsk.eagle:footprint:20155915/1" locally_modified="yes">
 <description>12-SON (DFN), 0.45 mm pitch, 3.00 X 3.00 X 0.80 mm body, 2.38 X 1.65 mm thermal pad
 &lt;p&gt;12-pin SON (DFN) package with 0.45 mm pitch with body size 3.00 X 3.00 X 0.80 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
 <wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.05" layer="21"/>
@@ -2242,7 +2242,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <description>10-SON (DFN), 0.50 mm pitch, 3.00 X 3.00 X 0.85 mm body, 2.38 X 1.65 mm thermal pad
 &lt;p&gt;10-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 3.00 X 0.85 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="LT3045XDD"/>
+<packageinstance name="LT-LT3045XDD"/>
 </packageinstances>
 </package3d>
 <package3d name="QFN50P400X400X100-21T200N" urn="urn:adsk.eagle:package:17469945/1" type="model">
@@ -2431,7 +2431,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <description>12-SON (DFN), 0.45 mm pitch, 3.00 X 3.00 X 0.80 mm body, 2.38 X 1.65 mm thermal pad
 &lt;p&gt;12-pin SON (DFN) package with 0.45 mm pitch with body size 3.00 X 3.00 X 0.80 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="LT3094XDD"/>
+<packageinstance name="LT-LT3094XDD"/>
 </packageinstances>
 </package3d>
 <package3d name="CAPMP3528X200N" urn="urn:adsk.eagle:package:20156094/1" type="model">
@@ -4058,13 +4058,13 @@ Low noise: 0.85nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT-LT3045XDD" prefix="U">
+<deviceset name="LT-LT3045" prefix="U">
 <description>Low noise LDO</description>
 <gates>
 <gate name="G$1" symbol="LT-LT3045XDD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LT3045XDD">
+<device name="" package="LT-LT3045XDD">
 <connects>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="8 11"/>
@@ -5637,12 +5637,12 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LT-LT3094XDD" prefix="U">
+<deviceset name="LT-LT3094" prefix="U">
 <gates>
 <gate name="G$1" symbol="LT-LT3094XDD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LT3094XDD">
+<device name="" package="LT-LT3094XDD">
 <connects>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="9"/>
