@@ -1,0 +1,323 @@
+#usage "<b>Rename a net </b>\n <p>"
+	"From a context menu for a net wire, this ULP simplifies the renaming of a net.<p>"
+	"<ul><li>Choose to use the first unused name in Eagle's default N$xx format</li>"
+	"<li>Choose from a list of nets already in the schematic</li>"
+	"<li>Choose from a list of visible pin names connected to that net segment</li>"
+	"<li>Choose from a list of all visible pin names connected to that net</li>"	
+	"<li>Type in a new name</li></ul>"
+	
+	"<i>Requires Eagle version 6.0.0 or later.</i><p>"
+"<b>Usage</b>:<br>"
+	"On first usage, in the <u>schematic</u>, run the ULP using the mouse or type into the command line the following:"
+	"<ul><li> RUN rename_net<br>"
+	"<i>The ULP will create the context menu required to run this ULP</i></ul>"
+
+	"Once the context menu has been created, use the ULP as follows:<p>"
+	"<ul><li>Right click on the net wire you wish to rename</li>"
+	"<li>Select from the context menu 'Rename Net'</li></ul>"
+	"<author>Author: Warren Brayshaw</author>"
+
+string version = "v1.0";	
+real rad,cx,cy,px,py; 
+string result,MyParam,usrret,ctxcmd,RunUlp,cmd,ClickXY,netname,ULPname,PinDisplayList[],PinNames[],PinNamesNotSeg[];
+numeric string NetList[];
+string ctxdesc = "Rename Net", NewName = "default", NewNameLab= "<html>New Name:";
+int x,MenuCnt=1,NetCnt,PinCnt,PinCntNotSeg,SelWireCnt,ContextExists,NetsInGroupCnt,DisPinNameCnt;
+string header = "<html>By renaming a net segment, you can<br>"
+								"&nbsp;&nbsp;&#8226;&nbsp;&nbsp;disconnect it electrically from other segments<br>"
+								"&nbsp;&nbsp;&#8226;&nbsp;&nbsp;reconnect it to another net (by giving it that net's name)<br>"
+								"&nbsp;&nbsp;&#8226;&nbsp;&nbsp;give the whole net a unique and descriptive name<p>"
+								"<hr></html>";
+
+//**********USER OPTIONS*********************************************************************************
+//CHANGE THE "1" IN THE FOLLOWING LINE TO A "0" IF YOU DON'T WANT 'RepositionMouseCursorAfterContextMenu'
+
+  string ReposMouse = "1";
+
+//******************************************************************************************************
+
+void Explain(string reason)
+{
+  string UseExplanation = ":<html><b>" + reason + "</b><br><p>This ULP requires that you launch it from the context menu of a net wire.<p>"
+	"The context menu item 'Rename Net' has been created for you by this ULP.<p>"
+	"Usage:"
+	"<ul><li>Right click on the net wire you wish to rename</li><li>Select 'Rename Net' from the context menu that opens</li></ul>";
+  dlgMessageBox(UseExplanation);
+}
+//*****************************
+void CheckNetCnt(int netcnt,int SelWireCnt)
+{
+  switch (netcnt) {
+    case 0:Explain("No net was selected.");exit(0);
+    case 1:switch (SelWireCnt){
+						case 1:return;
+						default:Explain("Multiple wires were selected."); exit(0);
+					}
+    default:Explain("Multiple nets were selected."); exit(0);
+  }
+}
+//*****************************
+string UnusedN()
+{
+	string Nnet;
+	numeric string Ns[];
+	int n,next;
+		for(int x=0; x<NetCnt; x++){
+			if(strxstr(NetList[x],"N\\$[0-9][0-9]*$") == 0){		// get all N$s
+				Ns[next] = NetList[x];
+				next++;
+			}
+		}
+		if(next == 0) return "N$1"; 									//No N$s so return "N$1";
+		else {
+			sort(next,Ns);													
+			x=0;
+			if(Ns[0]=="N$0") n=0;
+			else n=1;
+			for(x; x<next; x++){
+				sprintf(Nnet,"N$%u",n);
+				if(Ns[x] == Nnet) n++; 
+				else return Nnet;
+			}
+			sprintf(Nnet,"N$%u",n);
+			}
+	return Nnet; 
+}
+//*****************************
+int CheckForChars(string CurrentName) //net cannot have a comma or space
+{
+	if(strchr(CurrentName,32) != -1 || strchr(CurrentName,44) != -1  ) {
+		dlgMessageBox("!A net name cannot contain a space or a comma");
+		return 0;
+	}	
+	else return 1;	
+}
+//*****************************
+void info()
+{
+	string info = "<html><dl><dt>By renaming a net segment, you can</dt>"
+	"<dd>&#8226;&nbsp;&nbsp;disconnect it electrically from other segments</dd>"
+	"<dd>&#8226;&nbsp;&nbsp;reconnect it to another net (by giving it that net's name)</dd>"
+	"<dd>&#8226;&nbsp;&nbsp;give the whole net a unique and descriptive name</dd></dl>"
+	"<hr>"
+	"<dl><dt><b>New Name: field</b></dt><dd>Enter the new name for the net into the <b>'New name:'</b> field.<br>"
+	"The contents of this field is used to rename your net.<br></dd>"
+	"<dd>A net name can be overlined by preceding the name with a '!'.<br>"
+	"See <i>Eagle Help > Editor Commands > Text > Overlined text</i> for more details.<br></dd>"
+	"<dt><b>'Unused N$x' button</b></dt>"
+	"<dd>Used to place the first unused name in Eagle's default N$xx format into the <b>'New name'</b> field.</dd></dl>"
+	"<dl><dt><b>All Nets: field</b></dt><dd>The drop down of this field shows all the nets in your design. If you select another net in the list it is copied into the <b>'New name:'</b> field.<br></dd>"
+	"<hr>"
+	"If there are pins connected to the selected net segment and they have their names visible, there will be an additional section displayed related to these visible pin names.<p>"
+	"This is useful when the desired net name is the same or similar to the pin name.<p>"
+	"<dl><dt><b>Pin Name: field</b></dt>"
+	"<dd>A list of visible pin names, connected to your net, is made available here.<br>Use the dropdown to select from the list.<br></dd>"
+	"<dd>Use the radio buttons to select between displaying the visible pin names of the selected net segment or of all segments of that net.<br></dd>"
+	"<dt><b>'Use pin name' button</b></dt>"
+	"<dd>Used to place the selected pin name into the <b>'New name'</b> field where it can be edited.</dd></dl>"
+	"<hr>"
+	"<dl><dt><b>'Rename' button</b></dt>"
+	"<dd>This will rename the net to the text in the <b>'New name'</b> field and return you to the schematic.<br></dd>"
+	"<dt><b>'Cancel'button</b></dt>"
+	"<dd>This will return you to the schematic, making no change to the net name.</dd></dl></html>";
+	dlgDialog("Information"){
+		dlgHBoxLayout{ dlgSpacing(350);}
+		dlgLabel(info);
+		dlgHBoxLayout{
+			dlgLabel(version);
+			dlgStretch(1);
+			dlgPushButton("+OK") dlgReject();
+		}
+	};
+}
+//*****************************
+void swaparray(int seg, int Acnt)  //0 = This seg, 1 = All segs, Acnt = size of source array
+{
+	int x,n,m,trim;
+	int TrimCnt = DisPinNameCnt;
+	if(Acnt < DisPinNameCnt) trim = 1;
+	if(seg==1){// source array == All Segs
+		DisPinNameCnt = 0;
+		for(x=0; x<Acnt; x++){
+			PinDisplayList[x] = PinNamesNotSeg[x];
+			DisPinNameCnt++;
+		}	
+	}	
+	else {  																// source array == This Seg 
+		DisPinNameCnt =0;
+		for(x=0; x<Acnt; x++){
+			PinDisplayList[x] = PinNames[x];
+			DisPinNameCnt++;
+		}
+	}
+	if(trim==1){
+		for (x; x<TrimCnt; x++) { 
+		PinDisplayList[x] = "";
+		}
+	}
+	if(DisPinNameCnt >1){ 								//remove dups from PinNames list
+		sort(DisPinNameCnt,PinDisplayList);
+		do{
+			if(PinDisplayList[n] == PinDisplayList[n+1]){
+				for(m=n; m<DisPinNameCnt; m++){
+					PinDisplayList[m] = PinDisplayList[m+1];
+				}
+				DisPinNameCnt--;
+			}
+			else {n++;}
+		} while (n<DisPinNameCnt);
+	}
+}
+//*****************************
+void RemNetDups()
+{
+	int n,m;
+	sort(NetCnt,NetList);
+	do{
+		if(NetList[n] == NetList[n+1]){
+			for(m=n; m<NetCnt; m++){
+				NetList[m] = NetList[m+1];
+			}
+			NetCnt--;
+		}
+		else {n++;}
+	} while (n<NetCnt);
+}
+//*****************************
+void UpdateNewLab()
+{
+	if(netname==NewName) NewNameLab = "<html>New Name:";
+	else NewNameLab = "<html><font color=\"red\">New Name:</font>";
+}
+//*****************************
+string GUI(string CurrentName)
+{
+	int x,Sel=2,SelNet,PinDisplay;
+	NewName = CurrentName;
+		for(x=0; x<NetCnt; x++){
+			if(NetList[x] == netname) SelNet = x;
+		}
+	dlgDialog("Rename Net Segment"){
+		dlgHBoxLayout{dlgSpacing(400);}
+		dlgGroup("Net Name:"){
+			dlgGridLayout{
+				dlgCell(2,0,2,0) dlgLabel("Current name:    ");			
+				dlgCell(2,1,2,4) dlgLabel("<b>" + netname);	
+				dlgCell(4,0,4,0) dlgLabel(NewNameLab,1);
+				dlgCell(4,1,4,3) dlgStringEdit(NewName);
+				dlgCell(4,4,4,4) dlgPushButton("Unused N$x"){NewName = UnusedN(); UpdateNewLab();} 
+				dlgCell(5,0,5,0) dlgLabel("All Nets");
+				dlgCell(5,1,5,3) dlgComboBox(NetList, SelNet){NewName = NetList[SelNet]; UpdateNewLab();}
+			}
+		}
+		if(PinCnt){
+			dlgGroup("Visible Pin Names on Selected Net:"){			
+				dlgGridLayout{
+					dlgCell(0,0,0,0) dlgLabel("Pin Name:");
+					dlgCell(0,1,0,3) dlgComboBox(PinDisplayList, Sel)UpdateNewLab();			
+					dlgCell(0,4,0,4) dlgPushButton("Use pin name"){NewName = PinDisplayList[Sel];UpdateNewLab();}
+					dlgCell(1,0,1,1) dlgRadioButton("This net segment only",PinDisplay) swaparray(0,PinCnt);	
+					dlgCell(2,0,2,1) dlgRadioButton("All segments of this net",PinDisplay) swaparray(1,PinCntNotSeg);						
+				}
+			}
+		}
+		dlgSpacing(30);
+		dlgHBoxLayout	{
+			dlgPushButton("Help") {info();}		
+			dlgStretch(1);
+			dlgPushButton("+Rename") {if(CheckForChars(NewName)) dlgAccept();}
+			dlgPushButton("-Cancel") {dlgReject(); exit(0);}
+		}
+	};
+	return NewName;
+}
+//*****************************
+//************main*************
+#require 6.0000
+if(!schematic){ dlgMessageBox("Start this ULP from a schematic"); exit(0);}
+ULPname = filename(argv[0]);
+sprintf(ctxcmd,"'%s' = 'run %s'",ctxdesc,ULPname);  //This sets up for and exit and set context.
+while (MyParam != "SomeParam"){
+	sprintf(usrret,"EAGLE:Sch.MenuContext.Wire.%u",MenuCnt);
+	MyParam = cfgget(usrret,"SomeParam");
+	if(MyParam != "SomeParam"){
+	  if(strstr(MyParam,ctxcmd)!= -1){
+	    ContextExists = 1;
+	    break;
+	  }	
+	}
+	else break;
+	MenuCnt++;
+}
+if(!ContextExists) {		
+  RunUlp = "'Rename Net' = 'run " + ULPname + "'";
+  cfgset(usrret,RunUlp);						//set the context with a cfgset()
+  exit("Group;\nrun " + argv[0]); 	//Clears group so upon re-entry no items are found in group and hence info is displayed.
+}
+if(cfgget("EAGLE:Option.RepositionMouseCursorAfterContextMenu")=="0"&& ReposMouse=="1"){
+	cfgset("EAGLE:Option.RepositionMouseCursorAfterContextMenu","1");
+	}
+if(cfgget("EAGLE:Option.RepositionMouseCursorAfterContextMenu")=="1"&& ReposMouse=="0"){
+	cfgset("EAGLE:Option.RepositionMouseCursorAfterContextMenu","0");
+	}
+schematic(S){
+	S.sheets(SH){
+		SH.nets(N){
+			NetList[NetCnt] = N.name;
+			NetCnt++;
+			if(ingroup(N)){	
+				netname = N.name;	   		 //This is our net name or another if multiple nets were selected. 
+				NetsInGroupCnt++;
+				N.segments(SG){
+					if(ingroup(SG)){	    //Segment ingroup.
+						SG.wires(W){	
+							if(ingroup(W)){	  //A selected net wire.
+								SelWireCnt++;
+								if(W.arc){
+									cx=u2mm(W.arc.xc);
+									cy=u2mm(W.arc.yc);
+									px=u2mm(W.arc.x1);
+									py=u2mm(W.arc.y1);
+									rad=((W.arc.angle2 - W.arc.angle1)/2)*PI/180;
+									sprintf(ClickXY,"(%f %f)",cx +(px-cx)*cos(rad) + (cy-py)*sin(rad),cy+(py-cy)*cos(rad)+(px-cx)*sin(rad));
+								}
+								else {
+									sprintf(ClickXY,"(%f %f)",u2mm((W.x1+W.x2)/2),u2mm((W.y1+W.y2)/2)); 
+								}
+							}
+						}
+						SG.pinrefs(PR){		          //correct segment, now get pins this segment connects to
+							if(PR.pin.visible >= 2) { //add to array of possible pin names for net names
+								PinNames[PinCnt] = PR.pin.name;
+								PinCnt++;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	S.sheets(SH){  											//get all visible pin names of our net
+		SH.nets(N){
+			if(netname == N.name){	    		//This is our net name 
+				N.segments(SG){
+					SG.pinrefs(PR){		          //all segments from net in group, get pins this segment connects to
+						if(PR.pin.visible >= 2) { //add to array of possible pin names for net names
+							PinNamesNotSeg[PinCntNotSeg] = PR.pin.name;
+							PinCntNotSeg++;
+						}
+					}				
+				}
+			}
+		}
+	}
+}
+CheckNetCnt(NetsInGroupCnt,SelWireCnt);  //Check that only one net wire segment is in the group.
+if(NetCnt >1) RemNetDups();
+swaparray(0,PinCnt);
+NewName = GUI(netname);
+cmd  = "GRID MM;\n";
+cmd += "NAME " + NewName + " " + ClickXY + ";\n";
+cmd += "GRID LAST;\n";
+//dlgMessageBox(cmd);
+exit(cmd);
