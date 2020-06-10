@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -2360,6 +2360,32 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="1.99" y="2.5"/>
 </polygon>
 </package>
+<package name="MICROCHIP-93LC56BT-I/OT" urn="urn:adsk.eagle:footprint:20921377/1" locally_modified="yes">
+<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.95 X 1.63 X 1.45 mm body
+&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.95 X 1.63 X 1.45 mm&lt;/p&gt;</description>
+<smd name="1" x="-1.2644" y="0.95" dx="1.1864" dy="0.5971" layer="1" roundness="40"/>
+<smd name="2" x="-1.2644" y="0" dx="1.1864" dy="0.5971" layer="1" roundness="40"/>
+<smd name="3" x="-1.2644" y="-0.95" dx="1.1864" dy="0.5971" layer="1" roundness="40"/>
+<smd name="4" x="1.2644" y="-0.95" dx="1.1864" dy="0.5971" layer="1" roundness="40"/>
+<smd name="5" x="1.2644" y="0" dx="1.1864" dy="0.5971" layer="1" roundness="40"/>
+<smd name="6" x="1.2644" y="0.95" dx="1.1864" dy="0.5971" layer="1" roundness="40"/>
+<text x="-0.777" y="1.7555" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<wire x1="0.875" y1="-1.55" x2="-0.875" y2="-1.55" width="0.05" layer="21"/>
+<wire x1="-0.875" y1="-1.55" x2="-0.875" y2="1.55" width="0.05" layer="21"/>
+<wire x1="-0.875" y1="1.55" x2="0.875" y2="1.55" width="0.05" layer="21"/>
+<wire x1="0.875" y1="1.55" x2="0.875" y2="-1.55" width="0.05" layer="21"/>
+<polygon width="0.05" layer="21">
+<vertex x="-0.859" y="1.535"/>
+<vertex x="-0.859" y="0.535"/>
+<vertex x="0.041" y="1.535"/>
+</polygon>
+<polygon width="0.05" layer="39">
+<vertex x="0.875" y="-1.55"/>
+<vertex x="-0.875" y="-1.55"/>
+<vertex x="-0.875" y="1.55"/>
+<vertex x="0.875" y="1.55"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2675,6 +2701,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;16-pin SOP package with 0.64 mm pitch, 6.00 mm span with body size 4.91 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="TI-ISO7762FDBQR"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P280X145-6N" urn="urn:adsk.eagle:package:20921320/1" type="model">
+<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.95 X 1.63 X 1.45 mm body
+&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.95 X 1.63 X 1.45 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="MICROCHIP-93LC56BT-I/OT"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3275,13 +3308,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="-63.5" size="1.778" layer="95">&gt;PN</text>
 </symbol>
 <symbol name="LATTICE-ICE40HX4K-BG121-B">
-<wire x1="0" y1="-60.96" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-55.88" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="-60.96" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-60.96" x2="0" y2="-60.96" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-55.88" x2="0" y2="-55.88" width="0.254" layer="94"/>
 <text x="5.08" y="-13.97" size="2.54" layer="94" rot="R90">BANK 1</text>
 <text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
-<text x="0" y="-62.484" size="1.778" layer="95" align="top-left">&gt;PN</text>
+<text x="0" y="-57.404" size="1.778" layer="95" align="top-left">&gt;PN</text>
 <pin name="B11" x="27.94" y="-2.54" length="short" rot="R180"/>
 <pin name="C11" x="27.94" y="-5.08" length="short" rot="R180"/>
 <pin name="D9" x="27.94" y="-7.62" length="short" rot="R180"/>
@@ -3305,13 +3338,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="K11" x="27.94" y="-53.34" length="short" rot="R180"/>
 </symbol>
 <symbol name="LATTICE-ICE40HX4K-BG121-C">
-<wire x1="0" y1="-60.96" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-50.8" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="-60.96" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-60.96" x2="0" y2="-60.96" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-50.8" x2="0" y2="-50.8" width="0.254" layer="94"/>
 <text x="5.08" y="-13.97" size="2.54" layer="94" rot="R90">BANK 2</text>
 <text x="0" y="2.794" size="1.778" layer="95" align="top-left">&gt;NAME</text>
-<text x="0" y="-62.23" size="1.778" layer="95" align="top-left">&gt;PN</text>
+<text x="0" y="-52.07" size="1.778" layer="95" align="top-left">&gt;PN</text>
 <pin name="L1" x="27.94" y="-2.54" length="short" rot="R180"/>
 <pin name="L2" x="27.94" y="-5.08" length="short" rot="R180"/>
 <pin name="L3" x="27.94" y="-7.62" length="short" rot="R180"/>
@@ -3592,20 +3625,20 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <symbol name="FT232HQ-B">
 <pin name="DM" x="-2.54" y="-17.78" visible="pin" length="short"/>
 <pin name="DP" x="-2.54" y="-15.24" visible="pin" length="short"/>
-<pin name="EECLK" x="-2.54" y="-22.86" visible="pin" length="short"/>
-<pin name="EECS" x="-2.54" y="-25.4" visible="pin" length="short"/>
-<pin name="EEDATA" x="-2.54" y="-27.94" visible="pin" length="short"/>
+<pin name="EECLK" x="25.4" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="EECS" x="25.4" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="EEDATA" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="REF" x="-2.54" y="-7.62" visible="pin" length="short"/>
 <pin name="RST_" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <pin name="TEST" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="OCSI" x="-2.54" y="-33.02" visible="pin" length="short"/>
-<pin name="OCSO" x="-2.54" y="-35.56" visible="pin" length="short"/>
-<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="0" y1="-38.1" x2="15.24" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-38.1" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="OCSI" x="-2.54" y="-22.86" visible="pin" length="short"/>
+<pin name="OCSO" x="-2.54" y="-25.4" visible="pin" length="short"/>
+<wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-27.94" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-40.64" size="1.778" layer="95">&gt;PN</text>
+<text x="0" y="-30.48" size="1.778" layer="95">&gt;PN</text>
 </symbol>
 <symbol name="FT232HQ-C">
 <pin name="ADBUS0" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
@@ -4139,6 +4172,20 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="INE" x="22.86" y="-15.24" visible="pin" length="short" rot="R180"/>
 <pin name="INF" x="22.86" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="GND2" x="22.86" y="-20.32" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="MICROCHIP-93LC56BT">
+<wire x1="17.78" y1="0" x2="17.78" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="0" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.1524" layer="94"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-22.86" size="1.778" layer="95">&gt;PN</text>
+<pin name="DI" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="CLK" x="-2.54" y="-17.78" visible="pin" length="short" function="clk"/>
+<pin name="CS" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="DO" x="-2.54" y="-10.16" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6529,6 +6576,31 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROCHIP-93LC56BT" prefix="U">
+<gates>
+<gate name="G$1" symbol="MICROCHIP-93LC56BT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICROCHIP-93LC56BT-I/OT">
+<connects>
+<connect gate="G$1" pin="CLK" pad="4"/>
+<connect gate="G$1" pin="CS" pad="5"/>
+<connect gate="G$1" pin="DI" pad="3"/>
+<connect gate="G$1" pin="DO" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20921320/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Microchip"/>
 </technology>
 </technologies>
 </device>
