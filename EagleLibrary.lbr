@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3606,15 +3606,15 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FT232HQ-A">
-<pin name="VCCA" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="VCORE" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="VCCD" x="-2.54" y="-5.08" visible="pin" length="short"/>
-<pin name="VCCIO" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="VPHY" x="-2.54" y="-17.78" visible="pin" length="short"/>
-<pin name="VPLL" x="-2.54" y="-20.32" visible="pin" length="short"/>
-<pin name="VREGIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<pin name="GND" x="-2.54" y="-25.4" visible="pin" length="short"/>
-<pin name="AGND" x="-2.54" y="-27.94" visible="pin" length="short"/>
+<pin name="VCCA" x="-2.54" y="-10.16" length="short"/>
+<pin name="VCORE" x="-2.54" y="-12.7" length="short"/>
+<pin name="VCCD" x="-2.54" y="-5.08" length="short"/>
+<pin name="VCCIO" x="-2.54" y="-7.62" length="short"/>
+<pin name="VPHY" x="-2.54" y="-17.78" length="short"/>
+<pin name="VPLL" x="-2.54" y="-20.32" length="short"/>
+<pin name="VREGIN" x="-2.54" y="-2.54" length="short"/>
+<pin name="GND" x="-2.54" y="-25.4" length="short"/>
+<pin name="AGND" x="-2.54" y="-27.94" length="short"/>
 <wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="0" y1="-30.48" x2="12.7" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-30.48" x2="12.7" y2="0" width="0.254" layer="94"/>
@@ -3623,16 +3623,16 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FT232HQ-B">
-<pin name="DM" x="-2.54" y="-17.78" visible="pin" length="short"/>
-<pin name="DP" x="-2.54" y="-15.24" visible="pin" length="short"/>
-<pin name="EECLK" x="25.4" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="EECS" x="25.4" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="EEDATA" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="REF" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="RST_" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<pin name="TEST" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="OCSI" x="-2.54" y="-22.86" visible="pin" length="short"/>
-<pin name="OCSO" x="-2.54" y="-25.4" visible="pin" length="short"/>
+<pin name="DM" x="-2.54" y="-17.78" length="short"/>
+<pin name="DP" x="-2.54" y="-15.24" length="short"/>
+<pin name="EECLK" x="25.4" y="-7.62" length="short" rot="R180"/>
+<pin name="EECS" x="25.4" y="-5.08" length="short" rot="R180"/>
+<pin name="EEDATA" x="25.4" y="-2.54" length="short" rot="R180"/>
+<pin name="REF" x="-2.54" y="-7.62" length="short"/>
+<pin name="RST_" x="-2.54" y="-2.54" length="short"/>
+<pin name="TEST" x="-2.54" y="-10.16" length="short"/>
+<pin name="OCSI" x="-2.54" y="-22.86" length="short"/>
+<pin name="OCSO" x="-2.54" y="-25.4" length="short"/>
 <wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="0" y1="-27.94" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-27.94" x2="22.86" y2="0" width="0.254" layer="94"/>
@@ -3641,24 +3641,24 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="-30.48" size="1.778" layer="95">&gt;PN</text>
 </symbol>
 <symbol name="FT232HQ-C">
-<pin name="ADBUS0" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS1" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS2" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS3" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS4" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS5" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS6" x="17.78" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="ADBUS7" x="17.78" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS0" x="17.78" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS1" x="17.78" y="-27.94" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS2" x="17.78" y="-30.48" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS3" x="17.78" y="-33.02" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS4" x="17.78" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS5" x="17.78" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS6" x="17.78" y="-40.64" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS7" x="17.78" y="-43.18" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS8" x="17.78" y="-45.72" visible="pin" length="short" rot="R180"/>
-<pin name="ACBUS9" x="17.78" y="-48.26" visible="pin" length="short" rot="R180"/>
+<pin name="ADBUS0" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="ADBUS1" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="ADBUS2" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="ADBUS3" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="ADBUS4" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="ADBUS5" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="ADBUS6" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="ADBUS7" x="17.78" y="-20.32" length="short" rot="R180"/>
+<pin name="ACBUS0" x="17.78" y="-25.4" length="short" rot="R180"/>
+<pin name="ACBUS1" x="17.78" y="-27.94" length="short" rot="R180"/>
+<pin name="ACBUS2" x="17.78" y="-30.48" length="short" rot="R180"/>
+<pin name="ACBUS3" x="17.78" y="-33.02" length="short" rot="R180"/>
+<pin name="ACBUS4" x="17.78" y="-35.56" length="short" rot="R180"/>
+<pin name="ACBUS5" x="17.78" y="-38.1" length="short" rot="R180"/>
+<pin name="ACBUS6" x="17.78" y="-40.64" length="short" rot="R180"/>
+<pin name="ACBUS7" x="17.78" y="-43.18" length="short" rot="R180"/>
+<pin name="ACBUS8" x="17.78" y="-45.72" length="short" rot="R180"/>
+<pin name="ACBUS9" x="17.78" y="-48.26" length="short" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-50.8" width="0.254" layer="94"/>
 <wire x1="0" y1="-50.8" x2="15.24" y2="-50.8" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-50.8" x2="15.24" y2="0" width="0.254" layer="94"/>
@@ -3924,20 +3924,20 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="12.7" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-16.002" size="1.778" layer="95" align="top-left">&gt;PN</text>
-<pin name="AVDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<pin name="AGND" x="-2.54" y="-5.08" visible="pin" length="short"/>
-<pin name="DRVDD" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="DRGND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="AVDD" x="-2.54" y="-2.54" length="short"/>
+<pin name="AGND" x="-2.54" y="-5.08" length="short"/>
+<pin name="DRVDD" x="-2.54" y="-10.16" length="short"/>
+<pin name="DRGND" x="-2.54" y="-12.7" length="short"/>
 </symbol>
 <symbol name="TI-ADS4146-B">
 <description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
-<pin name="RST" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<pin name="SCLK_" x="-2.54" y="-5.08" visible="pin" length="short"/>
-<pin name="SDATA" x="-2.54" y="-7.62" visible="pin" length="short"/>
-<pin name="SEN_" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="OE" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="DFS" x="-2.54" y="-15.24" visible="pin" length="short"/>
-<pin name="OVR_SDOUT" x="30.48" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RST" x="-2.54" y="-2.54" length="short"/>
+<pin name="SCLK_" x="-2.54" y="-5.08" length="short"/>
+<pin name="SDATA" x="-2.54" y="-7.62" length="short"/>
+<pin name="SEN_" x="-2.54" y="-10.16" length="short"/>
+<pin name="OE" x="-2.54" y="-12.7" length="short"/>
+<pin name="DFS" x="-2.54" y="-15.24" length="short"/>
+<pin name="OVR_SDOUT" x="30.48" y="-2.54" length="short" rot="R180"/>
 <wire x1="0" y1="-17.78" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
 <wire x1="27.94" y1="0" x2="27.94" y2="-17.78" width="0.254" layer="94"/>
@@ -3947,26 +3947,26 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </symbol>
 <symbol name="TI-ADS4146-C">
 <description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
-<pin name="CLKP" x="-2.54" y="-10.16" visible="pin" length="short"/>
-<pin name="CLKM" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="INP" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<pin name="INM" x="-2.54" y="-5.08" visible="pin" length="short"/>
-<pin name="VCM" x="25.4" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="CLKOUT" x="25.4" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="D0" x="25.4" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="D1" x="25.4" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="D2" x="25.4" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="D3" x="25.4" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="D4" x="25.4" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="D5" x="25.4" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="D6" x="25.4" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="D7" x="25.4" y="-27.94" visible="pin" length="short" rot="R180"/>
-<pin name="D8" x="25.4" y="-30.48" visible="pin" length="short" rot="R180"/>
-<pin name="D9" x="25.4" y="-33.02" visible="pin" length="short" rot="R180"/>
-<pin name="D10" x="25.4" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="D11" x="25.4" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="D12" x="25.4" y="-40.64" visible="pin" length="short" rot="R180"/>
-<pin name="D13" x="25.4" y="-43.18" visible="pin" length="short" rot="R180"/>
+<pin name="CLKP" x="-2.54" y="-10.16" length="short"/>
+<pin name="CLKM" x="-2.54" y="-12.7" length="short"/>
+<pin name="INP" x="-2.54" y="-2.54" length="short"/>
+<pin name="INM" x="-2.54" y="-5.08" length="short"/>
+<pin name="VCM" x="25.4" y="-2.54" length="short" rot="R180"/>
+<pin name="CLKOUT" x="25.4" y="-5.08" length="short" rot="R180"/>
+<pin name="D0" x="25.4" y="-10.16" length="short" rot="R180"/>
+<pin name="D1" x="25.4" y="-12.7" length="short" rot="R180"/>
+<pin name="D2" x="25.4" y="-15.24" length="short" rot="R180"/>
+<pin name="D3" x="25.4" y="-17.78" length="short" rot="R180"/>
+<pin name="D4" x="25.4" y="-20.32" length="short" rot="R180"/>
+<pin name="D5" x="25.4" y="-22.86" length="short" rot="R180"/>
+<pin name="D6" x="25.4" y="-25.4" length="short" rot="R180"/>
+<pin name="D7" x="25.4" y="-27.94" length="short" rot="R180"/>
+<pin name="D8" x="25.4" y="-30.48" length="short" rot="R180"/>
+<pin name="D9" x="25.4" y="-33.02" length="short" rot="R180"/>
+<pin name="D10" x="25.4" y="-35.56" length="short" rot="R180"/>
+<pin name="D11" x="25.4" y="-38.1" length="short" rot="R180"/>
+<pin name="D12" x="25.4" y="-40.64" length="short" rot="R180"/>
+<pin name="D13" x="25.4" y="-43.18" length="short" rot="R180"/>
 <wire x1="0" y1="-45.72" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
 <wire x1="22.86" y1="0" x2="22.86" y2="-45.72" width="0.254" layer="94"/>
@@ -4123,8 +4123,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="1.27" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 <text x="0.254" y="-17.78" size="1.778" layer="95">&gt;PN</text>
 <pin name="GND" x="-2.54" y="-5.08" length="short"/>
-<pin name="OUT" x="22.86" y="-2.54" length="short" rot="R180"/>
-<pin name="OUT_" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="OUT" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="OUT_" x="22.86" y="-2.54" length="short" rot="R180"/>
 <pin name="EN" x="-2.54" y="-12.7" length="short"/>
 </symbol>
 <symbol name="AD-ADUM3160BRWZ">
