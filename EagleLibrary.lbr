@@ -3853,7 +3853,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="PG" x="25.4" y="-7.62" visible="pin" length="short" rot="R180"/>
 <pin name="OUTS" x="25.4" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<pin name="SET" x="25.4" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SET" x="25.4" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="VIOC" x="-2.54" y="-17.78" visible="pin" length="short"/>
 </symbol>
 <symbol name="TI-OPA2673-A">
