@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -245,7 +245,7 @@
 <vertex x="4.2" y="4.2"/>
 </polygon>
 </package>
-<package name="AMPHENOLFCI-10033526-N3212MLF">
+<package name="AMPHENOLFCI-10033526-N3222MLF">
 <smd name="GND2" x="-4.45" y="2.725" dx="2" dy="2.5" layer="1" roundness="50" cream="no"/>
 <smd name="GND3" x="-4.45" y="-2.725" dx="2" dy="2.5" layer="1" roundness="50" cream="no"/>
 <smd name="GND4" x="4.45" y="-2.725" dx="2" dy="2.5" layer="1" roundness="50" cream="no"/>
@@ -3088,7 +3088,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="-10.16" size="1.778" layer="95">SMA JACK</text>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="AMPHENOLFCI-10033526-N3212MLF">
+<symbol name="AMPHENOLFCI-10033526-N3222MLF">
 <wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="0" y1="-17.78" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-17.78" x2="15.24" y2="0" width="0.254" layer="94"/>
@@ -4619,10 +4619,10 @@ Synchronous
 <deviceset name="MINI-USB-JACK" prefix="J">
 <description>Mini USB Jack</description>
 <gates>
-<gate name="G$1" symbol="AMPHENOLFCI-10033526-N3212MLF" x="0" y="0"/>
+<gate name="G$1" symbol="AMPHENOLFCI-10033526-N3222MLF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="AMPHENOLFCI-10033526-N3212MLF">
+<device name="" package="AMPHENOLFCI-10033526-N3222MLF">
 <connects>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
@@ -4633,7 +4633,7 @@ Synchronous
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Amphenol FCI"/>
-<attribute name="PN" value="10033526-N3212MLF"/>
+<attribute name="PN" value="10033526-N3222MLF"/>
 </technology>
 </technologies>
 </device>
