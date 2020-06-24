@@ -2719,18 +2719,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <package name="HARWIN-S25-546">
 <description>Chip, 3.20 X 2.50 X 0.70 mm body
 &lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
-<smd name="1" x="0" y="0" dx="2.032" dy="3.81" layer="1" rot="R90" cream="no"/>
+<smd name="1" x="0" y="0" dx="2.032" dy="3.81" layer="1" rot="R90" stop="no" cream="no"/>
 <text x="-1.755559375" y="1.387778125" size="1.524" layer="25" font="vector">&gt;NAME</text>
-<wire x1="-2.032" y1="-1.143" x2="2.032" y2="-1.143" width="0.05" layer="21"/>
-<wire x1="2.032" y1="-1.143" x2="2.032" y2="1.143" width="0.05" layer="21"/>
-<wire x1="2.032" y1="1.143" x2="-2.032" y2="1.143" width="0.05" layer="21"/>
-<wire x1="-2.032" y1="1.143" x2="-2.032" y2="-1.143" width="0.05" layer="21"/>
-<polygon width="0.05" layer="39">
-<vertex x="-2.032" y="-1.143"/>
-<vertex x="2.032" y="-1.143"/>
-<vertex x="2.032" y="1.143"/>
-<vertex x="-2.032" y="1.143"/>
-</polygon>
 </package>
 </packages>
 <packages3d>
