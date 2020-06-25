@@ -1,0 +1,86 @@
+/* This EAGLE "User Language Program" creates centroid files in a format that
+ * is suitable for VisualPlace. If the board has components on both sides, two
+ * centroid files are generated. The output files contain all fields required
+ * by VisualPlace, so a separate BOM does not need to be generated.
+ *
+ * Version 1.0, June, 2012
+ * Thiadmer Riemersma, CompuPhase
+ */
+
+#usage "Creates centroid files in a format that is suitable for VisualPlace. "
+       "Centroid files contain the positions of all SMD components.\n\n"
+       "The generated centroid file contain all information that VisualPlace "
+       "needs. A separate BOM (Bill Of Materials) is therefore not required.\n\n"
+       "If the board has components on both sides, two centroid files are generated.\n\n"
+       "Author: Thiadmer Riemersma, CompuPhase"
+
+void printheader() {
+    printf("# Created by VisualPlace at %s\n", t2string(time()));
+    printf("# Report origin: (0.0, 0.0) = lower left corner of PCB\n");
+    printf("# Units: inch\n");
+    printf("# Only surface mount components are included\n");
+    printf("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n\n",
+           "Designator", "Value", "X", "Y", "Rotation", "Layer", "Package");
+}
+
+int smd(UL_PACKAGE P) {
+    int smd = 0;
+    P.contacts(C) {
+        if (C.smd)
+            smd = C.smd.layer;
+    }
+    return smd;
+}
+
+if (board) board(B) {
+    /* first check whether this board has components on both sides */
+    string Filename;
+    int numTop, numBottom;
+    numTop = 0;
+    numBottom = 0;
+    B.elements(E) {
+        if (smd(E.package) == 1)
+            numTop += 1;
+        else if (smd(E.package) == 16)
+            numBottom += 1;
+    }
+
+    /* if there are items on the top side, create a file for it */
+    if (numTop > 0) {
+        if (numBottom > 0)
+            Filename = filesetext(B.name, "-top.csv");
+        else
+            Filename = filesetext(B.name, "-centroid.csv");
+        output(Filename) {
+            printheader();
+            B.elements(E) {
+                if (smd(E.package) == 1) {
+                    printf("\"%s\",\"%s\",\"%6.4f\",\"%6.4f\",\"%.0f\",\"Top\",\"%s\"\n",
+                           E.name, E.value, u2inch(E.x), u2inch(E.y),
+                           E.angle, E.package.name);
+                }
+            }
+        }
+    }
+
+    /* then do the same for the components at the bottom side, but flip the
+     * horizontal axis (so that the positions are always relative to the lower
+     * left corner)
+     */
+    if (numBottom > 0) {
+        if (numTop > 0)
+            Filename = filesetext(B.name, "-bottom.csv");
+        else
+            Filename = filesetext(B.name, "-centroid.csv");
+        output(Filename) {
+            printheader();
+            B.elements(E) {
+                if (smd(E.package) == 16) {
+                    printf("\"%s\",\"%s\",\"%6.4f\",\"%6.4f\",\"%.0f\",\"Bottom\",\"%s\"\n",
+                           E.name, E.value, u2inch(E.x), u2inch(E.y),
+                           E.angle, E.package.name);
+                }
+            }
+        }
+    }
+}
