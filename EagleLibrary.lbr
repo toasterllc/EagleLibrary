@@ -1394,7 +1394,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-1" y="1.05"/>
 </polygon>
 </package>
-<package name="AR0330CS1C12SPKA0" urn="urn:adsk.eagle:footprint:18794472/1" locally_modified="yes">
+<package name="ON-AR0330CS1C12SPKA0" urn="urn:adsk.eagle:footprint:18794472/1" locally_modified="yes">
 <description>64-BGA, collapsing, 0.65 mm pitch, 6.65 X 6.28 X 1.00 mm body
 &lt;p&gt;64-pin collapsing BGA package with 0.65 mm col pitch and 0.65 mm row pitch with body size 6.65 X 6.28 X 1.00 mm&lt;/p&gt;</description>
 <smd name="A1" x="-2.275" y="2.275" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no" cream="no"/>
@@ -1477,6 +1477,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <smd name="F2" x="-1.625" y="-0.975" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no" cream="no"/>
 <smd name="F1" x="-2.275" y="-0.975" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no" cream="no"/>
 <smd name="H1" x="-2.275" y="-2.275" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no" cream="no"/>
+<polygon width="0.05" layer="21">
+<vertex x="-1.9875" y="2.7763"/>
+<vertex x="-1.9875" y="-2.3167"/>
+<vertex x="1.4075" y="-2.3167"/>
+<vertex x="1.4075" y="2.7763"/>
+</polygon>
 </package>
 <package name="MOLEX-1051620001">
 <smd name="CLK" x="5" y="0.5" dx="0.5" dy="1" layer="1"/>
@@ -2722,6 +2728,44 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <smd name="1" x="0" y="0" dx="2.032" dy="3.81" layer="1" rot="R90" stop="no" cream="no"/>
 <text x="-1.755559375" y="1.387778125" size="1.524" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="S-MOUNT-LENS-HOLDER">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<text x="-10.956" y="11.2871" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<pad name="P$1" x="-10.9982" y="0" drill="1.778"/>
+<pad name="P$2" x="10.9982" y="0" drill="1.778"/>
+<circle x="-10.9982" y="0" radius="2.286" width="0.05" layer="21"/>
+<circle x="10.9982" y="0" radius="2.286" width="0.05" layer="21"/>
+<circle x="0" y="0" radius="6.858" width="0.05" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-10.668" y="10.668"/>
+<vertex x="-10.668" y="-10.668"/>
+<vertex x="-8.636" y="-10.668"/>
+<vertex x="-8.636" y="10.668"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="8.636" y="10.668"/>
+<vertex x="8.636" y="-10.668"/>
+<vertex x="10.668" y="-10.668"/>
+<vertex x="10.668" y="10.668"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="-10.668" y="8.636"/>
+<vertex x="10.668" y="8.636"/>
+<vertex x="10.668" y="10.668"/>
+<vertex x="-10.668" y="10.668"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="-10.668" y="-10.668"/>
+<vertex x="10.668" y="-10.668"/>
+<vertex x="10.668" y="-8.636"/>
+<vertex x="-10.668" y="-8.636"/>
+</polygon>
+<wire x1="-10.9982" y1="10.9982" x2="10.9982" y2="10.9982" width="0.05" layer="21"/>
+<wire x1="10.9982" y1="10.9982" x2="10.9982" y2="-10.9982" width="0.05" layer="21"/>
+<wire x1="10.9982" y1="-10.9982" x2="-10.9982" y2="-10.9982" width="0.05" layer="21"/>
+<wire x1="-10.9982" y1="-10.9982" x2="-10.9982" y2="10.9982" width="0.05" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -2889,7 +2933,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <description>64-BGA, collapsing, 0.65 mm pitch, 6.65 X 6.28 X 1.00 mm body
 &lt;p&gt;64-pin collapsing BGA package with 0.65 mm col pitch and 0.65 mm row pitch with body size 6.65 X 6.28 X 1.00 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="AR0330CS1C12SPKA0"/>
+<packageinstance name="ON-AR0330CS1C12SPKA0"/>
 </packageinstances>
 </package3d>
 <package3d name="QFN50P800X800X90-49T620N" urn="urn:adsk.eagle:package:19081791/1" type="model">
@@ -3864,7 +3908,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="1.27" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 <text x="0.254" y="-15.24" size="1.778" layer="95">&gt;PN</text>
 </symbol>
-<symbol name="AR0330CS1C12SPKA0-A">
+<symbol name="ON-AR0330CS1C12SPKA0-A">
 <wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="0" y1="-27.94" x2="17.78" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-27.94" x2="17.78" y2="0" width="0.254" layer="94"/>
@@ -3881,7 +3925,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="VDD_MIPI" x="-2.54" y="-20.32" visible="pin" length="short"/>
 <pin name="VDD_PLL" x="-2.54" y="-22.86" visible="pin" length="short"/>
 </symbol>
-<symbol name="AR0330CS1C12SPKA0-B">
+<symbol name="ON-AR0330CS1C12SPKA0-B">
 <pin name="CLK_N" x="-2.54" y="-25.4" visible="pin" length="short"/>
 <pin name="CLK_P" x="-2.54" y="-27.94" visible="pin" length="short"/>
 <pin name="DATA2_N" x="-2.54" y="-30.48" visible="pin" length="short"/>
@@ -5804,14 +5848,14 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AR0330CS1C12SPKA0" prefix="U">
+<deviceset name="ON-AR0330CS1C12SPKA0" prefix="U">
 <description>3.4 Megapixel CMOS Image Sensor</description>
 <gates>
-<gate name="A" symbol="AR0330CS1C12SPKA0-A" x="0" y="0"/>
-<gate name="B" symbol="AR0330CS1C12SPKA0-B" x="30.48" y="0"/>
+<gate name="A" symbol="ON-AR0330CS1C12SPKA0-A" x="0" y="0"/>
+<gate name="B" symbol="ON-AR0330CS1C12SPKA0-B" x="30.48" y="0"/>
 </gates>
 <devices>
-<device name="" package="AR0330CS1C12SPKA0">
+<device name="" package="ON-AR0330CS1C12SPKA0">
 <connects>
 <connect gate="A" pin="AGND" pad="A3 B5"/>
 <connect gate="A" pin="DGND" pad="B4 B6 C4 C5 C6 D4 E6 G1 H2 H3"/>
@@ -6965,6 +7009,17 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <attribute name="MFG" value="Harwin"/>
 <attribute name="PN" value="S25-546"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S-MOUNT-LENS-HOLDER">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
