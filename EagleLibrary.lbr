@@ -2766,6 +2766,96 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="10.9982" y1="-10.9982" x2="-10.9982" y2="-10.9982" width="0.05" layer="21"/>
 <wire x1="-10.9982" y1="-10.9982" x2="-10.9982" y2="10.9982" width="0.05" layer="21"/>
 </package>
+<package name="TI-TMUX1574RSVR" urn="urn:adsk.eagle:footprint:22413671/1" locally_modified="yes">
+<description>16-QFN, 0.40 mm pitch, 2.60 X 1.80 X 0.55 mm body
+&lt;p&gt;16-pin QFN package with 0.40 mm pitch with body size 2.60 X 1.80 X 0.55 mm&lt;/p&gt;</description>
+<smd name="1" x="-0.8451" y="0.6" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="2" x="-0.8451" y="0.2" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="3" x="-0.8451" y="-0.2" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="4" x="-0.8451" y="-0.6" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="5" x="-0.6" y="-1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="-0.2" y="-1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="0.2" y="-1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="0.6" y="-1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="0.8451" y="-0.6" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="10" x="0.8451" y="-0.2" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="11" x="0.8451" y="0.2" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="12" x="0.8451" y="0.6" dx="0.8098" dy="0.22" layer="1" roundness="100"/>
+<smd name="13" x="0.6" y="1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="0.2" y="1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="-0.2" y="1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="-0.6" y="1.2451" dx="0.8098" dy="0.22" layer="1" roundness="100" rot="R90"/>
+<text x="-0.89408125" y="1.89638125" size="0.762" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="21">
+<vertex x="-0.9" y="1.3"/>
+<vertex x="-0.9" y="0.7"/>
+<vertex x="-0.3" y="1.3"/>
+</polygon>
+<wire x1="0.925" y1="-1.325" x2="-0.925" y2="-1.325" width="0.05" layer="21"/>
+<wire x1="-0.925" y1="-1.325" x2="-0.925" y2="1.325" width="0.05" layer="21"/>
+<wire x1="-0.925" y1="1.325" x2="0.925" y2="1.325" width="0.05" layer="21"/>
+<wire x1="0.925" y1="1.325" x2="0.925" y2="-1.325" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="0.925" y="-1.325"/>
+<vertex x="-0.925" y="-1.325"/>
+<vertex x="-0.925" y="1.325"/>
+<vertex x="0.925" y="1.325"/>
+</polygon>
+</package>
+<package name="NXP-NTB0102GF" urn="urn:adsk.eagle:footprint:22413770/1" locally_modified="yes">
+<description>DFN4, 1.00 X 1.35 X 0.50 mm body
+&lt;p&gt;DFN4 package with body size 1.00 X 1.35 X 0.50 mm&lt;/p&gt;</description>
+<smd name="2" x="-0.275" y="0.175" dx="0.4131" dy="0.22" layer="1"/>
+<smd name="3" x="-0.275" y="-0.175" dx="0.4131" dy="0.22" layer="1"/>
+<smd name="6" x="0.275" y="-0.175" dx="0.4131" dy="0.22" layer="1"/>
+<smd name="7" x="0.275" y="0.175" dx="0.4131" dy="0.22" layer="1"/>
+<text x="-0.512" y="0.829" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<smd name="1" x="-0.275" y="0.525" dx="0.4131" dy="0.22" layer="1"/>
+<smd name="8" x="0.275" y="0.525" dx="0.4131" dy="0.22" layer="1"/>
+<smd name="4" x="-0.275" y="-0.525" dx="0.4131" dy="0.22" layer="1"/>
+<smd name="5" x="0.275" y="-0.525" dx="0.4131" dy="0.22" layer="1"/>
+<polygon width="0.05" layer="21">
+<vertex x="-0.5" y="0.7"/>
+<vertex x="-0.5" y="0"/>
+<vertex x="0.2" y="0.7"/>
+</polygon>
+<wire x1="0.525" y1="-0.7" x2="-0.525" y2="-0.7" width="0.05" layer="21"/>
+<wire x1="-0.525" y1="-0.7" x2="-0.525" y2="0.7" width="0.05" layer="21"/>
+<wire x1="-0.525" y1="0.7" x2="0.525" y2="0.7" width="0.05" layer="21"/>
+<wire x1="0.525" y1="0.7" x2="0.525" y2="-0.7" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="0.525" y="-0.7"/>
+<vertex x="-0.525" y="-0.7"/>
+<vertex x="-0.525" y="0.7"/>
+<vertex x="0.525" y="0.7"/>
+</polygon>
+</package>
+<package name="ON-NLAS3157MX3TCG" urn="urn:adsk.eagle:footprint:22413902/1" locally_modified="yes">
+<description>6-SON (DFN), 0.35 mm pitch, 1.00 X 1.00 X 0.40 mm body
+&lt;p&gt;6-pin SON (DFN) package with 0.35 mm pitch with body size 1.00 X 1.00 X 0.40 mm&lt;/p&gt;</description>
+<smd name="1" x="-0.5006" y="0.35" dx="0.7107" dy="0.19" layer="1" roundness="100"/>
+<smd name="2" x="-0.5006" y="0" dx="0.7107" dy="0.19" layer="1" roundness="100"/>
+<smd name="3" x="-0.5006" y="-0.35" dx="0.7107" dy="0.19" layer="1" roundness="100"/>
+<smd name="4" x="0.5006" y="-0.35" dx="0.7107" dy="0.19" layer="1" roundness="100"/>
+<smd name="5" x="0.5006" y="0" dx="0.7107" dy="0.19" layer="1" roundness="100"/>
+<smd name="6" x="0.5006" y="0.35" dx="0.7107" dy="0.19" layer="1" roundness="100"/>
+<text x="-0.49018125" y="0.612421875" size="0.635" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="21">
+<vertex x="-0.5" y="0.5"/>
+<vertex x="-0.5" y="-0.2"/>
+<vertex x="0.2" y="0.5"/>
+</polygon>
+<wire x1="0.5" y1="-0.5" x2="-0.5" y2="-0.5" width="0.05" layer="21"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.05" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.05" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="-0.5" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="0.5" y="-0.5"/>
+<vertex x="-0.5" y="-0.5"/>
+<vertex x="-0.5" y="0.5"/>
+<vertex x="0.5" y="0.5"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
@@ -3088,6 +3178,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 &lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.95 X 1.63 X 1.45 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="MICROCHIP-93LC56BT-I/OT"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN40P260X180X55-16N" urn="urn:adsk.eagle:package:22413655/1" type="model">
+<description>16-QFN, 0.40 mm pitch, 2.60 X 1.80 X 0.55 mm body
+&lt;p&gt;16-pin QFN package with 0.40 mm pitch with body size 2.60 X 1.80 X 0.55 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TI-TMUX1574RSVR"/>
+</packageinstances>
+</package3d>
+<package3d name="DFN100X135X50-4N" urn="urn:adsk.eagle:package:22413725/1" type="model">
+<description>DFN4, 1.00 X 1.35 X 0.50 mm body
+&lt;p&gt;DFN4 package with body size 1.00 X 1.35 X 0.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="NXP-NTB0102GF"/>
+</packageinstances>
+</package3d>
+<package3d name="SON35P100X100X40-6N" urn="urn:adsk.eagle:package:22413872/1" type="model">
+<description>6-SON (DFN), 0.35 mm pitch, 1.00 X 1.00 X 0.40 mm body
+&lt;p&gt;6-pin SON (DFN) package with 0.35 mm pitch with body size 1.00 X 1.00 X 0.40 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="ON-NLAS3157MX3TCG"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3964,20 +4075,20 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="MICROSD-SOCKET">
-<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="-33.02" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-33.02" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
-<pin name="DAT3" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="DAT2" x="20.32" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="DET" x="20.32" y="-15.24" visible="pin" length="short" rot="R180"/>
-<text x="0" y="-20.32" size="1.778" layer="95">microSD Socket</text>
+<pin name="DAT3" x="-2.54" y="-25.4" visible="pin" length="short"/>
+<pin name="DAT2" x="-2.54" y="-22.86" visible="pin" length="short"/>
+<pin name="DET" x="-2.54" y="-30.48" visible="pin" length="short"/>
+<text x="0" y="-35.56" size="1.778" layer="95">microSD Socket</text>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
-<pin name="DAT1" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="DAT0" x="20.32" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="CLK" x="-2.54" y="-15.24" visible="pin" length="short" function="clk"/>
+<pin name="DAT1" x="-2.54" y="-20.32" visible="pin" length="short"/>
+<pin name="DAT0" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<pin name="CLK" x="-2.54" y="-12.7" visible="pin" length="short" function="clk"/>
 <pin name="CMD" x="-2.54" y="-10.16" visible="pin" length="short"/>
 </symbol>
 <symbol name="TEST-POINT">
@@ -4586,6 +4697,65 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <circle x="12.7" y="-12.7" radius="7.184203125" width="0.254" layer="94"/>
 <pin name="GND1" x="-2.54" y="-22.86" visible="pin" length="short"/>
 <pin name="GND2" x="27.94" y="-22.86" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="TI-TMUX1574">
+<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<pin name="S1A" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<wire x1="0" y1="-45.72" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-45.72" x2="0" y2="-45.72" width="0.254" layer="94"/>
+<text x="0" y="-46.482" size="1.778" layer="95" align="top-left">&gt;PN</text>
+<text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<pin name="S1B" x="-2.54" y="-20.32" visible="pin" length="short"/>
+<pin name="S2A" x="-2.54" y="-25.4" visible="pin" length="short"/>
+<pin name="S2B" x="-2.54" y="-27.94" visible="pin" length="short"/>
+<pin name="S3A" x="-2.54" y="-33.02" visible="pin" length="short"/>
+<pin name="S3B" x="-2.54" y="-35.56" visible="pin" length="short"/>
+<pin name="S4A" x="-2.54" y="-40.64" visible="pin" length="short"/>
+<pin name="S4B" x="-2.54" y="-43.18" visible="pin" length="short"/>
+<pin name="D1" x="30.48" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="D2" x="30.48" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="D3" x="30.48" y="-33.02" visible="pin" length="short" rot="R180"/>
+<pin name="D4" x="30.48" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="SEL" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="EN_" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<text x="0" y="-49.022" size="1.778" layer="95" align="top-left">4x 2:1 Analog Switch</text>
+</symbol>
+<symbol name="NXP-NTB0102">
+<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<pin name="A1" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<text x="0" y="-23.622" size="1.778" layer="95" align="top-left">&gt;PN</text>
+<text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<pin name="B1" x="22.86" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="OE" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="VCCA" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="A2" x="-2.54" y="-20.32" visible="pin" length="short"/>
+<pin name="B2" x="22.86" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="VCCB" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="0" y="-26.162" size="1.778" layer="95" align="top-left">Level Shifter</text>
+</symbol>
+<symbol name="ON-NLAS3157">
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VCC" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="B0" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="S" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="A" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="B1" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<text x="0.075" y="-25.5241" size="1.778" layer="95" ratio="10" rot="SR0">Analog Switch</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7036,6 +7206,96 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TMUX1574" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TMUX1574" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TMUX1574RSVR">
+<connects>
+<connect gate="G$1" pin="D1" pad="2"/>
+<connect gate="G$1" pin="D2" pad="5"/>
+<connect gate="G$1" pin="D3" pad="7"/>
+<connect gate="G$1" pin="D4" pad="10"/>
+<connect gate="G$1" pin="EN_" pad="13"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="S1A" pad="16"/>
+<connect gate="G$1" pin="S1B" pad="1"/>
+<connect gate="G$1" pin="S2A" pad="3"/>
+<connect gate="G$1" pin="S2B" pad="4"/>
+<connect gate="G$1" pin="S3A" pad="9"/>
+<connect gate="G$1" pin="S3B" pad="8"/>
+<connect gate="G$1" pin="S4A" pad="12"/>
+<connect gate="G$1" pin="S4B" pad="11"/>
+<connect gate="G$1" pin="SEL" pad="15"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22413655/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="TI"/>
+<attribute name="PN" value="TMUX1574RSVR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NXP-NTB0102" prefix="U">
+<gates>
+<gate name="G$1" symbol="NXP-NTB0102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NXP-NTB0102GF">
+<connects>
+<connect gate="G$1" pin="A1" pad="5"/>
+<connect gate="G$1" pin="A2" pad="4"/>
+<connect gate="G$1" pin="B1" pad="8"/>
+<connect gate="G$1" pin="B2" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OE" pad="6"/>
+<connect gate="G$1" pin="VCCA" pad="3"/>
+<connect gate="G$1" pin="VCCB" pad="7"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22413725/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="NXP"/>
+<attribute name="PN" value="NTB0102GF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ON-NLAS3157" prefix="U">
+<gates>
+<gate name="G$1" symbol="ON-NLAS3157" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ON-NLAS3157MX3TCG">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="B0" pad="4"/>
+<connect gate="G$1" pin="B1" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="S" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22413872/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="ON Semiconductor"/>
+<attribute name="PN" value="NLAS3157MX3TCG"/>
+</technology>
 </technologies>
 </device>
 </devices>
