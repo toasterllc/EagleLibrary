@@ -1745,6 +1745,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="9.25" y="-19.161"/>
 <vertex x="7.85" y="-20.561"/>
 </polygon>
+<polygon width="0.05" layer="21">
+<vertex x="8.05" y="-8.78"/>
+<vertex x="8.05" y="-11.78"/>
+<vertex x="9.2" y="-11.78"/>
+<vertex x="9.2" y="-8.78"/>
+</polygon>
 </package>
 <package name="HEADER-1X3" urn="urn:adsk.eagle:footprint:19124831/1" locally_modified="yes">
 <description>Single-row, 3-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
@@ -4027,7 +4033,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="OUT" x="17.78" y="-5.08" visible="pin" length="short" function="clk" rot="R180"/>
 <pin name="EN_" x="-2.54" y="-7.62" visible="pin" length="short" direction="in"/>
 <pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-12.7" size="1.778" layer="95">&gt;PN</text>
 </symbol>
 <symbol name="LATTICE-ICE40HX4K-BG121-A">
@@ -4494,10 +4500,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
 <pin name="D-" x="-2.54" y="-10.16" visible="pin" length="short"/>
 <pin name="VBUS" x="-2.54" y="-2.54" visible="pin" length="short"/>
-<text x="0" y="0.254" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <pin name="D+" x="-2.54" y="-7.62" visible="pin" length="short"/>
 <pin name="ID" x="-2.54" y="-12.7" visible="pin" length="short"/>
-<text x="0" y="-15.494" size="1.778" layer="95" align="top-left">USB ESD Protection</text>
+<text x="0" y="-17.78" size="1.778" layer="95">USB ESD Protection</text>
 </symbol>
 <symbol name="WURTH-61201021621">
 <wire x1="7.62" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
@@ -4525,6 +4531,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="9" x="10.16" y="-2.54" visible="pad" length="short" swaplevel="1" rot="R180"/>
 <pin name="10" x="-2.54" y="-2.54" visible="pad" length="short" swaplevel="1"/>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<polygon width="0.254" layer="94">
+<vertex x="6.604" y="-6.35"/>
+<vertex x="7.62" y="-6.35"/>
+<vertex x="7.62" y="-8.89"/>
+<vertex x="6.604" y="-8.89"/>
+</polygon>
 </symbol>
 <symbol name="HEADER-1X3">
 <wire x1="5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
