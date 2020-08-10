@@ -133,7 +133,7 @@
 <vertex x="-0.9" y="1.551"/>
 </polygon>
 </package>
-<package name="TPS61372YKBT" urn="urn:adsk.eagle:footprint:17639523/1" locally_modified="yes">
+<package name="TI-TPS61372YKBT" urn="urn:adsk.eagle:footprint:17639523/1" locally_modified="yes">
 <description>16-BGA, collapsing, 0.35 mm pitch, 1.55 X 1.50 X 0.50 mm body
 &lt;p&gt;16-pin collapsing BGA package with 0.35 mm col pitch and 0.35 mm row pitch with body size 1.55 X 1.50 X 0.50 mm&lt;/p&gt;</description>
 <smd name="A1" x="-0.525" y="0.525" dx="0.2" dy="0.2" layer="1" roundness="100" thermals="no"/>
@@ -666,7 +666,7 @@
 <vertex x="0.7" y="1.5"/>
 </polygon>
 </package>
-<package name="TLV1701AIDBVR" urn="urn:adsk.eagle:footprint:17793038/1" locally_modified="yes">
+<package name="TI-TLV1701AIDBVR" urn="urn:adsk.eagle:footprint:17793038/1" locally_modified="yes">
 <description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
 &lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
 <smd name="1" x="-1.2533" y="0.95" dx="1.2088" dy="0.5891" layer="1" roundness="100"/>
@@ -1002,7 +1002,7 @@
 <vertex x="4" y="4.5"/>
 </polygon>
 </package>
-<package name="TPS63805YFFR">
+<package name="TI-TPS63805YFFR">
 <smd name="A1" x="-0.4" y="0.8" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
 <smd name="A2" x="0" y="0.8" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
 <smd name="A3" x="0.4" y="0.8" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
@@ -1035,7 +1035,7 @@
 <vertex x="0.8" y="1.2"/>
 </polygon>
 </package>
-<package name="TPS6280XYKAR">
+<package name="TI-TPS6280XYKAR">
 <smd name="A1" x="-0.175" y="0.4064" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
 <smd name="A2" x="0.175" y="0.4064" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
 <smd name="B1" x="-0.175" y="0" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
@@ -1690,7 +1690,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.7" y="1.075"/>
 </polygon>
 </package>
-<package name="TPD4S012DRYR" urn="urn:adsk.eagle:footprint:19106717/1" locally_modified="yes">
+<package name="TI-TPD4S012DRYR" urn="urn:adsk.eagle:footprint:19106717/1" locally_modified="yes">
 <description>6-SON (DFN), 0.50 mm pitch, 1.45 X 1.00 X 0.60 mm body
 &lt;p&gt;6-pin SON (DFN) package with 0.50 mm pitch with body size 1.45 X 1.00 X 0.60 mm&lt;/p&gt;</description>
 <wire x1="0.525" y1="-0.75" x2="-0.525" y2="-0.75" width="0.05" layer="21"/>
@@ -3157,7 +3157,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="-10.16" y="-7.62" size="1.778" layer="95">&gt;PN</text>
 <text x="-10.16" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="TPS61372YKBT">
+<symbol name="TI-TPS61372YKBT">
 <pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
 <pin name="MODE" x="-2.54" y="-10.16" visible="pin" length="short"/>
 <pin name="VOUT" x="27.94" y="-17.78" visible="pin" length="short" rot="R180"/>
@@ -3437,7 +3437,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="3.048" y="1.524"/>
 </polygon>
 </symbol>
-<symbol name="TLV1701AIDBVR">
+<symbol name="TI-TLV1701AIDBVR">
 <pin name="IN-" x="-2.54" y="-15.24" length="short"/>
 <pin name="IN+" x="-2.54" y="-5.08" length="short"/>
 <pin name="V+" x="7.62" y="-2.54" visible="off" length="short" rot="R270"/>
@@ -3608,7 +3608,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-73.66" size="1.778" layer="95">&gt;PN</text>
 </symbol>
-<symbol name="TPS63805YFF">
+<symbol name="TI-TPS63805YFF">
 <wire x1="20.32" y1="0" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-33.02" x2="0" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="0" y1="-33.02" x2="0" y2="0" width="0.254" layer="94"/>
@@ -3626,7 +3626,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-35.56" size="1.778" layer="95">&gt;PN</text>
 </symbol>
-<symbol name="TPS6280XYKA">
+<symbol name="TI-TPS6280XYKA">
 <wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="0" y1="-25.4" x2="25.4" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-25.4" x2="25.4" y2="0" width="0.254" layer="94"/>
@@ -4163,7 +4163,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="TPD4S012DRYR">
+<symbol name="TI-TPD4S012DRYR">
 <wire x1="0" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="94"/>
@@ -5062,10 +5062,10 @@ Synchronous
 &lt;br&gt;
 3.8-A</description>
 <gates>
-<gate name="G$1" symbol="TPS61372YKBT" x="0" y="0"/>
+<gate name="G$1" symbol="TI-TPS61372YKBT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TPS61372YKBT">
+<device name="" package="TI-TPS61372YKBT">
 <connects>
 <connect gate="G$1" pin="BST" pad="C4"/>
 <connect gate="G$1" pin="COMP" pad="A2"/>
@@ -5499,13 +5499,13 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLV1701AIDBVR" prefix="U">
+<deviceset name="TI-TLV1701AIDBVR" prefix="U">
 <description>Comparator</description>
 <gates>
-<gate name="G$1" symbol="TLV1701AIDBVR" x="0" y="0"/>
+<gate name="G$1" symbol="TI-TLV1701AIDBVR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TLV1701AIDBVR">
+<device name="" package="TI-TLV1701AIDBVR">
 <connects>
 <connect gate="G$1" pin="IN+" pad="1"/>
 <connect gate="G$1" pin="IN-" pad="3"/>
@@ -5839,10 +5839,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <deviceset name="TI-TPS63805YFFR" prefix="U">
 <description>Buck-Boost Converter</description>
 <gates>
-<gate name="G$1" symbol="TPS63805YFF" x="0" y="0"/>
+<gate name="G$1" symbol="TI-TPS63805YFF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TPS63805YFFR">
+<device name="" package="TI-TPS63805YFFR">
 <connects>
 <connect gate="G$1" pin="AGND" pad="C1"/>
 <connect gate="G$1" pin="EN" pad="A1"/>
@@ -5867,10 +5867,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <deviceset name="TI-TPS6280XYKAR" prefix="U">
 <description>Step-Down Converter</description>
 <gates>
-<gate name="G$1" symbol="TPS6280XYKA" x="0" y="0"/>
+<gate name="G$1" symbol="TI-TPS6280XYKA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TPS6280XYKAR">
+<device name="" package="TI-TPS6280XYKAR">
 <connects>
 <connect gate="G$1" pin="EN" pad="C2"/>
 <connect gate="G$1" pin="GND" pad="A1"/>
@@ -6502,13 +6502,13 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPD4S012DRYR" prefix="U">
-<description>4x USB ESD diode</description>
+<deviceset name="TI-TPD4S012DRYR" prefix="U">
+<description>USB ESD diode</description>
 <gates>
-<gate name="G$1" symbol="TPD4S012DRYR" x="0" y="0"/>
+<gate name="G$1" symbol="TI-TPD4S012DRYR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TPD4S012DRYR">
+<device name="" package="TI-TPD4S012DRYR">
 <connects>
 <connect gate="G$1" pin="D+" pad="1"/>
 <connect gate="G$1" pin="D-" pad="2"/>
@@ -7649,11 +7649,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
