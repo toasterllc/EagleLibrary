@@ -3143,365 +3143,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <smd name="2" x="2.425" y="4" dx="2.85" dy="1" layer="1" roundness="40"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17604187/1" type="model">
-<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
-&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LTC6655BHMS8"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA16C35P4X4_155X150X50N" urn="urn:adsk.eagle:package:17639513/1" type="model">
-<description>16-BGA, collapsing, 0.35 mm pitch, 1.55 X 1.50 X 0.50 mm body
-&lt;p&gt;16-pin collapsing BGA package with 0.35 mm col pitch and 0.35 mm row pitch with body size 1.55 X 1.50 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TPS61372YKBT"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P280X145-6N" urn="urn:adsk.eagle:package:17569523/1" type="model">
-<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
-&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="OPA847"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P300X300X80-9T160X244N" urn="urn:adsk.eagle:package:17639004/1" type="model">
-<description>8-SON (DFN), 0.50 mm pitch, 3.00 X 3.00 X 0.80 mm body, 2.44 X 1.60 mm thermal pad
-&lt;p&gt;8-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 3.00 X 0.80 mm and thermal pad size 2.44 X 1.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="ADM7154ACPZ"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P300X300X85-11T165X238N" urn="urn:adsk.eagle:package:17630085/1" type="model">
-<description>10-SON (DFN), 0.50 mm pitch, 3.00 X 3.00 X 0.85 mm body, 2.38 X 1.65 mm thermal pad
-&lt;p&gt;10-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 3.00 X 0.85 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LT-LT3045XDD"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN50P400X400X100-21T200N" urn="urn:adsk.eagle:package:17469945/1" type="model">
-<description>20-QFN, 0.50 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.00 X 2.00 mm thermal pad
-&lt;p&gt;20-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.00 X 2.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="FT231XQ"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P280X100-6N" urn="urn:adsk.eagle:package:17604696/1" type="model">
-<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.63 X 1.00 mm body
-&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.63 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LT6200IS6"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN50P500X500X100-33T210N" urn="urn:adsk.eagle:package:17466758/1" type="model">
-<description>32-QFN, 0.50 mm pitch, 5.00 X 5.00 X 1.00 mm body, 2.10 X 2.10 mm thermal pad
-&lt;p&gt;32-pin QFN package with 0.50 mm pitch with body size 5.00 X 5.00 X 1.00 mm and thermal pad size 2.10 X 2.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="MSP430I2041"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P237X120-3N" urn="urn:adsk.eagle:package:17570478/1" type="model">
-<description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.20 mm body
-&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SI2302CDS-T1-GE3"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P200X200X80-9T90X160N" urn="urn:adsk.eagle:package:17476532/1" type="model">
-<description>8-SON (DFN), 0.50 mm pitch, 2.00 X 2.00 X 0.80 mm body, 1.60 X 0.90 mm thermal pad
-&lt;p&gt;8-pin SON (DFN) package with 0.50 mm pitch with body size 2.00 X 2.00 X 0.80 mm and thermal pad size 1.60 X 0.90 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="OPA855"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC1005X50N" urn="urn:adsk.eagle:package:17080064/1" type="model">
-<description>Chip, 1.00 X 0.50 X 0.50 mm body
-&lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="0402"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC1608X70N" urn="urn:adsk.eagle:package:17080173/1" type="model">
-<description>Chip, 1.60 X 0.80 X 0.70 mm body
-&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="0603"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC2012X70N" urn="urn:adsk.eagle:package:17080181/1" type="model">
-<description>Chip, 2.00 X 1.25 X 0.70 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.25 X 0.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="0805"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC3216X70N" urn="urn:adsk.eagle:package:17080198/1" type="model">
-<description>Chip, 3.20 X 1.60 X 0.70 mm body
-&lt;p&gt;Chip package with body size 3.20 X 1.60 X 0.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="1206"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P280X145-5N" urn="urn:adsk.eagle:package:17792477/1" type="model">
-<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
-&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TLV1701AIDBVR"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA4C50P2X2_88X88X50N" urn="urn:adsk.eagle:package:17798711/1" type="model">
-<description>4-BGA, collapsing, 0.50 mm pitch, 0.89 X 0.89 X 0.50 mm body
-&lt;p&gt;4-pin collapsing BGA package with 0.50 mm col pitch and 0.50 mm row pitch with body size 0.89 X 0.89 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-SN74LVC1G04YZVR"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN40P330X250X50-21T190X114N" urn="urn:adsk.eagle:package:17801222/1" type="model">
-<description>20-QFN, 0.40 mm pitch, 3.30 X 2.50 X 0.50 mm body, 1.90 X 1.14 mm thermal pad
-&lt;p&gt;20-pin QFN package with 0.40 mm pitch with body size 3.30 X 2.50 X 0.50 mm and thermal pad size 1.90 X 1.14 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SN74LVC244ARWPR"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC3225X70N" urn="urn:adsk.eagle:package:17955780/1" type="model">
-<description>Chip, 3.20 X 2.50 X 0.70 mm body
-&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="1210"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC7343X430N" urn="urn:adsk.eagle:package:17955961/1" type="model">
-<description>Chip, 7.30 X 4.30 X 4.30 mm body
-&lt;p&gt;Chip package with body size 7.30 X 4.30 X 4.30 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="293D476X9025E2TE3"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC5832X270N" urn="urn:adsk.eagle:package:17964015/1" type="model">
-<description>Chip, 5.80 X 3.20 X 2.70 mm body
-&lt;p&gt;Chip package with body size 5.80 X 3.20 X 2.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="T55D107M025C0060"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P300X200X60-8N" urn="urn:adsk.eagle:package:17077898/1" type="model">
-<description>8-SON (DFN), 0.50 mm pitch, 2.00 X 3.00 X 0.60 mm body
-&lt;p&gt;8-pin SON (DFN) package with 0.50 mm pitch with body size 2.00 X 3.00 X 0.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="GD25LQ80CEIGR"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA121C80P11X11_900X900X100N" urn="urn:adsk.eagle:package:16997455/1" type="model">
-<description>121-BGA, collapsing, 0.80 mm pitch, 9.00 X 9.00 X 1.00 mm body
-&lt;p&gt;121-pin collapsing BGA package with 0.80 mm col pitch and 0.80 mm row pitch with body size 9.00 X 9.00 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LATTICE-ICE40HX4K-BG121"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P300X200X80-9T20X160N" urn="urn:adsk.eagle:package:18792578/1" type="model">
-<description>8-SON (DFN), 0.50 mm pitch, 2.00 X 3.00 X 0.80 mm body, 1.60 X 0.20 mm thermal pad
-&lt;p&gt;8-pin SON (DFN) package with 0.50 mm pitch with body size 2.00 X 3.00 X 0.80 mm and thermal pad size 1.60 X 0.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="W25Q80EWUXIE"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA64C65P8X8_664X627X100N" urn="urn:adsk.eagle:package:18794457/1" type="model">
-<description>64-BGA, collapsing, 0.65 mm pitch, 6.65 X 6.28 X 1.00 mm body
-&lt;p&gt;64-pin collapsing BGA package with 0.65 mm col pitch and 0.65 mm row pitch with body size 6.65 X 6.28 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="ON-AR0330CS1C12SPKA0"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN50P800X800X90-49T620N" urn="urn:adsk.eagle:package:19081791/1" type="model">
-<description>48-QFN, 0.50 mm pitch, 8.00 X 8.00 X 0.90 mm body, 6.20 X 6.20 mm thermal pad
-&lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 8.00 X 8.00 X 0.90 mm and thermal pad size 6.20 X 6.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="FT232HQ"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN40P260X180X55-16N" urn="urn:adsk.eagle:package:19104354/1" type="model">
-<description>16-QFN, 0.40 mm pitch, 2.60 X 1.80 X 0.55 mm body
-&lt;p&gt;16-pin QFN package with 0.40 mm pitch with body size 2.60 X 1.80 X 0.55 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SN74AVCH4T245RSVR"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT65P210X110-5N" urn="urn:adsk.eagle:package:19104715/1" type="model">
-<description>5-SOT23, 0.65 mm pitch, 2.10 mm span, 2.00 X 1.25 X 1.10 mm body
-&lt;p&gt;5-pin SOT23 package with 0.65 mm pitch, 2.10 mm span with body size 2.00 X 1.25 X 1.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SN74LV1T12XDCKR"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P100X145X60-6N" urn="urn:adsk.eagle:package:19106363/1" type="model">
-<description>6-SON (DFN), 0.50 mm pitch, 1.45 X 1.00 X 0.60 mm body
-&lt;p&gt;6-pin SON (DFN) package with 0.50 mm pitch with body size 1.45 X 1.00 X 0.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TPD4S012DRYR"/>
-</packageinstances>
-</package3d>
-<package3d name="HDRV10W64P254_2X5_2036X910X1509B" urn="urn:adsk.eagle:package:19109748/1" type="model">
-<description>Double-row, 10-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 20.36 X 9.10 X 15.09 mm body
-&lt;p&gt;Double-row (2X5), 10-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 20.36 X 9.10 X 15.09 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="WURTH-61201021621"/>
-</packageinstances>
-</package3d>
-<package3d name="HDRV3W66P254_1X3_1016X508X838B" urn="urn:adsk.eagle:package:19124821/1" type="model">
-<description>Single-row, 3-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
-&lt;p&gt;Single-row (1X3), 3-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) col pitch, 0.66 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="HEADER-1X3"/>
-</packageinstances>
-</package3d>
-<package3d name="SOP65P640X120-17T209X300N" urn="urn:adsk.eagle:package:20136596/1" type="model">
-<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.40 X 1.20 mm body, 3.00 X 2.09 mm thermal pad
-&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.40 X 1.20 mm and thermal pad size 3.00 X 2.09 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LM43601PWPR"/>
-</packageinstances>
-</package3d>
-<package3d name="SON45P300X300X80-13T165X238N" urn="urn:adsk.eagle:package:20155894/1" type="model">
-<description>12-SON (DFN), 0.45 mm pitch, 3.00 X 3.00 X 0.80 mm body, 2.38 X 1.65 mm thermal pad
-&lt;p&gt;12-pin SON (DFN) package with 0.45 mm pitch with body size 3.00 X 3.00 X 0.80 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LT-LT3094XDD"/>
-</packageinstances>
-</package3d>
-<package3d name="CAPMP3528X200N" urn="urn:adsk.eagle:package:20156094/1" type="model">
-<description>Molded Body, 3.50 X 2.80 X 2.00 mm body
-&lt;p&gt;Molded Body package with body size 3.50 X 2.80 X 2.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="PANASONIC-10TPE47MAZB"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN65P400X400X100-17T216N" urn="urn:adsk.eagle:package:20157425/1" type="model">
-<description>16-QFN, 0.65 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.16 X 2.16 mm thermal pad
-&lt;p&gt;16-pin QFN package with 0.65 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.16 X 2.16 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-OPA2673"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P300X250X80-9T170X150N" urn="urn:adsk.eagle:package:20157466/1" type="model">
-<description>8-SON (DFN), 0.50 mm pitch, 2.50 X 3.00 X 0.80 mm body, 1.50 X 1.70 mm thermal pad
-&lt;p&gt;8-pin SON (DFN) package with 0.50 mm pitch with body size 2.50 X 3.00 X 0.80 mm and thermal pad size 1.50 X 1.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-LMH6552"/>
-</packageinstances>
-</package3d>
-<package3d name="SODFL1006X50N" urn="urn:adsk.eagle:package:20157583/1" type="model">
-<description>SODFL, 1.00 mm span, 1.00 X 0.60 X 0.50 mm body
-&lt;p&gt;SODFL package with 1.00 mm span with body size 1.00 X 0.60 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SODFL1006X50N"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN50P700X700X100-49T560N" urn="urn:adsk.eagle:package:20278237/1" type="model">
-<description>48-QFN, 0.50 mm pitch, 7.00 X 7.00 X 1.00 mm body, 5.60 X 5.60 mm thermal pad
-&lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 7.00 X 7.00 X 1.00 mm and thermal pad size 5.60 X 5.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-ADS4146"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA4C35P2X2_64X64X33N" urn="urn:adsk.eagle:package:20296028/1" type="model">
-<description>4-BGA, collapsing, 0.35 mm pitch, 0.64 X 0.64 X 0.33 mm body
-&lt;p&gt;4-pin collapsing BGA package with 0.35 mm col pitch and 0.35 mm row pitch with body size 0.64 X 0.64 X 0.33 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="ON-WLCSP4"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P200X300X80-11T84X240N" urn="urn:adsk.eagle:package:20605874/1" type="model">
-<description>10-SON (DFN), 0.50 mm pitch, 3.00 X 2.00 X 0.80 mm body, 2.40 X 0.84 mm thermal pad
-&lt;p&gt;10-pin SON (DFN) package with 0.50 mm pitch with body size 3.00 X 2.00 X 0.80 mm and thermal pad size 2.40 X 0.84 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-TPS62175DQC"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA6C40P2X3_146X96X50N" urn="urn:adsk.eagle:package:20605912/1" type="model">
-<description>6-BGA, collapsing, 0.40 mm pitch, 1.47 X 0.97 X 0.50 mm body
-&lt;p&gt;6-pin collapsing BGA package with 0.40 mm col pitch and 0.40 mm row pitch with body size 1.47 X 0.97 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-TPS6284XYBG"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P280X145-6N" urn="urn:adsk.eagle:package:20606339/1" type="model">
-<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
-&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-SN6505X"/>
-</packageinstances>
-</package3d>
-<package3d name="SON65P200X200X80-7T100X160N" urn="urn:adsk.eagle:package:20768387/1" type="model">
-<description>6-SON (DFN), 0.65 mm pitch, 2.00 X 2.00 X 0.80 mm body, 1.60 X 1.00 mm thermal pad
-&lt;p&gt;6-pin SON (DFN) package with 0.65 mm pitch with body size 2.00 X 2.00 X 0.80 mm and thermal pad size 1.60 X 1.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-TPS6224XDRV"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P280X145-5N" urn="urn:adsk.eagle:package:20803804/1" type="model">
-<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
-&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-OPA820IDBV"/>
-</packageinstances>
-</package3d>
-<package3d name="SOIC127P1032X265-16N" urn="urn:adsk.eagle:package:20887941/1" type="model">
-<description>16-SOIC, 1.27 mm pitch, 10.32 mm span, 10.30 X 7.50 X 2.65 mm body
-&lt;p&gt;16-pin SOIC package with 1.27 mm pitch, 10.32 mm span with body size 10.30 X 7.50 X 2.65 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="AD-ADUM3160BRWZ"/>
-</packageinstances>
-</package3d>
-<package3d name="SOP63P599X175-16N" urn="urn:adsk.eagle:package:20914403/1" type="model">
-<description>16-SOP, 0.64 mm pitch, 6.00 mm span, 4.91 X 3.90 X 1.75 mm body
-&lt;p&gt;16-pin SOP package with 0.64 mm pitch, 6.00 mm span with body size 4.91 X 3.90 X 1.75 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-ISO7762FDBQR"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P280X145-6N" urn="urn:adsk.eagle:package:20921320/1" type="model">
-<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.95 X 1.63 X 1.45 mm body
-&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.95 X 1.63 X 1.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="MICROCHIP-93LC56BT-I/OT"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN40P260X180X55-16N" urn="urn:adsk.eagle:package:22413655/1" type="model">
-<description>16-QFN, 0.40 mm pitch, 2.60 X 1.80 X 0.55 mm body
-&lt;p&gt;16-pin QFN package with 0.40 mm pitch with body size 2.60 X 1.80 X 0.55 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-TMUX1574RSVR"/>
-</packageinstances>
-</package3d>
-<package3d name="DFN100X135X50-4N" urn="urn:adsk.eagle:package:22413725/1" type="model">
-<description>DFN4, 1.00 X 1.35 X 0.50 mm body
-&lt;p&gt;DFN4 package with body size 1.00 X 1.35 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="NXP-NTB0102GF"/>
-</packageinstances>
-</package3d>
-<package3d name="SON35P100X100X40-6N" urn="urn:adsk.eagle:package:22413872/1" type="model">
-<description>6-SON (DFN), 0.35 mm pitch, 1.00 X 1.00 X 0.40 mm body
-&lt;p&gt;6-pin SON (DFN) package with 0.35 mm pitch with body size 1.00 X 1.00 X 0.40 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="ON-NLAS3157MX3TCG"/>
-</packageinstances>
-</package3d>
-<package3d name="BGA225C65P15X15_1000X1000X60N" urn="urn:adsk.eagle:package:22433285/1" type="model">
-<description>225-BGA, collapsing, 0.65 mm pitch, 10.00 X 10.00 X 0.60 mm body
-&lt;p&gt;225-pin collapsing BGA package with 0.65 mm col pitch and 0.65 mm row pitch with body size 10.00 X 10.00 X 0.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="STM-STM32F730I8"/>
-</packageinstances>
-</package3d>
-<package3d name="RESC2016X120N" urn="urn:adsk.eagle:package:22485740/1" type="model">
-<description>Chip, 2.00 X 1.60 X 1.20 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.60 X 1.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="0806"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="LTC6655BHMS8">
 <pin name="VIN" x="-12.7" y="2.54" visible="pin" length="short"/>
@@ -5403,9 +5044,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <connect gate="G$1" pin="VOUT_F" pad="7"/>
 <connect gate="G$1" pin="VOUT_S" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17604187/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Analog Devices"/>
@@ -5439,9 +5077,6 @@ Synchronous
 <connect gate="G$1" pin="VIN" pad="A3 D4"/>
 <connect gate="G$1" pin="VOUT" pad="D1 D2 D3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17639513/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -5513,9 +5148,6 @@ Low noise: 0.85nV/√Hz</description>
 <connect gate="G$1" pin="VS+" pad="6"/>
 <connect gate="G$1" pin="VS-" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17569523/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -5542,9 +5174,6 @@ Low noise: 0.85nV/√Hz</description>
 <connect gate="G$1" pin="VOUT" pad="2"/>
 <connect gate="G$1" pin="VREG" pad="1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17639004/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Analog Devices"/>
@@ -5572,9 +5201,6 @@ Low noise: 0.85nV/√Hz</description>
 <connect gate="G$1" pin="PGFB" pad="6"/>
 <connect gate="G$1" pin="SET" pad="7"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17630085/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Analog Devices"/>
@@ -5612,9 +5238,6 @@ Low noise: 0.85nV/√Hz</description>
 <connect gate="B" pin="RXD" pad="1"/>
 <connect gate="B" pin="TXD" pad="17"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17469945/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="FTDI"/>
@@ -5643,9 +5266,6 @@ Low noise</description>
 <connect gate="G$1" pin="V+" pad="6"/>
 <connect gate="G$1" pin="V-" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17604696/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Analog Devices"/>
@@ -5700,9 +5320,6 @@ Low noise</description>
 <connect gate="D" pin="P2.6/TA0.1" pad="31"/>
 <connect gate="D" pin="P2.7/TA0.2" pad="32"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17466758/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -5751,9 +5368,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VS+" pad="7"/>
 <connect gate="G$1" pin="VS-" pad="5 9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17476532/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -5773,9 +5387,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5785,9 +5396,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5797,9 +5405,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5809,9 +5414,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5821,9 +5423,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5840,9 +5439,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5852,9 +5448,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5864,9 +5457,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5876,9 +5466,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5888,9 +5475,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5929,9 +5513,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="V+" pad="5"/>
 <connect gate="G$1" pin="V-" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17792477/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -5975,9 +5556,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="OUT" pad="B2"/>
 <connect gate="G$1" pin="VDD" pad="A2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17798711/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -6015,9 +5593,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="GND" pad="9 21"/>
 <connect gate="G$1" pin="VDD" pad="19"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17801222/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -6037,9 +5612,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6049,9 +5621,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6061,9 +5630,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6073,9 +5639,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6085,9 +5648,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6097,9 +5657,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22485740/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6117,9 +5674,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17955961/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Vishay"/>
@@ -6140,9 +5694,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17964015/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Vishay"/>
@@ -6412,9 +5963,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="WP_" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17077898/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="GigaDevice"/>
@@ -6579,9 +6127,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="E" pin="VPP_2V5_C10" pad="C10"/>
 <connect gate="E" pin="VPP_FAST_B10" pad="B10"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16997455/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Lattice"/>
@@ -6659,9 +6204,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="WP_" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:18792578/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Winbond"/>
@@ -6720,9 +6262,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="B" pin="TEST" pad="B7"/>
 <connect gate="B" pin="TRIGGER" pad="C7"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:18794457/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="ON Semiconductor"/>
@@ -6823,9 +6362,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="C" pin="ADBUS6" pad="19"/>
 <connect gate="C" pin="ADBUS7" pad="20"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19081791/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="FTDI"/>
@@ -6859,9 +6395,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VCCA" pad="3"/>
 <connect gate="G$1" pin="VCCB" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19104354/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -6885,9 +6418,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD" pad="5"/>
 <connect gate="G$1" pin="Y" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19104715/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -6911,9 +6441,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD" pad="5"/>
 <connect gate="G$1" pin="Y" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19104715/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -6933,9 +6460,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080064/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6945,9 +6469,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080173/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6957,9 +6478,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080181/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6969,9 +6487,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17080198/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6981,9 +6496,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17955780/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7004,9 +6516,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="ID" pad="3"/>
 <connect gate="G$1" pin="VBUS" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19106363/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7034,9 +6543,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19109748/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Wurth Elektronik"/>
@@ -7057,9 +6563,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19124821/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7132,9 +6635,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VCC" pad="4"/>
 <connect gate="G$1" pin="VIN" pad="13 14"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20136596/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7162,9 +6662,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="SET" pad="8"/>
 <connect gate="G$1" pin="VIOC" pad="7"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20155894/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Analog Devices"/>
@@ -7183,9 +6680,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20156094/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7253,9 +6747,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="C" pin="VS+" pad="14"/>
 <connect gate="C" pin="VS-" pad="7 17"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20157425/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7281,9 +6772,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="B" pin="V-" pad="6 9"/>
 <connect gate="B" pin="VCM" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20157466/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7302,9 +6790,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20157583/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Skyworks"/>
@@ -7355,9 +6840,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="C" pin="INP" pad="15"/>
 <connect gate="C" pin="VCM" pad="13"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20278237/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7378,9 +6860,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="IN" pad="A1"/>
 <connect gate="G$1" pin="OUT" pad="A2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20296028/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="ON Semiconductor"/>
@@ -7401,9 +6880,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="IN" pad="A1"/>
 <connect gate="G$1" pin="OUT" pad="A2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20296028/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="ON Semiconductor"/>
@@ -7453,9 +6929,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOS" pad="10"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20605874/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7478,9 +6951,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VOS" pad="A2"/>
 <connect gate="G$1" pin="VSET" pad="C2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20605912/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7503,9 +6973,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20606339/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7570,9 +7037,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="SW" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20768387/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7672,9 +7136,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VS+" pad="5"/>
 <connect gate="G$1" pin="VS-" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20803804/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7726,9 +7187,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD1" pad="3"/>
 <connect gate="G$1" pin="VDD2" pad="14"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20887941/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Analog Devices"/>
@@ -7782,9 +7240,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VCC1" pad="1"/>
 <connect gate="G$1" pin="VCC2" pad="16"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20914403/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -7807,9 +7262,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20921320/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Microchip"/>
@@ -7876,9 +7328,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="SEL" pad="15"/>
 <connect gate="G$1" pin="VDD" pad="14"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22413655/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="TI"/>
@@ -7904,9 +7353,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VCCA" pad="3"/>
 <connect gate="G$1" pin="VCCB" pad="7"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22413725/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="NXP"/>
@@ -7930,9 +7376,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="S" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22413872/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="ON Semiconductor"/>
@@ -8162,9 +7605,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="L" pin="VSS_M8" pad="M8"/>
 <connect gate="L" pin="VSS_M9" pad="M9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22433285/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="STMicroelectronics"/>
