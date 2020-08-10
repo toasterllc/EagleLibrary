@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3195,7 +3195,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="D-" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
 <pin name="ID" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
 <text x="0" y="-20.32" size="1.778" layer="95">MINI USB JACK</text>
-<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
 <symbol name="OPA847">
 <pin name="IN-" x="-2.54" y="-5.08" visible="pin" length="short"/>
