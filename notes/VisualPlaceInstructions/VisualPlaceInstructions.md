@@ -16,7 +16,8 @@
     * Move the resulting two CSV files (pcb/Project-bottom.csv, pcb/Project-top.csv) to the ProjectRevX-CAM/Assembly directory
 
 * In VisualPlace, create a new project
-   * Fill in appropriate fields as shown:
-     ![Step 1](VisualPlace-NewProject-Step1.png)
-     ![Step 2](VisualPlace-NewProject-Step2.png)
-     ![Step 3](VisualPlace-NewProject-Step3.png)
+    * Fill in appropriate fields as shown:
+        ![Step 1](VisualPlace-NewProject-Step1.png)
+        ![Step 2](VisualPlace-NewProject-Step2.png)
+        ![Step 3](VisualPlace-NewProject-Step3.png)
+    * Click through components on both sides of the board to verify that VisualPlace determined the positions correctly
