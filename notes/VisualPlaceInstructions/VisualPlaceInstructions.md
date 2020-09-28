@@ -13,11 +13,7 @@
 
 * Export VisualPlace "CPL" data
     * In Eagle board layout, at command prompt: `run VisualPlace-ExportCPL.ulp`
-    * Move the resulting two CSV files:
-            pcb/Project-bottom.csv
-            pcb/Project-top.csv
-        
-        to the ProjectRevX-CAM/Assembly directory
+    * Move the resulting two CSV files (pcb/Project-bottom.csv, pcb/Project-top.csv) to the ProjectRevX-CAM/Assembly directory
 
 * In VisualPlace, create a new project
    * Fill in appropriate fields as shown:
