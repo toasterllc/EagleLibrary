@@ -6,8 +6,8 @@
         * Output Type > CSV
     * Assembly > Pick and Place
         * Output Type > CSV
-    * Export to Project Directory > No
-    * Process Job
+    * Export to Project Directory > Disable
+    * Click "Process Job"
         * Output to WindowsSharedFolder
     * Rename resulting "CAMOutputs" directory to "ProjectRevX-CAM"
 
@@ -19,7 +19,8 @@
         
         to the ProjectRevX-CAM/Assembly directory
 
-* Create a new VisualPlace project and fill in the appropriate fields:
-    ![Step 1](VisualPlace-NewProject-Step1.png)
-    ![Step 2](VisualPlace-NewProject-Step2.png)
-    ![Step 3](VisualPlace-NewProject-Step3.png)
+* In VisualPlace, create a new project
+   * Fill in appropriate fields as shown:
+     ![Step 1](VisualPlace-NewProject-Step1.png)
+     ![Step 2](VisualPlace-NewProject-Step2.png)
+     ![Step 3](VisualPlace-NewProject-Step3.png)
