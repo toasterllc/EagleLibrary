@@ -1,0 +1,68 @@
+* Lead-free solder: SN100C
+    - Rationale:
+        https://www.eevblog.com/forum/beginners/lead-free-solder-recommendations/
+        https://blog.adafruit.com/2018/05/04/adafruits-solder-alloy-of-choice-sn100c-manufacturing/
+    
+    - Product:
+        - AIM SN100C (solder type: SN100C)
+            Next time, try:
+                SN100C-WS482-3%-020, since it contains water-soluble flux.
+                Links:
+                    https://smtsupplies.com/AIM_Lead_Free_Water_Soluble_Core_Wire_Solder_SN100C_WS482_3_.020_Dia._1_Lb._Spool
+                    https://www.jensentools.com/aim-metals-sn100c-ws482-3-020-1lb-water-soluble-wire-solder-1lb-spool/p/477-686
+            
+            Previously tried:
+                SN100C with 'Glow Core' previously. It works well, but flux isn't water soluable
+                Links:
+                    https://www.amazon.com/AIM-SN100C-Glow-Core-Solder/dp/B00J812NRK/ref=sr_1_2?keywords=SN100C&qid=1585630301&sr=8-2#customerReviews
+                    https://smtsupplies.com/AIM_Lead_Free_No_Clean_Core_Wire_Solder_SN100C_Glow_Core_2.0_.020_Dia._1_Lb._Spool
+
+
+
+* Lead-free solder paste: SAC305
+    - Rationale
+        Ideally we'd get SN100C solder paste, but it doesn't seem to be common. SAC305 seems like the next best thing.
+    
+    - Product:
+        Next time, try a water-washable solder paste:
+            AMTECH LF-4300 solder paste
+                https://amtechdirect.com/shop/amtech-sn96-5-ag3-cu0-5-t3-water-washable-lead-free-solder-paste-rel0-lf-4300-35g-syringe/
+            
+            AIM WS488-SAC305-88.5-T3
+                https://smtsupplies.com/AIM_Lead_Free_Water_Soluble_Solder_Paste_WS488-SAC305-88.5-T3_250_Gram_Jar
+                Can we find this in a syringe?
+            
+            FCT Solder WS888 solder paste
+                https://www.pcbunlimited.com/products/ws888-water-soluble-lead-free-solder-paste
+        
+        
+        Previously tried:
+            - Kester NXG1 703213081
+                https://gokimco.com/kester-lead-free-sac305-nxg1-no-clean-solder-paste-500-gram-jar-70-3213-0810-lead-free.html
+
+
+
+* Flux: AMTECH 4300/LF-4300-TF Water Washable Lead-Free Tacky Solder Flux
+    https://amtechdirect.com/shop/amtech-4300-lf-4300-tf-water-washable-lead-free-tacky-solder-flux-rel0-75g-jar/
+    Datasheet: http://www.inventecusa.com/assets/4300-lf4300-tf.pdf
+    
+    - Rationale:
+        - Tried it ourself -- way easier to clean! It easily washes away with water.
+        - Doesn't corrode if it's not cleaned up (see datasheet)
+        - Datasheet: "can be left on the board for many SMT assemblies"
+
+
+
+
+* Flux: AMTECH VS-213-A-TF No-Clean Universal Halogen-Free Tacky Solder 
+    https://amtechdirect.com/product/amtech-vs-213-a-tf-tacky-solder-flux/
+    
+    - Rationale:
+        - Louis Rossmann recommends Amtech products
+        - "Designed for LGA, BGA, and CSP components"
+        - "Optimized for lead-free and standard alloy systems"
+    
+    - Review
+        Works well, but doesn't clean easily. Next time try a water-washable flux (see above).
+
+
