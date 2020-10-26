@@ -1,0 +1,38 @@
+* Sort pins in .pcf file
+    sort -V <file>
+    
+    For example:
+        Before:
+            set_io pix_d[0]            K11      -pullup no
+            set_io pix_d[10]           F9       -pullup no
+            set_io pix_d[1]            J10      -pullup no
+            set_io pix_d[2]            J11      -pullup no
+            ...
+            
+        After:
+            set_io pix_d[0]            K11      -pullup no
+            set_io pix_d[1]            J10      -pullup no
+            set_io pix_d[2]            J11      -pullup no
+            ...
+            set_io pix_d[10]           F9       -pullup no
+
+
+* Eagle: Move selection by delta (x,y)
+    MOVE (>0 0) (x y);
+
+
+* Eagle: Undo ratsnest
+    ripup @;
+
+
+* Eagle: Generate netlist
+    - Open layout
+    - Execute `run export-ict-netlist-pad-coordinates`
+
+
+* Eagle: Automate pin creation
+    - Use an SCR script:
+
+      pin short both io R0 'VCC'      (0 -00.0);
+      pin short both io R0 'VCCIO'    (0 -00.1);
+      ...
