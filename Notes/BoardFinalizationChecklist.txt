@@ -7,7 +7,7 @@ Board Finalization Checklist
     - Schematic: Export BOM and make sure all part numbers look good on Mouser
 
     - Layout:
-        - Verify that pins within PLL IO tiles are either unused pins, or output-only pins (ie, the pins are not used as inputs)
+        - ICE40: Verify that pins within PLL IO tiles are either unused pins, or output-only pins (ie, the pins are not used as inputs)
             - Only output pins are allowed on IO tiles which have an active PLL
             - For the ICE40HX4K-BG121, the PLL IO tiles are: B6, L5
             - If this rule isn't adhered too, it will make using the PLL on that respective IO tile impossible
