@@ -3198,15 +3198,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </polygon>
 </package>
 </packages>
-<packages3d>
-<package3d name="QFN50P450X350X100-21T305X205N" urn="urn:adsk.eagle:package:28409406/1" type="model">
-<description>20-QFN, 0.50 mm pitch, 4.50 X 3.50 X 1.00 mm body, 3.05 X 2.05 mm thermal pad
-&lt;p&gt;20-pin QFN package with 0.50 mm pitch with body size 4.50 X 3.50 X 1.00 mm and thermal pad size 3.05 X 2.05 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-MSP430FR2422IRHL"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="LTC6655BHMS8">
 <pin name="VIN" x="-12.7" y="2.54" visible="pin" length="short"/>
@@ -7782,9 +7773,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$3" pin="P2.5/UCB0SIMO/UCB0SDA/A7" pad="10"/>
 <connect gate="G$3" pin="P2.6/UCB0SOMI/UCB0SCL" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:28409406/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
