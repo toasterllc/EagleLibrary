@@ -3304,29 +3304,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </polygon>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOT65P210X110-3N" urn="urn:adsk.eagle:package:28496790/1" type="model">
-<description>3-SOT23, 0.65 mm pitch, 2.10 mm span, 2.00 X 1.25 X 1.10 mm body
-&lt;p&gt;3-pin SOT23 package with 0.65 mm pitch, 2.10 mm span with body size 2.00 X 1.25 X 1.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TI-LM66100DCK"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P230X110-3N" urn="urn:adsk.eagle:package:28496830/1" type="model">
-<description>3-SOT23, 0.95 mm pitch, 2.30 mm span, 2.90 X 1.30 X 1.10 mm body
-&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.30 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="NEXPERIA-PMV27UPEAR"/>
-</packageinstances>
-</package3d>
-<package3d name="SON50P100X145X50-6N" urn="urn:adsk.eagle:package:28498965/1" type="model">
-<description>6-SON (DFN), 0.50 mm pitch, 1.45 X 1.00 X 0.50 mm body
-&lt;p&gt;6-pin SON (DFN) package with 0.50 mm pitch with body size 1.45 X 1.00 X 0.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="NEXPERIA-74LVC1G32GM"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="LTC6655BHMS8">
 <pin name="VIN" x="-12.7" y="2.54" visible="pin" length="short"/>
@@ -8029,9 +8006,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:28496790/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
@@ -8051,9 +8025,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:28496830/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Nexperia"/>
@@ -8076,9 +8047,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VDD" pad="6"/>
 <connect gate="G$1" pin="Y" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:28498965/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Nexperia"/>
