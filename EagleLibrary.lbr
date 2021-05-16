@@ -3522,6 +3522,32 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.423" y="1.051"/>
 </polygon>
 </package>
+<package name="DIODESINC-DT1446-04V-7" urn="urn:adsk.eagle:footprint:28686926/1" locally_modified="yes">
+<description>6-SOTFL, 0.50 mm pitch, 1.63 mm span, 1.60 X 1.18 X 0.60 mm body
+&lt;p&gt;6-pin SOTFL package with 0.50 mm pitch, 1.63 mm span with body size 1.60 X 1.18 X 0.60 mm&lt;/p&gt;</description>
+<wire x1="0.625" y1="-0.85" x2="-0.625" y2="-0.85" width="0.05" layer="21"/>
+<wire x1="-0.625" y1="-0.85" x2="-0.625" y2="0.85" width="0.05" layer="21"/>
+<wire x1="-0.625" y1="0.85" x2="0.625" y2="0.85" width="0.05" layer="21"/>
+<wire x1="0.625" y1="0.85" x2="0.625" y2="-0.85" width="0.05" layer="21"/>
+<smd name="1" x="-0.7958" y="0.5" dx="0.5456" dy="0.3371" layer="1"/>
+<smd name="2" x="-0.7958" y="0" dx="0.5456" dy="0.3371" layer="1"/>
+<smd name="3" x="-0.7958" y="-0.5" dx="0.5456" dy="0.3371" layer="1"/>
+<smd name="4" x="0.7958" y="-0.5" dx="0.5456" dy="0.3371" layer="1"/>
+<smd name="5" x="0.7958" y="0" dx="0.5456" dy="0.3371" layer="1"/>
+<smd name="6" x="0.7958" y="0.5" dx="0.5456" dy="0.3371" layer="1"/>
+<text x="-0.56" y="1.0035" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="0.625" y="-0.85"/>
+<vertex x="-0.625" y="-0.85"/>
+<vertex x="-0.625" y="0.85"/>
+<vertex x="0.625" y="0.85"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-0.61" y="0.836"/>
+<vertex x="-0.61" y="-0.164"/>
+<vertex x="0.39" y="0.836"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC6655BHMS8">
@@ -5604,6 +5630,20 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
 <pin name="QOD" x="20.32" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="DIODESINC-DT1446-04V-7">
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="0" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="IO2" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<pin name="IO1" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="IO3" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<text x="0" y="-22.86" size="1.778" layer="95">USB ESD Protection</text>
+<pin name="IO4" x="-2.54" y="-17.78" visible="pin" length="short"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC6655BHMS8" prefix="U">
@@ -6853,7 +6893,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="ON Semiconductor"/>
-<attribute name="PN" value="AR0330CS1C12SPKA0"/>
 </technology>
 </technologies>
 </device>
@@ -8526,6 +8565,29 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="Texas Instruments"/>
 <attribute name="PN" value="TPS22919DCK"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODESINC-DT1446-04V-7" prefix="U">
+<gates>
+<gate name="G$1" symbol="DIODESINC-DT1446-04V-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIODESINC-DT1446-04V-7">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IO1" pad="1"/>
+<connect gate="G$1" pin="IO2" pad="3"/>
+<connect gate="G$1" pin="IO3" pad="4"/>
+<connect gate="G$1" pin="IO4" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Diodes Incorporated"/>
+<attribute name="PN" value="DT1446-04V-7"/>
 </technology>
 </technologies>
 </device>
