@@ -3496,6 +3496,32 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.395" y="0.3965"/>
 </polygon>
 </package>
+<package name="TI-TPS22919DCK" urn="urn:adsk.eagle:footprint:28686815/1" locally_modified="yes">
+<description>6-SOT23, 0.65 mm pitch, 2.10 mm span, 2.00 X 1.25 X 1.10 mm body
+&lt;p&gt;6-pin SOT23 package with 0.65 mm pitch, 2.10 mm span with body size 2.00 X 1.25 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="0.7" y1="-1.075" x2="-0.7" y2="-1.075" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="-1.075" x2="-0.7" y2="1.075" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="1.075" x2="0.7" y2="1.075" width="0.05" layer="21"/>
+<wire x1="0.7" y1="1.075" x2="0.7" y2="-1.075" width="0.05" layer="21"/>
+<smd name="1" x="-0.9623" y="0.65" dx="1.1857" dy="0.3971" layer="1"/>
+<smd name="2" x="-0.9623" y="0" dx="1.1857" dy="0.3971" layer="1"/>
+<smd name="3" x="-0.9623" y="-0.65" dx="1.1857" dy="0.3971" layer="1"/>
+<smd name="4" x="0.9623" y="-0.65" dx="1.1857" dy="0.3971" layer="1"/>
+<smd name="5" x="0.9623" y="0" dx="1.1857" dy="0.3971" layer="1"/>
+<smd name="6" x="0.9623" y="0.65" dx="1.1857" dy="0.3971" layer="1"/>
+<text x="-0.6604" y="1.25451875" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="0.7" y="-1.075"/>
+<vertex x="-0.7" y="-1.075"/>
+<vertex x="-0.7" y="1.075"/>
+<vertex x="0.7" y="1.075"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-0.677" y="1.051"/>
+<vertex x="-0.677" y="-0.149"/>
+<vertex x="0.423" y="1.051"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC6655BHMS8">
@@ -5564,6 +5590,19 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="10.16" y1="-2.54" x2="10.16" y2="-4.064" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="20.32" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="TI-TPS22919">
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="VOUT" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="EN" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<text x="0" y="-15.24" size="1.778" layer="95">&gt;PN</text>
+<text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="QOD" x="20.32" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8465,6 +8504,28 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="Maxim Integrated"/>
 <attribute name="PN" value="MAX40203ANS+T"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TPS22919DCK" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TPS22919" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TPS22919DCK">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="QOD" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="TPS22919DCK"/>
 </technology>
 </technologies>
 </device>
