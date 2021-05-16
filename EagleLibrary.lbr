@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -929,7 +929,7 @@
 </polygon>
 <text x="-0.771" y="0.0642" size="1.27" layer="25" font="vector" align="center">+</text>
 </package>
-<package name="W989D6DBGX6I">
+<package name="WINBOND-W989D6DBGX6I">
 <description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
 <smd name="A1" x="-3.2" y="3.2" dx="0.35" dy="0.35" layer="1" roundness="100" cream="no"/>
 <smd name="A2" x="-2.4" y="3.2" dx="0.35" dy="0.35" layer="1" roundness="100" cream="no"/>
@@ -3548,6 +3548,79 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.39" y="0.836"/>
 </polygon>
 </package>
+<package name="ALLIANCE-AS4C8M16MSA-6BIN">
+<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
+<smd name="A1" x="-3.2" y="3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="-2.4" y="3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="A3" x="-1.6" y="3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="A7" x="1.6" y="3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="A8" x="2.4" y="3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="A9" x="3.2" y="3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="B1" x="-3.2" y="2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="B2" x="-2.4" y="2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="B3" x="-1.6" y="2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="B7" x="1.6" y="2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="B8" x="2.4" y="2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="B9" x="3.2" y="2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="C1" x="-3.2" y="1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="C2" x="-2.4" y="1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="C3" x="-1.6" y="1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="C7" x="1.6" y="1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="C8" x="2.4" y="1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="C9" x="3.2" y="1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="D1" x="-3.2" y="0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="D2" x="-2.4" y="0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="D3" x="-1.6" y="0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="D7" x="1.6" y="0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="D8" x="2.4" y="0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="D9" x="3.2" y="0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="E1" x="-3.2" y="0" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="E2" x="-2.4" y="0" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="E3" x="-1.6" y="0" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="E7" x="1.6" y="0" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="E8" x="2.4" y="0" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="E9" x="3.2" y="0" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="F1" x="-3.2" y="-0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="F2" x="-2.4" y="-0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="F3" x="-1.6" y="-0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="F7" x="1.6" y="-0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="F8" x="2.4" y="-0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="F9" x="3.2" y="-0.8" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="G1" x="-3.2" y="-1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="G2" x="-2.4" y="-1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="G3" x="-1.6" y="-1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="G7" x="1.6" y="-1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="G8" x="2.4" y="-1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="G9" x="3.2" y="-1.6" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="H1" x="-3.2" y="-2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="H2" x="-2.4" y="-2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="H3" x="-1.6" y="-2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="H7" x="1.6" y="-2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="H8" x="2.4" y="-2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="H9" x="3.2" y="-2.4" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="J1" x="-3.2" y="-3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="J2" x="-2.4" y="-3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="J3" x="-1.6" y="-3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="J7" x="1.6" y="-3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="J8" x="2.4" y="-3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<smd name="J9" x="3.2" y="-3.2" dx="0.33" dy="0.33" layer="1" roundness="100" cream="no"/>
+<text x="-3.958" y="4.178" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.05" layer="21"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.05" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.05" layer="21"/>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="4" y="-4"/>
+<vertex x="-4" y="-4"/>
+<vertex x="-4" y="4"/>
+<vertex x="4" y="4"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-3.976" y="3.968"/>
+<vertex x="-3.976" y="2.368"/>
+<vertex x="-2.576" y="3.968"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC6655BHMS8">
@@ -3952,7 +4025,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="GND" x="2.54" y="-2.54" visible="off" length="short" rot="R180"/>
 <text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="W989D6DBGX6I-A">
+<symbol name="WINBOND-W989D6DBGX6I-A">
 <description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
 <wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
@@ -3975,7 +4048,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-22.86" size="1.778" layer="95">&gt;PN</text>
 </symbol>
-<symbol name="W989D6DBGX6I-B">
+<symbol name="WINBOND-W989D6DBGX6I-B">
 <description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
 <wire x1="0" y1="-71.12" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
@@ -5644,6 +5717,78 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="-22.86" size="1.778" layer="95">USB ESD Protection</text>
 <pin name="IO4" x="-2.54" y="-17.78" visible="pin" length="short"/>
 </symbol>
+<symbol name="ALLIANCE-AS4C8M16MSA-6BIN-A">
+<description>128M Low Power SDRAM</description>
+<wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<pin name="VDD_A9" x="-5.08" y="-2.54" length="middle"/>
+<pin name="VDDQ_A7" x="-5.08" y="-10.16" length="middle"/>
+<pin name="VSS_A1" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="VSSQ_A3" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="VDD_E7" x="-5.08" y="-5.08" length="middle"/>
+<pin name="VDDQ_B3" x="-5.08" y="-12.7" length="middle"/>
+<pin name="VSS_E3" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<pin name="VSSQ_B7" x="35.56" y="-12.7" length="middle" rot="R180"/>
+<pin name="VDD_J9" x="-5.08" y="-7.62" length="middle"/>
+<pin name="VDDQ_C7" x="-5.08" y="-15.24" length="middle"/>
+<pin name="VSS_J1" x="35.56" y="-7.62" length="middle" rot="R180"/>
+<pin name="VSSQ_C3" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="VDDQ_D3" x="-5.08" y="-17.78" length="middle"/>
+<pin name="VSSQ_D7" x="35.56" y="-17.78" length="middle" rot="R180"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-22.86" size="1.778" layer="95">&gt;PN</text>
+</symbol>
+<symbol name="ALLIANCE-AS4C8M16MSA-6BIN-B">
+<description>128M Low Power SDRAM</description>
+<wire x1="0" y1="-71.12" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-71.12" x2="0" y2="-71.12" width="0.254" layer="94"/>
+<pin name="!CAS!" x="-5.08" y="-55.88" length="middle"/>
+<pin name="!CS!" x="-5.08" y="-60.96" length="middle"/>
+<pin name="!RAS!" x="-5.08" y="-66.04" length="middle"/>
+<pin name="!WE!" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="A0" x="-5.08" y="-2.54" length="middle"/>
+<pin name="A1" x="-5.08" y="-5.08" length="middle"/>
+<pin name="A2" x="-5.08" y="-7.62" length="middle"/>
+<pin name="A3" x="-5.08" y="-10.16" length="middle"/>
+<pin name="A4" x="-5.08" y="-12.7" length="middle"/>
+<pin name="A5" x="-5.08" y="-15.24" length="middle"/>
+<pin name="A6" x="-5.08" y="-17.78" length="middle"/>
+<pin name="A7" x="-5.08" y="-20.32" length="middle"/>
+<pin name="A8" x="-5.08" y="-22.86" length="middle"/>
+<pin name="A9" x="-5.08" y="-25.4" length="middle"/>
+<pin name="A10" x="-5.08" y="-27.94" length="middle"/>
+<pin name="A11" x="-5.08" y="-30.48" length="middle"/>
+<pin name="A12" x="-5.08" y="-33.02" length="middle"/>
+<pin name="BA0" x="-5.08" y="-48.26" length="middle"/>
+<pin name="BA1" x="-5.08" y="-50.8" length="middle"/>
+<pin name="CKE" x="22.86" y="-50.8" length="middle" rot="R180"/>
+<pin name="CLK" x="22.86" y="-55.88" length="middle" rot="R180"/>
+<pin name="DQ0" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="DQ1" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="DQ2" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="DQ3" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="DQ4" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="DQ5" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="DQ6" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="DQ7" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="DQ8" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="DQ9" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="DQ10" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="DQ11" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="DQ12" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="DQ13" x="22.86" y="-40.64" length="middle" rot="R180"/>
+<pin name="DQ14" x="22.86" y="-43.18" length="middle" rot="R180"/>
+<pin name="DQ15" x="22.86" y="-45.72" length="middle" rot="R180"/>
+<pin name="LDQM" x="22.86" y="-66.04" length="middle" rot="R180"/>
+<pin name="NC" x="22.86" y="-60.96" length="middle" rot="R180"/>
+<pin name="UDQM" x="22.86" y="-68.58" length="middle" rot="R180"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-73.66" size="1.778" layer="95">&gt;PN</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC6655BHMS8" prefix="U">
@@ -6391,14 +6536,14 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="W989D6DBGX6I" prefix="U">
+<deviceset name="WINBOND-W989D6DBGX6I" prefix="U">
 <description>512Mbit SDRAM</description>
 <gates>
-<gate name="A" symbol="W989D6DBGX6I-A" x="0" y="-15.24"/>
-<gate name="B" symbol="W989D6DBGX6I-B" x="37.78" y="0"/>
+<gate name="A" symbol="WINBOND-W989D6DBGX6I-A" x="0" y="-15.24"/>
+<gate name="B" symbol="WINBOND-W989D6DBGX6I-B" x="37.78" y="0"/>
 </gates>
 <devices>
-<device name="" package="W989D6DBGX6I">
+<device name="" package="WINBOND-W989D6DBGX6I">
 <connects>
 <connect gate="A" pin="VDDQ_A7" pad="A7"/>
 <connect gate="A" pin="VDDQ_B3" pad="B3"/>
@@ -8601,11 +8746,6 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
