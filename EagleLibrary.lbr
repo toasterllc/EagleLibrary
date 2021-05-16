@@ -3479,10 +3479,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="-0.395" y1="-0.3965" x2="-0.395" y2="0.3965" width="0.05" layer="21"/>
 <wire x1="-0.395" y1="0.3965" x2="0.395" y2="0.3965" width="0.05" layer="21"/>
 <wire x1="0.395" y1="0.3965" x2="0.395" y2="-0.3965" width="0.05" layer="21"/>
-<smd name="A1" x="-0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no"/>
-<smd name="A2" x="0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no"/>
-<smd name="B1" x="-0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no"/>
-<smd name="B2" x="0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no"/>
+<smd name="A1" x="-0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="A2" x="0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="B1" x="-0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="B2" x="0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" thermals="no" cream="no"/>
 <text x="-0.36321875" y="0.48341875" size="0.762" layer="25" font="vector">&gt;NAME</text>
 <polygon width="0.05" layer="21">
 <vertex x="-0.371" y="0.371"/>
@@ -3619,6 +3619,31 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-3.976" y="3.968"/>
 <vertex x="-3.976" y="2.368"/>
 <vertex x="-2.576" y="3.968"/>
+</polygon>
+</package>
+<package name="MICROCHIP-MIC550X-SOT23-5" urn="urn:adsk.eagle:footprint:28687037/1" locally_modified="yes">
+<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.30 mm body
+&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.30 mm&lt;/p&gt;</description>
+<wire x1="0.85" y1="-1.5" x2="-0.85" y2="-1.5" width="0.05" layer="21"/>
+<wire x1="-0.85" y1="-1.5" x2="-0.85" y2="1.5" width="0.05" layer="21"/>
+<wire x1="-0.85" y1="1.5" x2="0.85" y2="1.5" width="0.05" layer="21"/>
+<wire x1="0.85" y1="1.5" x2="0.85" y2="-1.5" width="0.05" layer="21"/>
+<smd name="1" x="-1.2644" y="0.95" dx="1.1864" dy="0.5839" layer="1"/>
+<smd name="2" x="-1.2644" y="0" dx="1.1864" dy="0.5839" layer="1"/>
+<smd name="3" x="-1.2644" y="-0.95" dx="1.1864" dy="0.5839" layer="1"/>
+<smd name="4" x="1.2644" y="-0.95" dx="1.1864" dy="0.5839" layer="1"/>
+<smd name="5" x="1.2644" y="0.95" dx="1.1864" dy="0.5839" layer="1"/>
+<text x="-0.889" y="1.7419" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="0.85" y="-1.5"/>
+<vertex x="-0.85" y="-1.5"/>
+<vertex x="-0.85" y="1.5"/>
+<vertex x="0.85" y="1.5"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-0.83" y="1.476"/>
+<vertex x="-0.83" y="0.376"/>
+<vertex x="0.17" y="1.476"/>
 </polygon>
 </package>
 </packages>
@@ -5785,6 +5810,18 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="UDQM" x="22.86" y="-68.58" length="middle" rot="R180"/>
 <text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-73.66" size="1.778" layer="95">&gt;PN</text>
+</symbol>
+<symbol name="MICROCHIP-MIC550X">
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="VOUT" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-15.3641" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8805,6 +8842,26 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MICROCHIP-MIC550X" prefix="U">
+<gates>
+<gate name="G$1" symbol="MICROCHIP-MIC550X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICROCHIP-MIC550X-SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Microchip"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
@@ -8813,6 +8870,11 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
