@@ -3670,6 +3670,15 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-1.352" y="-1.861"/>
 </polygon>
 </package>
+<package name="PANASONIC-EKMB110711X">
+<text x="-3.017140625" y="5.811340625" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.54" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.65"/>
+<pad name="3" x="2.54" y="0" drill="0.65"/>
+<pad name="2" x="0" y="2.54" drill="0.65"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC6655BHMS8">
@@ -5862,6 +5871,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="-2.54" y1="-2.54" x2="-0.508" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="3.048" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 <pin name="B" x="5.08" y="-2.54" visible="off" length="point"/>
+</symbol>
+<symbol name="PANASONIC-EKMB110711X">
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="0" y="-10.16" size="1.778" layer="95">&gt;PN</text>
+<pin name="OUT" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8902,7 +8922,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EPSON-MC-306" prefix="Y">
+<deviceset name="EPSON-MC-306" prefix="X">
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -8915,6 +8935,26 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Epson"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PANASONIC-EKMB110711X" prefix="U">
+<description>Motion sensor</description>
+<gates>
+<gate name="G$1" symbol="PANASONIC-EKMB110711X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PANASONIC-EKMB110711X">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Panasonic"/>
 </technology>
 </technologies>
 </device>
