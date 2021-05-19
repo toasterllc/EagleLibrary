@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3720,6 +3720,29 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-2" y="-2.8"/>
 <vertex x="2" y="-2.8"/>
 <vertex x="2" y="2.8"/>
+</polygon>
+</package>
+<package name="ROHM-RB168MM-40TFTR" urn="urn:adsk.eagle:footprint:28823522/1" locally_modified="yes">
+<description>SODFL, 3.50 mm span, 2.60 X 1.60 X 0.90 mm body
+&lt;p&gt;SODFL package with 3.50 mm span with body size 2.60 X 1.60 X 0.90 mm&lt;/p&gt;</description>
+<wire x1="2.3364" y1="0.9699" x2="-2.3364" y2="0.9699" width="0.12" layer="21"/>
+<wire x1="-2.3364" y1="0.9699" x2="-2.3364" y2="-0.9699" width="0.12" layer="21"/>
+<wire x1="-2.3364" y1="-0.9699" x2="2.3364" y2="-0.9699" width="0.12" layer="21"/>
+<smd name="1" x="-1.525" y="0" dx="1.1948" dy="1.3118" layer="1"/>
+<smd name="2" x="1.525" y="0" dx="1.1948" dy="1.3118" layer="1"/>
+<text x="-2.41" y="1.2219" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="2.3364" y1="0.9699" x2="2.3364" y2="-0.9699" width="0.12" layer="21"/>
+<polygon width="0.12" layer="39">
+<vertex x="2.3364" y="-0.9699"/>
+<vertex x="-2.3364" y="-0.9699"/>
+<vertex x="-2.3364" y="0.9699"/>
+<vertex x="2.3364" y="0.9699"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="2.24" y="0.9"/>
+<vertex x="2.24" y="-0.9"/>
+<vertex x="0.24" y="-0.9"/>
+<vertex x="0.24" y="0.9"/>
 </polygon>
 </package>
 </packages>
@@ -9035,6 +9058,25 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ROHM-RB168MM-40TFTR" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ROHM-RB168MM-40TFTR">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="ROHM"/>
+<attribute name="PN" value="RB168MM-40TFTR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
@@ -9047,6 +9089,11 @@ which will not be processed correctly with this version.
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
