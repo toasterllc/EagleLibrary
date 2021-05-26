@@ -29,6 +29,8 @@ Board Finalization Checklist
 
     - Layout: Make sure there are no GNDX nets (which appear when copying vias)
 
+    - Layout: Make all via diameters 'auto'
+
     - Layout: Make sure vias are tented
 
     - Layout: Make sure top/bottom cream layers look sane
