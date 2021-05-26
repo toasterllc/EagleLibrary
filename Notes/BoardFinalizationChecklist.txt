@@ -13,6 +13,11 @@ Board Finalization Checklist
             - If this rule isn't adhered too, it will make using the PLL on that respective IO tile impossible
             - If PLLs aren't used, then this rule can be ignored
 
+        - ICE40: Verify that PIO pairs (2 pads that share the same PIO tile) use the same INPUT_CLK / OUTPUT_CLK / CLOCK_ENABLE.
+            - Best way is to make a simple design that uses all the IOs as they will eventually be used (in/out/inout)
+                - nextpnr will give an error if there's a conflict:
+                    ERROR: Bel 'X33/Y4/io1' of type 'SB_IO' is not valid for cell 'IO_B' of type 'SB_IO'
+
     - Layout: Ensure isolation on top/bottom layers is >= 10 mil
         In the past we've had issues with solder bridging across a component's pad to the surrounding ground plane
 
