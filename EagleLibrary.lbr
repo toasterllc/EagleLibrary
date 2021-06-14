@@ -5330,7 +5330,6 @@ the design uses this PLL</text>
 <text x="0" y="-50.8" size="1.778" layer="95">4x 2:1 Analog Switch</text>
 </symbol>
 <symbol name="NXP-NTB0102">
-<description>DRAM Chip Mobile LPSDR SDRAM 512M-Bit 32Mx16 1.8V 54-Pin VFBGA</description>
 <pin name="A1" x="-2.54" y="-15.24" visible="pin" length="short"/>
 <wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
