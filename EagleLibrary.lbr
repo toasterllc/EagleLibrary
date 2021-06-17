@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3810,6 +3810,48 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.17" y="1.035"/>
 </polygon>
 </package>
+<package name="DIODESINC-AP7366-SN-7" urn="urn:adsk.eagle:footprint:29411069/1" locally_modified="yes">
+<description>6-SON (DFN), 0.65 mm pitch, 2.01 X 2.01 X 0.63 mm body, 1.55 X 0.86 mm thermal pad
+&lt;p&gt;6-pin SON (DFN) package with 0.65 mm pitch with body size 2.01 X 2.01 X 0.63 mm and thermal pad size 1.55 X 0.86 mm&lt;/p&gt;</description>
+<wire x1="1.0375" y1="-1.0375" x2="-1.0375" y2="-1.0375" width="0.05" layer="21"/>
+<wire x1="-1.0375" y1="-1.0375" x2="-1.0375" y2="1.0375" width="0.05" layer="21"/>
+<wire x1="-1.0375" y1="1.0375" x2="1.0375" y2="1.0375" width="0.05" layer="21"/>
+<wire x1="1.0375" y1="1.0375" x2="1.0375" y2="-1.0375" width="0.05" layer="21"/>
+<smd name="1" x="-0.9763" y="0.65" dx="0.7651" dy="0.27" layer="1" roundness="100"/>
+<smd name="2" x="-0.9763" y="0" dx="0.7651" dy="0.27" layer="1" roundness="100"/>
+<smd name="3" x="-0.9763" y="-0.65" dx="0.7651" dy="0.27" layer="1" roundness="100"/>
+<smd name="4" x="0.9763" y="-0.65" dx="0.7651" dy="0.27" layer="1" roundness="100"/>
+<smd name="5" x="0.9763" y="0" dx="0.7651" dy="0.27" layer="1" roundness="100"/>
+<smd name="6" x="0.9763" y="0.65" dx="0.7651" dy="0.27" layer="1" roundness="100"/>
+<text x="-1.074421875" y="1.20371875" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<polygon width="0.05" layer="39">
+<vertex x="1.0375" y="-1.0375"/>
+<vertex x="-1.0375" y="-1.0375"/>
+<vertex x="-1.0375" y="1.0375"/>
+<vertex x="1.0375" y="1.0375"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-1.015" y="1.009"/>
+<vertex x="-1.015" y="0.009"/>
+<vertex x="-0.115" y="1.009"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="-1.2" y="0.1"/>
+<vertex x="-1.2" y="-0.1"/>
+<vertex x="-0.43" y="-0.1"/>
+<vertex x="-0.43" y="-0.775"/>
+<vertex x="0.43" y="-0.775"/>
+<vertex x="0.43" y="0.775"/>
+<vertex x="-0.43" y="0.775"/>
+<vertex x="-0.43" y="0.1"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="-0.25" y="0.5"/>
+<vertex x="-0.25" y="-0.5"/>
+<vertex x="0.25" y="-0.5"/>
+<vertex x="0.25" y="0.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC6655BHMS8">
@@ -5792,17 +5834,17 @@ tolerant of VDDUSB</text>
 <pin name="EN_" x="-2.54" y="-7.62" visible="pin" length="short"/>
 </symbol>
 <symbol name="TI-LM66100DCK">
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="CE_" x="20.32" y="-5.08" length="short" rot="R180"/>
-<pin name="GND" x="-2.54" y="-7.62" length="short"/>
+<pin name="CE_" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-7.62" visible="pin" length="short"/>
 <pin name="VOUT" x="20.32" y="-2.54" visible="off" length="point" rot="R180"/>
 <pin name="VIN" x="-2.54" y="-2.54" visible="off" length="point"/>
-<pin name="ST" x="-2.54" y="-5.08" length="short"/>
+<pin name="ST" x="20.32" y="-10.16" visible="pin" length="short" rot="R180"/>
 <text x="0.075" y="2.54" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left">&gt;NAME</text>
-<text x="0.075" y="-12.7" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<text x="0.075" y="-15.24" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
 <wire x1="7.62" y1="-0.635" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="-4.445" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-4.445" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
@@ -6037,6 +6079,19 @@ tolerant of VDDUSB</text>
 <text x="0.075" y="-12.8241" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
 <pin name="GND" x="-2.54" y="-7.62" visible="pin" length="short"/>
 <pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+</symbol>
+<symbol name="DIODESINC-AP7366-SN-7">
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VOUT" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-17.9041" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short"/>
+<pin name="EN" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="ADJ" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9187,6 +9242,28 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="ROHM"/>
 <attribute name="PN" value="RB161MM-20TR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODESINC-AP7366-SN-7" prefix="U">
+<gates>
+<gate name="G$1" symbol="DIODESINC-AP7366-SN-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIODESINC-AP7366-SN-7">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="6"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Diodes Incorporated"/>
+<attribute name="PN" value="AP7366-SN-7"/>
 </technology>
 </technologies>
 </device>
