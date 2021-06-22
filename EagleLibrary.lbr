@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -3876,6 +3876,41 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-0.657" y="1.077"/>
 <vertex x="-0.657" y="0.077"/>
 <vertex x="0.243" y="1.077"/>
+</polygon>
+</package>
+<package name="EPSON-FC-135">
+<description>16-QFN, 0.40 mm pitch, 2.60 X 1.80 X 0.55 mm body
+&lt;p&gt;16-pin QFN package with 0.40 mm pitch with body size 2.60 X 1.80 X 0.55 mm&lt;/p&gt;</description>
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1" cream="no"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1" cream="no"/>
+<text x="-1.7850625" y="1.2099625" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="1.9" y1="-1.05" x2="-1.9" y2="-1.05" width="0.05" layer="21"/>
+<wire x1="-1.9" y1="-1.05" x2="-1.9" y2="1.05" width="0.05" layer="21"/>
+<wire x1="-1.9" y1="1.05" x2="1.9" y2="1.05" width="0.05" layer="21"/>
+<wire x1="1.9" y1="1.05" x2="1.9" y2="-1.05" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="1.9" y="-1.05"/>
+<vertex x="-1.9" y="-1.05"/>
+<vertex x="-1.9" y="1.05"/>
+<vertex x="1.9" y="1.05"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="-1.55" y="0.55"/>
+<vertex x="-1.55" y="-0.55"/>
+<vertex x="-0.95" y="-0.55"/>
+<vertex x="-0.95" y="0.55"/>
+</polygon>
+<polygon width="0.05" layer="31">
+<vertex x="0.95" y="0.55"/>
+<vertex x="0.95" y="-0.55"/>
+<vertex x="1.55" y="-0.55"/>
+<vertex x="1.55" y="0.55"/>
+</polygon>
+<polygon width="0.05" layer="21">
+<vertex x="-1.9" y="1.02"/>
+<vertex x="-1.9" y="-1.02"/>
+<vertex x="0" y="-1.02"/>
+<vertex x="0" y="1.02"/>
 </polygon>
 </package>
 </packages>
@@ -9474,6 +9509,24 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Nexperia"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPSON-FC-135" prefix="X">
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EPSON-FC-135">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Epson"/>
 </technology>
 </technologies>
 </device>
