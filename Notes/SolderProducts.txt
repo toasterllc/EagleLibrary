@@ -25,6 +25,11 @@
     
     - Product:
         Next time, try a water-washable solder paste:
+            Chip Quik SMD4300SNL10
+                https://www.chipquik.com/store/product_info.php?products_id=430003
+                https://www.mouser.com/ProductDetail/Chip-Quik/SMD4300SNL10?qs=8BX3xQzFIvlNd3O5sO5qnQ%3D%3D
+                Cheaper than AMTECH, Mouser stocks
+            
             AMTECH LF-4300 solder paste
                 https://amtechdirect.com/shop/amtech-sn96-5-ag3-cu0-5-t3-water-washable-lead-free-solder-paste-rel0-lf-4300-35g-syringe/
             

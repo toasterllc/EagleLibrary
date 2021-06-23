@@ -3,6 +3,7 @@ Board Finalization Checklist
     - Schematic: Verify that all parts have the correct footprint
 
     - Schematic: Renumber parts based on schematic so that part numbers are organized
+        - Tools > Renumber parts...
 
     - Schematic: Export BOM and make sure all part numbers look good on Mouser
 
@@ -38,6 +39,8 @@ Board Finalization Checklist
     - Layout: Make sure pins of BGA chips don't have cream applied
 
     - Layout: Miter board corners
+
+    - Layout: Ensure bottom-left corner of board is at origin (0,0)
 
     - Layout: Update RevX text on board
 
