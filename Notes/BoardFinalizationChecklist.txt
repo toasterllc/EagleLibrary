@@ -41,6 +41,7 @@ Board Finalization Checklist
     - Layout: Miter board corners
 
     - Layout: Ensure bottom-left corner of board is at origin (0,0)
+        - This is needed for VisualPlace.exe to work properly.
 
     - Layout: Update RevX text on board
 
