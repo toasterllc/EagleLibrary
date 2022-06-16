@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -4014,6 +4014,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="0.17" y="1.476"/>
 </polygon>
 </package>
+<package name="EATON-STN101">
+<description>SODFL, 3.50 mm span, 2.60 X 1.60 X 0.90 mm body
+&lt;p&gt;SODFL package with 3.50 mm span with body size 2.60 X 1.60 X 0.90 mm&lt;/p&gt;</description>
+<wire x1="0.6" y1="0.4" x2="-0.6" y2="0.4" width="0.05" layer="21"/>
+<wire x1="-0.6" y1="0.4" x2="-0.6" y2="-0.4" width="0.05" layer="21"/>
+<wire x1="-0.6" y1="-0.4" x2="0.6" y2="-0.4" width="0.05" layer="21"/>
+<smd name="1" x="-0.325" y="0" dx="0.35" dy="0.6" layer="1"/>
+<smd name="2" x="0.325" y="0" dx="0.35" dy="0.6" layer="1"/>
+<text x="-0.645559375" y="0.45238125" size="0.762" layer="25" font="vector">&gt;NAME</text>
+<wire x1="0.6" y1="0.4" x2="0.6" y2="-0.4" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="0.6" y="-0.4"/>
+<vertex x="-0.6" y="-0.4"/>
+<vertex x="-0.6" y="0.4"/>
+<vertex x="0.6" y="0.4"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SON50P300X200X80-8N" urn="urn:adsk.eagle:package:36180302/1" type="model">
@@ -6421,6 +6438,16 @@ Charger</text>
 <text x="2.032" y="-9.652" size="0.508" layer="94">GND</text>
 <circle x="1.651" y="-2.54" radius="0.762" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="0.8382" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="EATON-STN101">
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-2.54" y="-2.54" visible="off" length="short"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<pin name="2" x="12.7" y="-2.54" visible="off" length="short" rot="R180"/>
+<text x="2.54" y="-3.302" size="1.778" layer="94">ESD</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9820,6 +9847,24 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Nexperia"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EATON-STN101" prefix="U">
+<gates>
+<gate name="G$1" symbol="EATON-STN101" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EATON-STN101">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Eaton"/>
 </technology>
 </technologies>
 </device>
