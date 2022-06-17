@@ -45,6 +45,9 @@ Board Finalization Checklist
 
     - Layout: Update RevX text on board
 
+    - Export board:
+        - Use OSHPark-Export-4Layer-MillingSlotPaths.cam script to export the design as a .zip of gerbers
+
     - Order parts
 
     - Order boards
