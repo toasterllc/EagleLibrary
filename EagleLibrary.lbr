@@ -4101,34 +4101,40 @@ SMD mount</description>
 <vertex x="4.32" y="-2.25"/>
 <vertex x="4.32" y="5.5"/>
 </polygon>
-<wire x1="-4.32" y1="5" x2="-4.32" y2="3.3" width="1" layer="1"/>
-<wire x1="-4.32" y1="5" x2="-4.32" y2="3.3" width="1" layer="16"/>
-<pad name="GND7" x="-4.32" y="5" drill="0.6" diameter="1" rot="R90"/>
-<wire x1="-4.32" y1="5" x2="-4.32" y2="3.3" width="1" layer="30"/>
-<pad name="GND8" x="-4.32" y="3.3" drill="0.6" diameter="1" rot="R90"/>
-<wire x1="-4.32" y1="5" x2="-4.32" y2="3.3" width="0.6" layer="46"/>
-<wire x1="-4.32" y1="5" x2="-4.32" y2="3.3" width="1" layer="29"/>
-<wire x1="4.32" y1="5" x2="4.32" y2="3.3" width="1" layer="1"/>
-<wire x1="4.32" y1="5" x2="4.32" y2="3.3" width="1" layer="16"/>
-<pad name="GND1" x="4.32" y="5" drill="0.6" diameter="1" rot="R90"/>
-<wire x1="4.32" y1="5" x2="4.32" y2="3.3" width="1" layer="30"/>
-<pad name="GND2" x="4.32" y="3.3" drill="0.6" diameter="1" rot="R90"/>
-<wire x1="4.32" y1="5" x2="4.32" y2="3.3" width="0.6" layer="46"/>
-<wire x1="4.32" y1="5" x2="4.32" y2="3.3" width="1" layer="29"/>
-<wire x1="-4.32" y1="0.7" x2="-4.32" y2="-0.7" width="1" layer="1"/>
-<wire x1="-4.32" y1="0.7" x2="-4.32" y2="-0.7" width="1" layer="16"/>
-<wire x1="-4.32" y1="0.7" x2="-4.32" y2="-0.7" width="1" layer="30"/>
-<wire x1="-4.32" y1="0.7" x2="-4.32" y2="-0.7" width="1" layer="29"/>
-<pad name="GND9" x="-4.32" y="0.7" drill="0.6" diameter="1" rot="R90"/>
-<pad name="GND10" x="-4.32" y="-0.7" drill="0.6" diameter="1" rot="R90"/>
-<wire x1="-4.32" y1="0.7" x2="-4.32" y2="-0.7" width="0.6" layer="46"/>
-<wire x1="4.32" y1="0.7" x2="4.32" y2="-0.7" width="1" layer="1"/>
-<wire x1="4.32" y1="0.7" x2="4.32" y2="-0.7" width="1" layer="16"/>
-<wire x1="4.32" y1="0.7" x2="4.32" y2="-0.7" width="1" layer="30"/>
-<wire x1="4.32" y1="0.7" x2="4.32" y2="-0.7" width="1" layer="29"/>
-<pad name="GND3" x="4.32" y="0.7" drill="0.6" diameter="1" rot="R90"/>
-<pad name="GND4" x="4.32" y="-0.7" drill="0.6" diameter="1" rot="R90"/>
-<wire x1="4.32" y1="0.7" x2="4.32" y2="-0.7" width="0.6" layer="46"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="1" layer="1"/>
+<pad name="GND7" x="-4.32" y="4.73" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="1" layer="30"/>
+<pad name="GND8" x="-4.32" y="3.63" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="0.6" layer="46"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="1" layer="29"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="1" layer="16"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="1" layer="2"/>
+<wire x1="-4.32" y1="4.73" x2="-4.32" y2="3.63" width="1" layer="15"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="1" layer="1"/>
+<pad name="GND1" x="4.32" y="4.73" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="1" layer="30"/>
+<pad name="GND2" x="4.32" y="3.63" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="0.6" layer="46"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="1" layer="29"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="1" layer="16"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="1" layer="2"/>
+<wire x1="4.32" y1="4.73" x2="4.32" y2="3.63" width="1" layer="15"/>
+<pad name="GND5" x="-4.32" y="0.4" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="-4.32" y1="0.4" x2="-4.32" y2="-0.4" width="1" layer="30"/>
+<pad name="GND6" x="-4.32" y="-0.4" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="-4.32" y1="0.4" x2="-4.32" y2="-0.4" width="0.6" layer="46"/>
+<wire x1="-4.32" y1="0.4" x2="-4.32" y2="-0.4" width="1" layer="29"/>
+<wire x1="-4.32" y1="0.4" x2="-4.32" y2="-0.4" width="1" layer="16"/>
+<wire x1="-4.32" y1="0.4" x2="-4.32" y2="-0.4" width="1" layer="2"/>
+<wire x1="-4.32" y1="0.4" x2="-4.32" y2="-0.4" width="1" layer="15"/>
+<pad name="GND3" x="4.32" y="0.4" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="4.32" y1="0.4" x2="4.32" y2="-0.4" width="1" layer="30"/>
+<pad name="GND4" x="4.32" y="-0.4" drill="0.6" diameter="1" rot="R90"/>
+<wire x1="4.32" y1="0.4" x2="4.32" y2="-0.4" width="0.6" layer="46"/>
+<wire x1="4.32" y1="0.4" x2="4.32" y2="-0.4" width="1" layer="29"/>
+<wire x1="4.32" y1="0.4" x2="4.32" y2="-0.4" width="1" layer="16"/>
+<wire x1="4.32" y1="0.4" x2="4.32" y2="-0.4" width="1" layer="2"/>
+<wire x1="4.32" y1="0.4" x2="4.32" y2="-0.4" width="1" layer="15"/>
 </package>
 </packages>
 <packages3d>
@@ -10032,7 +10038,7 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="CC2" pad="B5"/>
 <connect gate="G$1" pin="D+" pad="A6 B6"/>
 <connect gate="G$1" pin="D-" pad="A7 B7"/>
-<connect gate="G$1" pin="GND" pad="A1B12 B1A12 GND1 GND2 GND3 GND4 GND7 GND8 GND9 GND10"/>
+<connect gate="G$1" pin="GND" pad="A1B12 B1A12 GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8"/>
 <connect gate="G$1" pin="SBU1" pad="A8"/>
 <connect gate="G$1" pin="SBU2" pad="B8"/>
 <connect gate="G$1" pin="VBUS" pad="A4B9 B4A9"/>
