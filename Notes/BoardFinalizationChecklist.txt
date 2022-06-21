@@ -47,6 +47,8 @@ Board Finalization Checklist
 
     - Export board:
         - Use OSHPark-Export-4Layer-MillingSlotPaths.cam script to export the design as a .zip of gerbers
+            - We use this to export slots correctly, since Eagle doesn't support slots natively
+            - See https://docs.oshpark.com/design-tools/eagle/cutouts-and-slots/
 
     - Order parts
 
