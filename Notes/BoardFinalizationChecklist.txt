@@ -4,6 +4,7 @@ Board Finalization Checklist
 
     - Schematic: Renumber parts based on schematic so that part numbers are organized
         - Tools > Renumber parts...
+            - Weighting of emphases: Y-direction
 
     - Schematic: Export BOM and make sure all part numbers look good on Mouser
 
@@ -47,8 +48,18 @@ Board Finalization Checklist
 
     - Export board:
         - Use OSHPark-Export-4Layer-MillingSlotPaths.cam script to export the design as a .zip of gerbers
-            - We use this to export slots correctly, since Eagle doesn't support slots natively
+            - This script is necessary so that slots are properly generated (such as those in the USB-C-JACK part).
+              Eagle doesn't support slots natively, so we have to use a special layout to indicate slots.
+            
             - See https://docs.oshpark.com/design-tools/eagle/cutouts-and-slots/
+            
+            - Usage:
+                - Double-click OSHPark-Export-4Layer-MillingSlotPaths.cam script in Finder
+                - In the window that Eagle opens, click the 'Select Board...' button in the lower-left
+                - Select the .brd file
+                - Click the 'Process Job' button
+                - Save the .zip file
+                - Upload the .zip file to OSHPark
 
     - Order parts
 

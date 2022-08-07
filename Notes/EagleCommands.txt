@@ -36,3 +36,6 @@
       pin short both io R0 'VCC'      (0 -00.0);
       pin short both io R0 'VCCIO'    (0 -00.1);
       ...
+
+* Eagle: Calculate trace lengths
+    run length-freq-ri
