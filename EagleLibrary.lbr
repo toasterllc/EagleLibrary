@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -4172,6 +4172,32 @@ SMD mount</description>
 <smd name="1" x="-2.65" y="1" dx="2.1" dy="0.89" layer="1" roundness="40"/>
 <smd name="2" x="2.65" y="1" dx="2.1" dy="0.89" layer="1" roundness="40"/>
 </package>
+<package name="TI-TLV62568ADRL">
+<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<smd name="1" x="-0.74" y="0.5" dx="0.67" dy="0.3" layer="1" roundness="50"/>
+<smd name="2" x="-0.74" y="0" dx="0.67" dy="0.3" layer="1" roundness="50"/>
+<smd name="3" x="-0.74" y="-0.5" dx="0.67" dy="0.3" layer="1" roundness="50"/>
+<smd name="4" x="0.74" y="-0.5" dx="0.67" dy="0.3" layer="1" roundness="50"/>
+<smd name="5" x="0.74" y="0" dx="0.67" dy="0.3" layer="1" roundness="50"/>
+<text x="-0.595459375" y="0.926559375" size="0.762" layer="25" font="vector">&gt;NAME</text>
+<wire x1="0.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="-0.6" y1="-0.8" x2="-0.6" y2="0.8" width="0.05" layer="21"/>
+<wire x1="-0.6" y1="0.8" x2="0.6" y2="0.8" width="0.05" layer="21"/>
+<wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="0.6" y="-0.8"/>
+<vertex x="-0.6" y="-0.8"/>
+<vertex x="-0.6" y="0.8"/>
+<vertex x="0.6" y="0.8"/>
+</polygon>
+<smd name="6" x="0.74" y="0.5" dx="0.67" dy="0.3" layer="1" roundness="50"/>
+<polygon width="0.05" layer="21">
+<vertex x="-0.6" y="0.8"/>
+<vertex x="-0.6" y="-0.1"/>
+<vertex x="0.2" y="0.8"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SON50P300X200X80-8N" urn="urn:adsk.eagle:package:36180302/1" type="model">
@@ -6638,6 +6664,19 @@ Connector</text>
 <pin name="3" x="-2.54" y="-5.08" visible="pad" length="short" swaplevel="1"/>
 <pin name="4" x="10.16" y="-5.08" visible="pad" length="short" swaplevel="1" rot="R180"/>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="TI-TLV62568A">
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-17.78" visible="pin" length="short"/>
+<pin name="FB" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="SW" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<text x="0.075" y="0.8919" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0.075" y="-22.9841" size="1.778" layer="95" ratio="10" rot="SR0">&gt;PN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10118,6 +10157,28 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <technology name="">
 <attribute name="MFG" value="Wurth"/>
 <attribute name="PN" value="621004242921"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TLV62568A" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TLV62568A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TLV62568ADRL">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2 6" route="any"/>
+<connect gate="G$1" pin="SW" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Texas Instruments"/>
+<attribute name="PN" value="TLV62568ADRL"/>
 </technology>
 </technologies>
 </device>
