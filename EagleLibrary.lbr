@@ -6577,12 +6577,8 @@ the design uses this PLL</text>
 <pin name="PA7_R3" x="33.02" y="-20.32" length="middle" rot="R180"/>
 <pin name="PA8_F15" x="33.02" y="-22.86" length="middle" rot="R180"/>
 <pin name="PA9_E15" x="33.02" y="-25.4" length="middle" rot="R180"/>
-<text x="12.7" y="-30.226" size="0.762" layer="95" align="top-right">Powered by VDDUSB;
-Only use with voltages
-tolerant of VDDUSB</text>
-<wire x1="14.986" y1="-30.48" x2="13.462" y2="-30.48" width="0.254" layer="95"/>
-<wire x1="14.986" y1="-33.02" x2="13.462" y2="-33.02" width="0.254" layer="95"/>
-<wire x1="13.462" y1="-30.48" x2="13.462" y2="-33.02" width="0.254" layer="95"/>
+<text x="13.716" y="-31.496" size="0.762" layer="95" align="top-right">Powered by VDDUSB</text>
+<wire x1="14.732" y1="-29.972" x2="14.732" y2="-33.782" width="0.254" layer="95"/>
 </symbol>
 <symbol name="STM-STM32F730I8-B">
 <pin name="PB0_R5" x="20.32" y="-2.54" length="middle" rot="R180"/>
@@ -6631,35 +6627,34 @@ tolerant of VDDUSB</text>
 <wire x1="27.94" y1="-43.18" x2="0" y2="-43.18" width="0.254" layer="94"/>
 <text x="0.254" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-45.72" size="1.778" layer="95">&gt;PN</text>
-<text x="12.192" y="-37.846" size="0.762" layer="95" align="top-right">Limited drive strength</text>
-<wire x1="14.986" y1="-35.56" x2="13.462" y2="-35.56" width="0.254" layer="95"/>
-<wire x1="14.986" y1="-38.1" x2="13.462" y2="-38.1" width="0.254" layer="95"/>
-<wire x1="14.986" y1="-40.64" x2="13.462" y2="-40.64" width="0.254" layer="95"/>
-<wire x1="13.462" y1="-35.56" x2="13.462" y2="-40.64" width="0.254" layer="95"/>
+<text x="13.97" y="-38.1" size="0.762" layer="95" align="top-right">Limited drive strength</text>
+<wire x1="14.732" y1="-35.052" x2="14.732" y2="-41.402" width="0.254" layer="95"/>
 </symbol>
 <symbol name="STM-STM32F730I8-D">
-<pin name="PD0_B12" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="PD1_C12" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="PD10_N15" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="PD11_N14" x="20.32" y="-30.48" length="middle" rot="R180"/>
-<pin name="PD12_N13" x="20.32" y="-33.02" length="middle" rot="R180"/>
-<pin name="PD13_M15" x="20.32" y="-35.56" length="middle" rot="R180"/>
-<pin name="PD14_M14" x="20.32" y="-38.1" length="middle" rot="R180"/>
-<pin name="PD15_L14" x="20.32" y="-40.64" length="middle" rot="R180"/>
-<pin name="PD2_D12" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="PD3_D11" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="PD4_D10" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="PD5_C11" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="PD6_B11" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="PD7_A11" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="PD8_P15" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="PD9_P14" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="PD0_B12" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="PD1_C12" x="33.02" y="-5.08" length="middle" rot="R180"/>
+<pin name="PD10_N15" x="33.02" y="-27.94" length="middle" rot="R180"/>
+<pin name="PD11_N14" x="33.02" y="-30.48" length="middle" rot="R180"/>
+<pin name="PD12_N13" x="33.02" y="-33.02" length="middle" rot="R180"/>
+<pin name="PD13_M15" x="33.02" y="-35.56" length="middle" rot="R180"/>
+<pin name="PD14_M14" x="33.02" y="-38.1" length="middle" rot="R180"/>
+<pin name="PD15_L14" x="33.02" y="-40.64" length="middle" rot="R180"/>
+<pin name="PD2_D12" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="PD3_D11" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="PD4_D10" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="PD5_C11" x="33.02" y="-15.24" length="middle" rot="R180"/>
+<pin name="PD6_B11" x="33.02" y="-17.78" length="middle" rot="R180"/>
+<pin name="PD7_A11" x="33.02" y="-20.32" length="middle" rot="R180"/>
+<pin name="PD8_P15" x="33.02" y="-22.86" length="middle" rot="R180"/>
+<pin name="PD9_P14" x="33.02" y="-25.4" length="middle" rot="R180"/>
 <wire x1="0" y1="-43.18" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-43.18" x2="0" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-43.18" x2="0" y2="-43.18" width="0.254" layer="94"/>
 <text x="0.254" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-45.72" size="1.778" layer="95">&gt;PN</text>
+<text x="13.716" y="-18.542" size="0.762" layer="95" align="top-right">Powered by VDDSDMMC</text>
+<wire x1="14.986" y1="-17.018" x2="14.986" y2="-21.336" width="0.254" layer="95"/>
 </symbol>
 <symbol name="STM-STM32F730I8-E">
 <pin name="PE0_A4" x="20.32" y="-2.54" length="middle" rot="R180"/>
@@ -6710,26 +6705,28 @@ tolerant of VDDUSB</text>
 <text x="0" y="-45.72" size="1.778" layer="95">&gt;PN</text>
 </symbol>
 <symbol name="STM-STM32F730I8-G">
-<pin name="PG0_N7" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="PG1_M7" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="PG10_B10" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="PG11_B9" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="PG12_B8" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="PG13_A8" x="20.32" y="-30.48" length="middle" rot="R180"/>
-<pin name="PG14_A7" x="20.32" y="-33.02" length="middle" rot="R180"/>
-<pin name="PG15_B7" x="20.32" y="-35.56" length="middle" rot="R180"/>
-<pin name="PG2_L15" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="PG3_K15" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="PG4_K14" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="PG5_K13" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="PG8_H14" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="PG9_C10" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="PG0_N7" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="PG1_M7" x="33.02" y="-5.08" length="middle" rot="R180"/>
+<pin name="PG10_B10" x="33.02" y="-22.86" length="middle" rot="R180"/>
+<pin name="PG11_B9" x="33.02" y="-25.4" length="middle" rot="R180"/>
+<pin name="PG12_B8" x="33.02" y="-27.94" length="middle" rot="R180"/>
+<pin name="PG13_A8" x="33.02" y="-30.48" length="middle" rot="R180"/>
+<pin name="PG14_A7" x="33.02" y="-33.02" length="middle" rot="R180"/>
+<pin name="PG15_B7" x="33.02" y="-35.56" length="middle" rot="R180"/>
+<pin name="PG2_L15" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="PG3_K15" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="PG4_K14" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="PG5_K13" x="33.02" y="-15.24" length="middle" rot="R180"/>
+<pin name="PG8_H14" x="33.02" y="-17.78" length="middle" rot="R180"/>
+<pin name="PG9_C10" x="33.02" y="-20.32" length="middle" rot="R180"/>
 <wire x1="0" y1="-38.1" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-38.1" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="27.94" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-38.1" x2="0" y2="-38.1" width="0.254" layer="94"/>
 <text x="0.254" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-40.64" size="1.778" layer="95">&gt;PN</text>
+<text x="13.462" y="-23.622" size="0.762" layer="95" align="top-right">Powered by VDDSDMMC</text>
+<wire x1="14.224" y1="-19.558" x2="14.224" y2="-28.448" width="0.254" layer="95"/>
 </symbol>
 <symbol name="STM-STM32F730I8-H">
 <pin name="PH0_G1" x="20.32" y="-2.54" length="middle" rot="R180"/>
