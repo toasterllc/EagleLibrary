@@ -4993,6 +4993,32 @@ Contact Housing: JST SHR-02V-S</description>
 <smd name="2" x="0.65" y="-1.1" dx="0.5" dy="0.8" layer="1"/>
 <smd name="3" x="0" y="1.1" dx="0.5" dy="0.8" layer="1"/>
 </package>
+<package name="TI-TXB0102YZP">
+<smd name="A1" x="-0.25" y="0.75" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="0.25" y="0.75" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="B1" x="-0.25" y="0.25" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="B2" x="0.25" y="0.25" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="C1" x="-0.25" y="-0.25" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="C2" x="0.25" y="-0.25" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<text x="-0.479740625" y="1.067990625" size="0.508" layer="25" font="vector" rot="SR0">&gt;NAME</text>
+<wire x1="-0.5" y1="-1" x2="0.5" y2="-1" width="0.05" layer="21"/>
+<wire x1="0.5" y1="-1" x2="0.5" y2="1" width="0.05" layer="21"/>
+<wire x1="0.5" y1="1" x2="-0.5" y2="1" width="0.05" layer="21"/>
+<wire x1="-0.5" y1="1" x2="-0.5" y2="-1" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-0.5" y="1"/>
+<vertex x="-0.5" y="-1"/>
+<vertex x="0.5" y="-1"/>
+<vertex x="0.5" y="1"/>
+</polygon>
+<smd name="D1" x="-0.25" y="-0.75" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="D2" x="0.25" y="-0.75" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<polygon width="0.05" layer="21">
+<vertex x="-0.5" y="1"/>
+<vertex x="-0.5" y="0.2"/>
+<vertex x="0.5" y="1"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SON50P300X200X80-8N" urn="urn:adsk.eagle:package:36180302/1" type="model">
@@ -7526,6 +7552,23 @@ Connect</text>
 <text x="0" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="middle"/>
+</symbol>
+<symbol name="TI-TXB0102">
+<pin name="A1" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<text x="0" y="-25.4" size="1.778" layer="95">&gt;PN</text>
+<text x="0" y="2.54" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<pin name="B1" x="22.86" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="OE" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="VCCA" x="-2.54" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="-5.08" visible="pin" length="short"/>
+<pin name="A2" x="-2.54" y="-20.32" visible="pin" length="short"/>
+<pin name="B2" x="22.86" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="VCCB" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="0" y="-27.94" size="1.778" layer="95">Level Shifter</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11196,6 +11239,31 @@ NOTE: Footprint is to be used on the edge of a PCB and may require the use of th
 <technology name="">
 <attribute name="MFG" value="Torex"/>
 <attribute name="PN" value="XP231P02013R-G"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TI-TXB0102" prefix="U">
+<gates>
+<gate name="G$1" symbol="TI-TXB0102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TI-TXB0102YZP">
+<connects>
+<connect gate="G$1" pin="A1" pad="D2"/>
+<connect gate="G$1" pin="A2" pad="D1"/>
+<connect gate="G$1" pin="B1" pad="A2"/>
+<connect gate="G$1" pin="B2" pad="A1"/>
+<connect gate="G$1" pin="GND" pad="B1"/>
+<connect gate="G$1" pin="OE" pad="C2"/>
+<connect gate="G$1" pin="VCCA" pad="C1"/>
+<connect gate="G$1" pin="VCCB" pad="B2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="TI"/>
+<attribute name="PN" value="TXB0102YZP"/>
 </technology>
 </technologies>
 </device>
