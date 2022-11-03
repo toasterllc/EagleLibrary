@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -4972,6 +4972,8 @@ Contact Housing: JST SHR-02V-S</description>
 <description>Chip, 3.20 X 2.50 X 0.70 mm body
 &lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
 <pad name="1" x="0" y="0" drill="1.7" thermals="no"/>
+<circle x="0" y="0" radius="1.75" width="0" layer="41"/>
+<circle x="0" y="0" radius="1.75" width="0" layer="42"/>
 <circle x="0" y="0" radius="1.75" width="0" layer="39"/>
 <circle x="0" y="0" radius="1.75" width="0" layer="40"/>
 </package>
