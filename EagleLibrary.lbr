@@ -7655,13 +7655,13 @@ Connect</text>
 <symbol name="TI-MSP430FR2433IRGE-PORT1">
 <description>16 MHz MCU with 8KB FRAM, 2KB SRAM, 10-bit ADC, UART/SPI/I2C, timer</description>
 <wire x1="0" y1="-22.86" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="55.88" y2="0" width="0.254" layer="94"/>
-<wire x1="55.88" y1="0" x2="55.88" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="55.88" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="58.42" y2="0" width="0.254" layer="94"/>
+<wire x1="58.42" y1="0" x2="58.42" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="58.42" y1="-22.86" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <text x="0" y="2.286" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="0" y="-23.622" size="1.778" layer="95" align="top-left">&gt;PN</text>
 <pin name="PA.0/P1.0/UCB0STE/TA0CLK/A0/VEREF+" x="-2.54" y="-2.54" length="short"/>
-<text x="48.26" y="-2.54" size="1.778" layer="94">Port 1</text>
+<text x="50.8" y="-2.54" size="1.778" layer="94">Port 1</text>
 <pin name="PA.1/P1.1/UCB0CLK/TA0.1/A1" x="-2.54" y="-5.08" length="short"/>
 <pin name="PA.2/P1.2/UCB0SIMO/UCB0SDA/TA0.2/A2/VEREF-" x="-2.54" y="-7.62" length="short"/>
 <pin name="PA.3/P1.3/UCB0SOMI/UCB0SCL/MCLK/A3" x="-2.54" y="-10.16" length="short"/>
