@@ -4972,8 +4972,6 @@ Contact Housing: JST SHR-02V-S</description>
 <description>Chip, 3.20 X 2.50 X 0.70 mm body
 &lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
 <pad name="1" x="0" y="0" drill="1.7" thermals="no"/>
-<circle x="0" y="0" radius="1.75" width="0" layer="41"/>
-<circle x="0" y="0" radius="1.75" width="0" layer="42"/>
 <circle x="0" y="0" radius="1.75" width="0" layer="39"/>
 <circle x="0" y="0" radius="1.75" width="0" layer="40"/>
 </package>
