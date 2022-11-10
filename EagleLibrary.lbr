@@ -5106,6 +5106,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </polygon>
 <rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
 </package>
+<package name="DEALON-TD-1624UR-180">
+<description>Chip, 1.60 X 0.80 X 0.70 mm body
+&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.70 mm&lt;/p&gt;</description>
+<smd name="1" x="-1.625" y="0" dx="0.55" dy="1.5" layer="1"/>
+<smd name="2" x="1.625" y="0" dx="0.55" dy="1.5" layer="1"/>
+<text x="-1.438" y="1.123" size="0.508" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.05" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="1.5" y2="-1" width="0.05" layer="21"/>
+<wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.05" layer="21"/>
+<wire x1="1.5" y1="1" x2="-1.5" y2="1" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-1.5" y="1"/>
+<vertex x="-1.5" y="-1"/>
+<vertex x="1.5" y="-1"/>
+<vertex x="1.5" y="1"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SON50P300X200X80-8N" urn="urn:adsk.eagle:package:36180302/1" type="model">
@@ -5904,16 +5921,16 @@ the design uses this PLL</text>
 <text x="0" y="0.762" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SWITCH">
-<text x="-5.08" y="0.381" size="1.778" layer="95" align="top-left">&gt;NAME</text>
-<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-2.54" x2="3.175" y2="-4.445" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="3.175" y2="-5.08" width="0.1524" layer="94"/>
-<pin name="X" x="-5.08" y="-2.54" visible="off" length="short"/>
-<pin name="Y2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<pin name="Y1" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<text x="-3.048" y="3.683" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<wire x1="1.905" y1="0" x2="3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0" x2="8.255" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="1.27" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="8.255" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="8.255" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="X" x="0" y="0" visible="off" length="short"/>
+<pin name="Y2" x="10.16" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="Y1" x="10.16" y="-2.54" visible="off" length="short" rot="R180"/>
 </symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
@@ -7718,6 +7735,15 @@ Connect</text>
 <text x="17.78" y="-2.54" size="1.778" layer="94">Port 3</text>
 <pin name="PB.1/P3.1/UCA1STE" x="-2.54" y="-5.08" length="short"/>
 <pin name="PB.2/P3.2" x="-2.54" y="-7.62" length="short"/>
+</symbol>
+<symbol name="TACTILE-SWITCH">
+<pin name="1" x="0" y="0" visible="off" length="middle" function="dot"/>
+<pin name="2" x="15.24" y="0" visible="off" length="middle" function="dot" rot="R180"/>
+<wire x1="4.064" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="11.176" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.842" y1="4.318" x2="7.62" y2="4.318" width="0.254" layer="94"/>
+<wire x1="7.62" y1="4.318" x2="9.398" y2="4.318" width="0.254" layer="94"/>
+<wire x1="7.62" y1="4.318" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11486,6 +11512,22 @@ NOTE: Footprint is to be used on the edge of a PCB and may require the use of th
 <attribute name="MFG" value="Texas Instruments"/>
 <attribute name="PN" value="MSP430FR2433IRGE"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TACTILE-SWITCH" prefix="SW">
+<gates>
+<gate name="G$1" symbol="TACTILE-SWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DEALON-TD-1624UR-180">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
