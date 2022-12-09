@@ -5159,11 +5159,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </polygon>
 </package>
 <package name="MOLEX-781710002">
-<smd name="4" x="-1.75" y="-3.775" dx="0.7" dy="0.8" layer="1" cream="no"/>
+<smd name="4" x="-1.75" y="-3.775" dx="0.7" dy="0.8" layer="1"/>
 <text x="-2.577" y="0.769" size="0.6096" layer="25" font="vector">&gt;NAME</text>
-<smd name="3" x="1.75" y="-3.775" dx="0.7" dy="0.8" layer="1" cream="no"/>
-<smd name="1" x="-0.6" y="0" dx="0.6" dy="0.85" layer="1" cream="no"/>
-<smd name="2" x="0.6" y="0" dx="0.6" dy="0.85" layer="1" cream="no"/>
+<smd name="3" x="1.75" y="-3.775" dx="0.7" dy="0.8" layer="1"/>
+<smd name="1" x="-0.6" y="0" dx="0.6" dy="0.85" layer="1"/>
+<smd name="2" x="0.6" y="0" dx="0.6" dy="0.85" layer="1"/>
 <wire x1="-2.5" y1="-4.715" x2="-2.5" y2="0.6" width="0.05" layer="21"/>
 <wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.05" layer="21"/>
 <wire x1="2.5" y1="0.6" x2="2.5" y2="-4.715" width="0.05" layer="21"/>
