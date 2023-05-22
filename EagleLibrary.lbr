@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -7801,6 +7801,21 @@ Connect</text>
 <wire x1="7.62" y1="4.318" x2="9.398" y2="4.318" width="0.254" layer="94"/>
 <wire x1="7.62" y1="4.318" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 </symbol>
+<symbol name="NEXPERIA-74LVC1G98-MUX-INV-OUTPUT">
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="OUT" x="15.24" y="-12.7" visible="off" length="point" rot="R180"/>
+<pin name="VDD" x="2.54" y="2.54" visible="pin" length="short" rot="R270"/>
+<text x="12.7" y="-25.4" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<pin name="GND" x="7.62" y="2.54" visible="pin" length="short" rot="R270"/>
+<pin name="0" x="-2.54" y="-10.16" visible="pin" length="short"/>
+<pin name="1" x="-2.54" y="-15.24" visible="pin" length="short"/>
+<pin name="SEL" x="5.08" y="-27.94" visible="pin" length="short" rot="R90"/>
+<circle x="11.176" y="-12.7" radius="0.762" width="0.254" layer="94"/>
+<wire x1="11.938" y1="-12.7" x2="15.24" y2="-12.7" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC6655BHMS8" prefix="U">
@@ -11616,6 +11631,28 @@ NOTE: Footprint is to be used on the edge of a PCB and may require the use of th
 <technology name="">
 <attribute name="MFG" value="Molex"/>
 <attribute name="PN" value="781710002"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NEXPERIA-74LVC1G98-MUX-INV-OUTPUT" prefix="U">
+<gates>
+<gate name="G$1" symbol="NEXPERIA-74LVC1G98-MUX-INV-OUTPUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NEXPERIA-SOT363">
+<connects>
+<connect gate="G$1" pin="0" pad="1"/>
+<connect gate="G$1" pin="1" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="SEL" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Nexperia"/>
 </technology>
 </technologies>
 </device>
