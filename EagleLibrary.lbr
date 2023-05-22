@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -5177,6 +5177,32 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="-2.5" y="-4.715"/>
 <vertex x="-2.5" y="0.6"/>
 <vertex x="2.5" y="0.6"/>
+</polygon>
+</package>
+<package name="NEXPERIA-NXB0102UN">
+<smd name="A1" x="-0.2" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="0.2" y="0.6" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="B1" x="-0.2" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="B2" x="0.2" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="C1" x="-0.2" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="C2" x="0.2" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<text x="-0.479740625" y="1.067990625" size="0.508" layer="25" font="vector" rot="SR0">&gt;NAME</text>
+<wire x1="-0.4" y1="-0.8" x2="0.4" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="0.4" y1="-0.8" x2="0.4" y2="0.8" width="0.05" layer="21"/>
+<wire x1="0.4" y1="0.8" x2="-0.4" y2="0.8" width="0.05" layer="21"/>
+<wire x1="-0.4" y1="0.8" x2="-0.4" y2="-0.8" width="0.05" layer="21"/>
+<polygon width="0.05" layer="39">
+<vertex x="-0.4" y="0.8"/>
+<vertex x="-0.4" y="-0.8"/>
+<vertex x="0.4" y="-0.8"/>
+<vertex x="0.4" y="0.8"/>
+</polygon>
+<smd name="D1" x="-0.2" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<smd name="D2" x="0.2" y="-0.6" dx="0.2" dy="0.2" layer="1" roundness="100" cream="no"/>
+<polygon width="0.05" layer="21">
+<vertex x="-0.4" y="0.8"/>
+<vertex x="-0.4" y="0.2"/>
+<vertex x="0.4" y="0.8"/>
 </polygon>
 </package>
 </packages>
@@ -11653,6 +11679,31 @@ NOTE: Footprint is to be used on the edge of a PCB and may require the use of th
 <technologies>
 <technology name="">
 <attribute name="MFG" value="Nexperia"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NEXPERIA-NXB0102" prefix="U">
+<gates>
+<gate name="G$1" symbol="NXP-NTB0102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NEXPERIA-NXB0102UN">
+<connects>
+<connect gate="G$1" pin="A1" pad="D2"/>
+<connect gate="G$1" pin="A2" pad="D1"/>
+<connect gate="G$1" pin="B1" pad="A2"/>
+<connect gate="G$1" pin="B2" pad="A1"/>
+<connect gate="G$1" pin="GND" pad="B1"/>
+<connect gate="G$1" pin="OE" pad="C2"/>
+<connect gate="G$1" pin="VCCA" pad="C1"/>
+<connect gate="G$1" pin="VCCB" pad="B2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MFG" value="Nexperia"/>
+<attribute name="PN" value="NXB0102UN"/>
 </technology>
 </technologies>
 </device>
