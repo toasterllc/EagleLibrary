@@ -1,7 +1,7 @@
 {
     "author": {
-        "email": "support@oshpark.com",
-        "name": "Dan Sheadel"
+        "email": "davekeck@gmail.com",
+        "name": "David Keck"
     },
     "description": {
         "EN": "CAM for <a href=\"https://oshpark.com/\">OSHPark</a>'s 4 layer PCB service.<br> <b>WARNING:</b> This CAM must only be used when slots are indicated as shown on our <a href=\"https://docs.oshpark.com/design-tools/eagle/cutouts-and-slots/\">Eagle Slots</a> page. <br><b>WARNING</b>: Eagle's DRC does not support slots, and un-detected errors are common on internal layers using slots. Verify copper layers near slots manually."
@@ -129,7 +129,8 @@
                     "layers": [
                         1,
                         17,
-                        18
+                        18,
+                        53
                     ],
                     "milling": false,
                     "name": "Top Copper Layer",
@@ -207,7 +208,8 @@
                     "layers": [
                         16,
                         17,
-                        18
+                        18,
+                        54
                     ],
                     "milling": false,
                     "name": "Bottom Copper Layer",
@@ -356,13 +358,19 @@
             ]
         },
         {
+            "filename_prefix": "CAMOutputs/Assembly",
+            "output_type": "assembly",
+            "outputs": [
+            ]
+        },
+        {
             "filename_prefix": "CAMOutputs/DrawingFiles",
             "output_type": "drawing",
             "outputs": [
             ]
         }
     ],
-    "timestamp": "2020-05-06T20:31:27",
+    "timestamp": "2023-05-23T20:13:37",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "8.6.0"

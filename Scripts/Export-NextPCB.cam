@@ -130,7 +130,8 @@
                     "layers": [
                         1,
                         17,
-                        18
+                        18,
+                        53
                     ],
                     "milling": false,
                     "name": "Top Copper Layer",
@@ -208,7 +209,8 @@
                     "layers": [
                         16,
                         17,
-                        18
+                        18,
+                        54
                     ],
                     "milling": false,
                     "name": "Bottom Copper Layer",
@@ -325,7 +327,7 @@
             ]
         }
     ],
-    "timestamp": "2022-11-23T18:39:06",
+    "timestamp": "2023-05-23T20:12:04",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"
