@@ -5225,6 +5225,37 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </polygon>
 <wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.381" layer="53"/>
 </package>
+<package name="MDC-CUTOUT">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<polygon width="0" layer="41">
+<vertex x="0" y="2.25"/>
+<vertex x="0" y="-2.25"/>
+<vertex x="1.5" y="0"/>
+</polygon>
+<polygon width="0" layer="41">
+<vertex x="0" y="1.6" curve="-180"/>
+<vertex x="0" y="-1.6"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="0" y="2.25"/>
+<vertex x="0" y="-2.25"/>
+<vertex x="1.5" y="0"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="0" y="1.6" curve="-180"/>
+<vertex x="0" y="-1.6"/>
+</polygon>
+<polygon width="0" layer="46">
+<vertex x="0" y="2.25"/>
+<vertex x="0" y="-2.25"/>
+<vertex x="1.5" y="0"/>
+</polygon>
+<polygon width="0" layer="46">
+<vertex x="0" y="1.6" curve="-180"/>
+<vertex x="0" y="-1.6"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SON50P300X200X80-8N" urn="urn:adsk.eagle:package:36180302/1" type="model">
@@ -7861,6 +7892,11 @@ Connect</text>
 <pin name="SEL" x="5.08" y="-27.94" length="short" rot="R90"/>
 <circle x="11.176" y="-12.7" radius="0.762" width="0.254" layer="94"/>
 <wire x1="11.938" y1="-12.7" x2="15.24" y2="-12.7" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="MDC-CUTOUT">
+<text x="0" y="-5.08" size="1.778" layer="95">Cutout</text>
+<text x="0" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11734,6 +11770,18 @@ NOTE: Footprint is to be used on the edge of a PCB and may require the use of th
 <attribute name="MFG" value="Nexperia"/>
 <attribute name="PN" value="NXB0102UN"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MDC-CUTOUT" prefix="X">
+<gates>
+<gate name="G$1" symbol="MDC-CUTOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MDC-CUTOUT">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
