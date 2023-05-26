@@ -7744,7 +7744,7 @@ Header</text>
 <pin name="D+" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
 <pin name="D-" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
 <text x="0" y="0.508" size="1.778" layer="95">&gt;NAME</text>
-<text x="0.762" y="-32.258" size="1.778" layer="94">USB-C Jack</text>
+<text x="0.762" y="-32.258" size="1.778" layer="94">USB-C</text>
 <text x="0" y="-35.56" size="1.778" layer="95">&gt;PN</text>
 <pin name="SBU1" x="17.78" y="-25.4" visible="pin" length="short" rot="R180"/>
 <pin name="SBU2" x="17.78" y="-27.94" visible="pin" length="short" rot="R180"/>
@@ -11454,7 +11454,10 @@ Low Input Voltage Noise: 0.98 nV/√Hz</description>
 <connect gate="G$1" pin="VBUS" pad="A9B4 B9A4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MFG" value="G-Switch"/>
+<attribute name="PN" value="GT-USB-7030A"/>
+</technology>
 </technologies>
 </device>
 </devices>
