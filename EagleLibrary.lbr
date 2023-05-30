@@ -5272,11 +5272,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pad name="GND3" x="4.9" y="-0.775" drill="0.55" rot="R90"/>
 <pad name="GND4" x="4.9" y="-1.675" drill="0.55" rot="R90"/>
 <wire x1="4.9" y1="-0.775" x2="4.9" y2="-1.675" width="0.55" layer="46"/>
-<wire x1="-4.9" y1="3.35" x2="-4.9" y2="-0.1" width="0.05" layer="21"/>
-<wire x1="-4.9" y1="-0.1" x2="-4.9" y2="-3.8" width="0.05" layer="21"/>
+<wire x1="-4.9" y1="3.35" x2="-4.9" y2="-3.8" width="0.05" layer="21"/>
 <wire x1="-4.9" y1="-3.8" x2="4.9" y2="-3.8" width="0.05" layer="21"/>
-<wire x1="4.9" y1="-3.8" x2="4.9" y2="-0.1" width="0.05" layer="21"/>
-<wire x1="4.9" y1="-0.1" x2="4.9" y2="3.35" width="0.05" layer="21"/>
+<wire x1="4.9" y1="-3.8" x2="4.9" y2="3.35" width="0.05" layer="21"/>
 <wire x1="4.9" y1="3.35" x2="-4.9" y2="3.35" width="0.05" layer="21"/>
 <polygon width="0.05" layer="39">
 <vertex x="-4.9" y="3.35"/>
@@ -5284,10 +5282,16 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="4.9" y="-3.8"/>
 <vertex x="4.9" y="3.35"/>
 </polygon>
-<wire x1="-4.9" y1="-0.1" x2="4.9" y2="-0.1" width="0" layer="20"/>
+<wire x1="-5.1" y1="-0.1" x2="5.1" y2="-0.1" width="0" layer="20"/>
 <text x="-0.778759375" y="-0.5138" size="0.254" layer="25" font="vector">PCB edge</text>
 <wire x1="-2" y1="0" x2="2" y2="0" width="0" layer="21"/>
 <text x="-0.778759375" y="0.1862" size="0.254" layer="25" font="vector">Overhang</text>
+</package>
+<package name="MDC-CUTOUT-HALF">
+<description>Chip, 3.20 X 2.50 X 0.70 mm body
+&lt;p&gt;Chip package with body size 3.20 X 2.50 X 0.70 mm&lt;/p&gt;</description>
+<wire x1="0.5" y1="1.5" x2="0" y2="2.25" width="0" layer="20"/>
+<wire x1="0.5" y1="1.5" x2="1.6" y2="0" width="0" layer="20" curve="-72.368171"/>
 </package>
 </packages>
 <packages3d>
@@ -11830,7 +11834,12 @@ NOTE: Footprint is to be used on the edge of a PCB and may require the use of th
 <gate name="G$1" symbol="MDC-CUTOUT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MDC-CUTOUT">
+<device name="-FULL" package="MDC-CUTOUT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-HALF" package="MDC-CUTOUT-HALF">
 <technologies>
 <technology name=""/>
 </technologies>
