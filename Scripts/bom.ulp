@@ -230,10 +230,11 @@ string SeparatorString;
 int     NumParts;
 numeric string Lines[];
 numeric string PartName[];
-string  PartValue[], PartDevice[], PartPackage[], PartHeadline[];
+string  PartValue[], PartDevice[], PartPackage[], PartHeadline[], PartNumber[];
 numeric string PartDescription [];
 int     PartValueOn[];
 int     Selected;
+int     PartNumberAttributeIndex = -1;
 
 string CurrentVariant = "";
 string Variants[] = { "" };  // 2012-04-16
@@ -280,6 +281,7 @@ string ReplaceTabs(string s)
 //            PartDevice[]
 //            PartPackage[]
 //            PartHeadline[]
+//            PartNumber[]
 //            PartDescription []
 //            PartValueOn[]      - 0=part value off, 1= part value on, 2=override with attr. VAL
 //            FoundAttributes     - # of different attribute names found in schematic.
@@ -338,6 +340,21 @@ void CollectPartData (string var)
       }
     }
     sort (FoundAttributes, AttributesList);
+    
+    for (i = 0; i < FoundAttributes; i ++)
+    {
+      if (AttributesList[i] == "PN")
+      {
+        PartNumberAttributeIndex = i;
+        break;
+      }
+    }
+    
+    if (PartNumberAttributeIndex < 0)
+    {
+        dlgMessageBox ("No 'PN' attribute detected on any parts");
+        exit (1);
+    }
   }
   // Second, collect all data
   schematic (SCH)
@@ -367,6 +384,12 @@ void CollectPartData (string var)
                 attr[i] = A.value;
                 break;
               }
+              
+              if (A.name == "PN")
+              {
+                PartNumber[NumParts] = A.value;
+              }
+              
             if ("VALUE" == A.name && 0 < strlen (A.value))
              // Override old fashioned value information!
             PartValueOn[NumParts] = 2;
@@ -406,7 +429,7 @@ void GenerateValueList (void)
 {
   int NumLines = 0;
   int Index [];
-  string attr[], s, s_val;
+  string attr[], s;
 
   if (UseAttributes) s = strjoin(AttributesList, '\t');
 
@@ -417,13 +440,17 @@ void GenerateValueList (void)
   {
     int i1 = Index [n1];
     strsplit (attr, PartAttributes[i1], Separator);
+    string pn = attr[PartNumberAttributeIndex];
     if (UseAttributes) s = strjoin(attr, '\t');
-    s_val = attr[i1];
     if (n2 < NumParts)
     {
       int i2 = Index [n2]; // 2012-11-08
-      strsplit (attr, PartAttributes[i2], Separator);
-      if (PartValue[i1] == PartValue[i2] && PartDevice[i1] == PartDevice[i2] && PartAttributes[i1] == PartAttributes[i2]) // 2012-11-08 check diffent values of attributes
+      
+      string attr2[];
+      strsplit(attr2, PartAttributes[i2], Separator);
+      
+      string pn2 = attr2[PartNumberAttributeIndex];
+      if (pn != "" && pn2 != "" && pn == pn2)
         continue;
     }
     string Quantity;
