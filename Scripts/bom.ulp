@@ -242,15 +242,12 @@ int    VDsel = 0;
 
 
 // cwi: Added arrays for an arbitraty number of attributes.
-int UseAttributes = 1;
 int FoundAttributes = 0;            // # of different attribute names found in schematic.
 numeric string AttributesList[];    // Sorted list of all attributes found in the schematic.
 numeric string PartAttributes[];    // Adjusted list of attributes per part.
 
 enum { ltParts, ltValues };         // List Types
-enum { ofText, ofCSV, ofHTML };     // Output Formats
 int ListType = 0;
-int OutputFormat = 0;
 
 
 string StripWhiteSpace (string s)
@@ -297,49 +294,47 @@ void CollectPartData (string var)
 
   // First, collect the names of all available attributes.
   FoundAttributes = 0;
-  if (UseAttributes) {
-    schematic (SCH)
+  schematic (SCH)
+  {
+    SCH.allparts (P) // 2014-08-07
     {
-      SCH.allparts (P) // 2014-08-07
+      if (P.device.package)
       {
-        if (P.device.package)
+        if (P.populate)
         {
-          if (P.populate)
+          P.attributes (A)
           {
-            P.attributes (A)
+            if (0 == FoundAttributes)
             {
-              if (0 == FoundAttributes)
+              // First one
+              AttributesList[0] = A.name;
+              FoundAttributes = 1;
+            }
+            else
+            {
+              Found = 0;
+              for (i = 0; i < FoundAttributes; i ++)
               {
-                // First one
-                AttributesList[0] = A.name;
-                FoundAttributes = 1;
+                if (A.name == AttributesList[i])
+                {
+                  // Found an already listed atrribute
+                  Found = 1;
+                  break;
+                }
               }
-              else
+              if (0 == Found)
               {
-                Found = 0;
-                for (i = 0; i < FoundAttributes; i ++)
-                {
-                  if (A.name == AttributesList[i])
-                  {
-                    // Found an already listed atrribute
-                    Found = 1;
-                    break;
-                  }
-                }
-                if (0 == Found)
-                {
-                  // Attribute not listed, add at the end.
-                  AttributesList[FoundAttributes] = A.name;
-                  FoundAttributes ++;
-                }
+                // Attribute not listed, add at the end.
+                AttributesList[FoundAttributes] = A.name;
+                FoundAttributes ++;
               }
             }
           }
         }
       }
     }
-    sort (FoundAttributes, AttributesList);
   }
+  sort (FoundAttributes, AttributesList);
   // Second, collect all data
   schematic (SCH)
   {
@@ -386,36 +381,13 @@ void CollectPartData (string var)
   }
 }
 
-
-void GeneratePartList(void)
-{
-  int NumLines = 0;
-  string attr[], s;
-
-  if (UseAttributes) s = strjoin(AttributesList, '\t');
-  Lines[NumLines ++] = tr ("Part\tValue\tDevice\tPackage\tDescription\t") + s;
-  for (int i = 0; i < NumParts; i ++)
-  {
-    strsplit (attr, PartAttributes[i], Separator);
-    if (UseAttributes) s = strjoin(attr, '\t');
-    Lines[NumLines] = PartName[i] + "\t" + PartValue[i] + "\t" + PartDevice[i] + "\t" +
-                       PartPackage[i] + "\t" + PartHeadline[i] + "\t" + s;
-    NumLines ++;
-  }
-  Lines[NumLines] = "";
-}
-
-
-// Generate list with one entry per value.
-// 'VALUE' is replaced by the value of attribute 'VAL', if existing.
-
-void GenerateValueList (void)
+void GenerateList (void)
 {
   int NumLines = 0;
   int Index [];
   string attr[], s;
 
-  if (UseAttributes) s = strjoin(AttributesList, '\t');
+  s = strjoin(AttributesList, '\t');
 
   Lines[NumLines ++] = tr ("Qty\tParts\t") + s;
   sort (NumParts, Index, PartNumber, PartName, PartAttributes);
@@ -423,7 +395,7 @@ void GenerateValueList (void)
   {
     int i1 = Index [n1];
     strsplit (attr, PartAttributes[i1], Separator);
-    if (UseAttributes) s = strjoin(attr, '\t');
+    s = strjoin(attr, '\t');
     if (n2 < NumParts)
     {
       int i2 = Index [n2]; // 2012-11-08
@@ -453,16 +425,6 @@ void GenerateValueList (void)
 }
 
 
-void GenerateList (void)
-{
-  switch (ListType)
-  {
-    case ltParts:  GeneratePartList (); break;
-    case ltValues: GenerateValueList (); break;
-  }
-}
-
-
 string MakeListHeader (void)
 {
   string s;
@@ -472,47 +434,7 @@ string MakeListHeader (void)
 }
 
 
-string MakeListText(void)
-{
-  int l, Width [];
-  string List;
-  int numHeaders;
-
-  for (l = 0; Lines[l]; l ++)
-  {
-    string a [];
-    for (int n = strsplit (a, Lines[l], '\t'); n --; )
-      Width [n] = max (Width [n], strlen (a [n]));
-  }
-
-  List = MakeListHeader () + "\n\n";
-
-  for (l = 0; Lines[l]; l ++)
-  {
-    string line, a [];
-
-    int n = strsplit (a, Lines[l], '\t');
-    if (l == 0)
-      numHeaders = n;
-    else
-      n = numHeaders; // for the hidden key!
-    for (int i = 0; i < n; i ++)
-    {
-      string s;
-
-      sprintf (s, "%s%-*s", line ? " " : "", Width [i], a [i]);
-      line += s;
-    }
-    List += line + "\n";
-  }
-  return List;
-}
-
-
-// 2008-11-24 Christian Schlittler:
-// Make comma-serparated list, with all values double-quoted.
-
-string MakeListCSV (void)
+string MakeList (void)
 {
   string List;
   int numHeaders;
@@ -533,54 +455,12 @@ string MakeListCSV (void)
 }
 
 
-string MakeListHTML (void)
-{
-  string List;
-  int numHeaders;
-
-  List = "<b>" + MakeListHeader() + "</b>\n<p>\n";
-  List += "<table>\n";
-  for (int l = 0; Lines[l]; l++)
-  {
-    List += "<tr>";
-    string a [];
-    int n = strsplit (a, Lines[l], '\t');
-    if (l == 0)
-      numHeaders = n;
-    else
-      n = numHeaders; // for the hidden key!
-    for (int i = 0; i < n; i ++)
-    {
-      if (l == 0)
-        a[i] = "<b>" + a[i] + "</b>";
-      List += "<td>" + a[i] + "</td>";
-    }
-    List += "</tr>\n";
-  }
-  List += "</table>\n";
-  return List;
-}
-
-
-string MakeList (void)
-{
-  switch (OutputFormat)
-  {
-    case ofText: return MakeListText(); break;
-    case ofCSV:  return MakeListCSV(); break;
-    case ofHTML: return MakeListHTML(); break;
-  }
-  return "";
-}
-
-
 void ViewList (void)
 {
   dlgDialog (tr ("Bill Of Material - Preview"))
   {
     string s = MakeList ();
-    if (OutputFormat == ofText || OutputFormat == ofCSV)
-      s = "<pre>" + s + "</pre>";
+    s = "<pre>" + s + "</pre>";
     dlgHBoxLayout dlgSpacing (400);
     dlgHBoxLayout
     {
@@ -602,14 +482,8 @@ void SaveList (void)
   // - Added new format extension .csv
   // - Changed from .bom to .txt for text format.
   string FileName;
-  string FileExt;
+  string FileExt = ".csv";
 
-  switch (OutputFormat)
-  {
-    case ofText: FileExt = ".txt"; break;
-    case ofHTML: FileExt = ".html"; break;
-    case ofCSV:  FileExt = ".csv"; break;
-  }
   schematic(SCH) FileName = filesetext (SCH.name, FileExt);
   FileName = dlgFileSave (tr ("Save Bill Of Material"), FileName);
   if (FileName)
@@ -660,50 +534,4 @@ schematic(SCH) {
 setvariant(CurrentVariant);
 CollectPartData(CurrentVariant);
 GenerateList();
-
-dlgDialog (tr ("Bill Of Material"))
-{
-  dlgHBoxLayout {
-    dlgLabel(tr ("Current &variant "));
-    dlgComboBox(Variants, VDsel) {
-      CurrentVariant = Variants[VDsel];
-      setvariant(CurrentVariant);
-      CollectPartData(CurrentVariant);
-      GenerateList();
-    }
-    dlgStretch(1);
-  }
-  dlgListView ("", Lines, Selected);
-  dlgHBoxLayout
-  {
-    dlgGroup(tr ("List type"))
-    {
-      dlgRadioButton(tr ("&Parts"), ListType) GeneratePartList ();
-      dlgRadioButton(tr ("&Values"), ListType) GenerateValueList ();
-      dlgCheckBox(tr ("List &attributes"), UseAttributes) {
-        if (!UseAttributes) {
-          NumParts = 0;
-        }
-        CollectPartData(CurrentVariant);
-        GenerateList();
-      }
-    }
-    dlgGroup (tr ("Output format"))
-    {
-      // 2008-10-09: Entries swapped for correct function.
-      dlgRadioButton(tr ("&Text"), OutputFormat);
-      // 2008-11-24 cwi: New format added.
-      dlgRadioButton(tr ("&CSV"), OutputFormat);
-      dlgRadioButton(tr ("&HTML"), OutputFormat);
-    }
-    dlgStretch(1);
-  }
-  dlgHBoxLayout  {
-    dlgPushButton (tr ("+Vie&w"))    ViewList ();
-    dlgPushButton (tr ("&Save...")) SaveList ();
-    dlgPushButton (tr ("H&elp"))    DisplayHelp ();
-    dlgPushButton (tr ("-Close"))   dlgAccept ();
-    dlgStretch(1);
-    dlgLabel("Version " + Version);
-  }
-};
+SaveList();
