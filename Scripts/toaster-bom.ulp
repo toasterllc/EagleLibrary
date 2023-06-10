@@ -14,19 +14,21 @@ string SeparatorString;
 sprintf(SeparatorString, "%c", Separator);
 
 int     NumParts;
+int     Index[];
 numeric string Lines[];
 numeric string PartName[];
 string  PartNumber[];
+int     PartOurStock[];
 
 int FoundAttributes = 0;            // # of different attribute names found in schematic.
 numeric string AttributesList[];    // Sorted list of all attributes found in the schematic.
 numeric string PartAttributes[];    // Adjusted list of attributes per part.
 
-enum { ExportTypeAll, ExportTypeMountFab, ExportTypeCancel };
+enum { ExportTypeFull, ExportTypeFabNextPCB, ExportTypeCancel };
 int ExportType = 0;
 
 int IncludePart(UL_PART P) {
-    if (ExportType == ExportTypeAll) return 1;
+    if (ExportType == ExportTypeFull) return 1;
     
     P.attributes(A) {
         if (A.name=="AS-MOUNT-FAB" && strtol(A.value)) {
@@ -38,135 +40,196 @@ int IncludePart(UL_PART P) {
 
 void CollectPartData ()
 {
-  int Found = 0;
-  int i;
-  string attr[];
+    int Found = 0;
+    int i;
+    string attr[];
 
-  NumParts = 0;
+    NumParts = 0;
 
-  // First, collect the names of all available attributes.
-  FoundAttributes = 0;
-  schematic (SCH)
-  {
-    SCH.allparts (P) // 2014-08-07
+    // First, collect the names of all available attributes.
+    FoundAttributes = 0;
+    schematic (SCH)
     {
-      if (P.device.package)
-      {
-        if (P.populate)
+        SCH.allparts (P) // 2014-08-07
         {
-          P.attributes (A)
-          {
-            if (0 == FoundAttributes)
+            if (P.device.package)
             {
-              // First one
-              AttributesList[0] = A.name;
-              FoundAttributes = 1;
+                if (P.populate)
+                {
+                    P.attributes (A)
+                    {
+                        if (0 == FoundAttributes)
+                        {
+                            // First one
+                            AttributesList[0] = A.name;
+                            FoundAttributes = 1;
+                        }
+                        else
+                        {
+                            Found = 0;
+                            for (i = 0; i < FoundAttributes; i ++)
+                            {
+                                if (A.name == AttributesList[i])
+                                {
+                                    // Found an already listed atrribute
+                                    Found = 1;
+                                    break;
+                                }
+                            }
+                            if (0 == Found)
+                            {
+                                // Attribute not listed, add at the end.
+                                AttributesList[FoundAttributes] = A.name;
+                                FoundAttributes ++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    sort (FoundAttributes, AttributesList);
+    // Second, collect all data
+    schematic (SCH)
+    {
+        SCH.allparts (P)
+        {
+            if (P.device.package)
+            {
+                if (P.populate)
+                {
+                    if (IncludePart(P))
+                    {
+                        PartName[NumParts] = P.name;
+                        // Zero all strings
+                        for (i = 0; i < FoundAttributes; i ++)
+                            attr[i] = "";
+                        P.attributes(A)
+                        {
+                            for (i = 0; i < FoundAttributes; i ++)
+                                if (A.name == AttributesList[i])
+                                {
+                                    attr[i] = A.value;
+                                    break;
+                                }
+                        
+                                if (A.name == "PN")
+                                {
+                                    PartNumber[NumParts] = A.value;
+                                }
+                                
+                                if (A.name == "AS-OUR-STOCK")
+                                {
+                                    PartOurStock[NumParts] = strtol(A.value);
+                                }
+                        }
+                        PartAttributes[NumParts] = strjoin(attr, Separator);
+                        NumParts ++;
+                    }
+                }
+            }
+        }
+    }
+    
+    sort(NumParts, Index, PartNumber, PartName, PartOurStock, PartAttributes);
+}
+
+void GenerateList_Full (void)
+{
+    int NumLines = 0;
+    string attr[], s;
+
+    s = strjoin(AttributesList, '\t');
+
+    Lines[NumLines ++] = "Quantity\tParts\t" + s;
+    for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
+    {
+        int i1 = Index [n1];
+        strsplit (attr, PartAttributes[i1], Separator);
+        s = strjoin(attr, '\t');
+        if (n2 < NumParts)
+        {
+            int i2 = Index [n2]; // 2012-11-08
+            if (PartNumber[i1]!="" && PartNumber[i2]!="" && PartNumber[i1]==PartNumber[i2])
+                continue;
+        }
+        string Quantity;
+        sprintf (Quantity, "%d", n2 - n1);
+        Lines[NumLines] = Quantity + "\t";
+        for (;;)
+        {
+            Lines[NumLines] += PartName[i1];
+            if (++n1 < n2)
+            {
+                i1 = Index [n1];
+                Lines[NumLines] += ", ";
             }
             else
-            {
-              Found = 0;
-              for (i = 0; i < FoundAttributes; i ++)
-              {
-                if (A.name == AttributesList[i])
-                {
-                  // Found an already listed atrribute
-                  Found = 1;
-                  break;
-                }
-              }
-              if (0 == Found)
-              {
-                // Attribute not listed, add at the end.
-                AttributesList[FoundAttributes] = A.name;
-                FoundAttributes ++;
-              }
-            }
-          }
+                break;
         }
-      }
+        Lines[NumLines] += "\t" + s;
+        NumLines ++;
     }
-  }
-  sort (FoundAttributes, AttributesList);
-  // Second, collect all data
-  schematic (SCH)
-  {
-    SCH.allparts (P)
-    {
-      if (P.device.package)
-      {
-        if (P.populate)
-        {
-          if (IncludePart(P))
-          {
-              PartName[NumParts] = P.name;
-              // Zero all strings
-              for (i = 0; i < FoundAttributes; i ++)
-                attr[i] = "";
-              P.attributes(A)
-              {
-                for (i = 0; i < FoundAttributes; i ++)
-                  if (A.name == AttributesList[i])
-                  {
-                    attr[i] = A.value;
-                    break;
-                  }
-              
-                  if (A.name == "PN")
-                  {
-                    PartNumber[NumParts] = A.value;
-                  }
-              }
-              PartAttributes[NumParts] = strjoin(attr, Separator);
-              NumParts ++;
-          }
-        }
-      }
-    }
-  }
+    Lines[NumLines] = "";
 }
 
-void GenerateList (void)
+
+
+void GenerateList_FabNextPCB (void)
 {
-  int NumLines = 0;
-  int Index [];
-  string attr[], s;
+    int NumLines = 0;
+    string attr[], s;
 
-  s = strjoin(AttributesList, '\t');
+    s = strjoin(AttributesList, '\t');
 
-  Lines[NumLines ++] = "Quantity\tParts\t" + s;
-  sort (NumParts, Index, PartNumber, PartName, PartAttributes);
-  for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
-  {
-    int i1 = Index [n1];
-    strsplit (attr, PartAttributes[i1], Separator);
-    s = strjoin(attr, '\t');
-    if (n2 < NumParts)
+    Lines[NumLines ++] = "Manufacturer Part Number\tQty\tDesignator\tCustomer Supply\tCustomer Remark";
+    for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
     {
-      int i2 = Index [n2]; // 2012-11-08
-      if (PartNumber[i1] != "" && PartNumber[i2] != "" && PartNumber[i1] == PartNumber[i2])
-        continue;
+        int i1 = Index [n1];
+        strsplit (attr, PartAttributes[i1], Separator);
+        s = strjoin(attr, '\t');
+        if (n2 < NumParts)
+        {
+            int i2 = Index [n2];
+            if (PartNumber[i1]!="" && PartNumber[i2]!="" && PartNumber[i1]==PartNumber[i2]) {
+                // Require AS-OUR-STOCK to match for all parts with the same part number
+                if (PartOurStock[i1] != PartOurStock[i2]) {
+                    dlgMessageBox("AS-OUR-STOCK mismatch between " + PartName[i1] + " and " + PartName[i2]);
+                    exit(1);
+                }
+                continue;
+            }
+        }
+        
+        // Part number
+        Lines[NumLines] = PartNumber[i1] + "\t";
+        
+        // Quantity
+        string Quantity;
+        sprintf (Quantity, "%d", n2 - n1);
+        Lines[NumLines] += Quantity + "\t";
+        
+        // Part names
+        for (;;) {
+            Lines[NumLines] += PartName[i1];
+            if (++n1 < n2)
+            {
+                i1 = Index [n1];
+                Lines[NumLines] += ", ";
+            }
+            else
+                break;
+        }
+        Lines[NumLines] += "\t";
+        
+        // Our stock?
+        Lines[NumLines] += (PartOurStock[i1] ? "Y" : "") + "\t";
+        NumLines ++;
     }
-    string Quantity;
-    sprintf (Quantity, "%d", n2 - n1);
-    Lines[NumLines] = Quantity + "\t";
-    for (;;)
-    {
-      Lines[NumLines] += PartName[i1];
-      if (++n1 < n2)
-      {
-        i1 = Index [n1];
-        Lines[NumLines] += ", ";
-      }
-      else
-        break;
-    }
-    // cwi: add extra information from attributes
-    // 2010-04-17 cwi: Included description.
-    Lines[NumLines] += "\t" + s;
-    NumLines ++;
-  }
-  Lines[NumLines] = "";
+    Lines[NumLines] = "";
 }
+
+
 
 string MakeList (void)
 {
@@ -202,9 +265,12 @@ void SaveList (void)
   }
 }
 
-ExportType = dlgMessageBox("Export all parts (AS-MOUNT), or only fab-mounted parts (AS-MOUNT-FAB)?", "AS-MOUNT", "AS-MOUNT-FAB", "Cancel");
+ExportType = dlgMessageBox("Select export type\t\t\t\t", "Full", "Fab (NextPCB)", "Cancel");
 if (ExportType == ExportTypeCancel) exit(0);
 
 CollectPartData();
-GenerateList();
+switch (ExportType) {
+case ExportTypeFull:        GenerateList_Full(); break;
+case ExportTypeFabNextPCB:  GenerateList_FabNextPCB(); break;
+}
 SaveList();
