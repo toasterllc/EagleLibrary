@@ -417,9 +417,8 @@ void GenerateValueList (void)
 
   if (UseAttributes) s = strjoin(AttributesList, '\t');
 
-  // 2010-04-17 cwi: Included description.
-  Lines[NumLines ++] = tr ("Qty\tValue\tDevice\tPackage\tParts\tDescription\t") + s;                 // 2011-04-08
-  sort (NumParts, Index, PartNumber, PartValue, PartDevice, PartPackage, PartAttributes, PartName, PartHeadline); // 2011-11-08 Partattribute jetzt nach Package alf@cadsoft.de
+  Lines[NumLines ++] = tr ("Qty\tParts\t") + s;
+  sort (NumParts, Index, PartNumber, PartName, PartAttributes);
   for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
   {
     int i1 = Index [n1];
@@ -433,7 +432,7 @@ void GenerateValueList (void)
     }
     string Quantity;
     sprintf (Quantity, "%d", n2 - n1);
-    Lines[NumLines] = Quantity + "\t" + PartValue[i1] + "\t" + PartDevice[i1] + "\t" + PartPackage[i1] + "\t";
+    Lines[NumLines] = Quantity + "\t";
     for (;;)
     {
       Lines[NumLines] += PartName[i1];
@@ -447,7 +446,7 @@ void GenerateValueList (void)
     }
     // cwi: add extra information from attributes
     // 2010-04-17 cwi: Included description.
-    Lines[NumLines] += "\t" + PartHeadline[i1] + "\t" + s;
+    Lines[NumLines] += "\t" + s;
     NumLines ++;
   }
   Lines[NumLines] = "";
