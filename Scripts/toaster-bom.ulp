@@ -3,15 +3,16 @@
 //
 // - Toaster 2023-6-10
 
-char Separator = ';';
-
 if (!schematic)
 {
   dlgMessageBox (usage + "<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.");
   exit (1);
 }
 
+char Separator = ';';
 string SeparatorString;
+sprintf(SeparatorString, "%c", Separator);
+
 int     NumParts;
 numeric string Lines[];
 numeric string PartName[];
@@ -20,6 +21,20 @@ string  PartNumber[];
 int FoundAttributes = 0;            // # of different attribute names found in schematic.
 numeric string AttributesList[];    // Sorted list of all attributes found in the schematic.
 numeric string PartAttributes[];    // Adjusted list of attributes per part.
+
+enum { ExportTypeAll, ExportTypeMountFab, ExportTypeCancel };
+int ExportType = 0;
+
+int IncludePart(UL_PART P) {
+    if (ExportType == ExportTypeAll) return 1;
+    
+    P.attributes(A) {
+        if (A.name=="AS-MOUNT-FAB" && strtol(A.value)) {
+            return 1;
+        }
+    }
+    return 0;
+}
 
 void CollectPartData ()
 {
@@ -81,26 +96,29 @@ void CollectPartData ()
       {
         if (P.populate)
         {
-          PartName[NumParts] = P.name;
-          // Zero all strings
-          for (i = 0; i < FoundAttributes; i ++)
-            attr[i] = "";
-          P.attributes(A)
+          if (IncludePart(P))
           {
-            for (i = 0; i < FoundAttributes; i ++)
-              if (A.name == AttributesList[i])
+              PartName[NumParts] = P.name;
+              // Zero all strings
+              for (i = 0; i < FoundAttributes; i ++)
+                attr[i] = "";
+              P.attributes(A)
               {
-                attr[i] = A.value;
-                break;
-              }
+                for (i = 0; i < FoundAttributes; i ++)
+                  if (A.name == AttributesList[i])
+                  {
+                    attr[i] = A.value;
+                    break;
+                  }
               
-              if (A.name == "PN")
-              {
-                PartNumber[NumParts] = A.value;
+                  if (A.name == "PN")
+                  {
+                    PartNumber[NumParts] = A.value;
+                  }
               }
+              PartAttributes[NumParts] = strjoin(attr, Separator);
+              NumParts ++;
           }
-          PartAttributes[NumParts] = strjoin(attr, Separator);
-          NumParts ++;
         }
       }
     }
@@ -184,10 +202,8 @@ void SaveList (void)
   }
 }
 
-
-schematic(SCH) {
-  sprintf(SeparatorString, "%c", Separator);
-}
+ExportType = dlgMessageBox("Export all parts (AS-MOUNT), or only fab-mounted parts (AS-MOUNT-FAB)?", "AS-MOUNT", "AS-MOUNT-FAB", "Cancel");
+if (ExportType == ExportTypeCancel) exit(0);
 
 CollectPartData();
 GenerateList();
