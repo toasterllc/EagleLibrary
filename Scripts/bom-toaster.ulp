@@ -1,5 +1,7 @@
 // This is a modified version of the bom.ulp script, which combines parts based on their part number attribute ('PN').
 // It removes all settings provided by the original bom.ulp script, and exclusively outputs as CSV.
+//
+// - Toaster 2023-6-10
 
 #require 6.5100
 

@@ -1,3 +1,7 @@
+// This is a modified version of the mountsmd.ulp script, which only outputs elements whose AS-MOUNT-FAB attribute is '1'.
+//
+// - Toaster 2023-6-10
+
 #usage "<b>Data generation for mounting machines</b>\n"
        "<p>"
        "Generates files for smds on the top and bottom layers "
@@ -16,6 +20,19 @@
 
 // THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
 
+int IncludeElement(UL_ELEMENT E)
+{
+  int inc = 0;
+  E.attributes(A)
+  {
+    if (A.name=="AS-MOUNT-FAB" && strtol(A.value))
+    {
+      inc = 1;
+    }
+  }
+  return inc;
+}
+
 if (board) board(B) {
 
   // Get filename
@@ -26,29 +43,32 @@ if (board) board(B) {
 
    B.elements(E) if (E.populate) {
 
-     int wasSmd,
-         xmax =-2147483648,
-         xmin = 2147483647,
-         ymax = xmax,
-         ymin = xmin;
-
-      wasSmd = 0;
-
-        E.package.contacts(C) {
-          if (C.smd && C.smd.layer == 1) {
-            wasSmd = 1;
-
-            if (C.x > xmax) xmax = C.x;
-            if (C.y > ymax) ymax = C.y;
-            if (C.x < xmin) xmin = C.x;
-            if (C.y < ymin) ymin = C.y;
+     if (IncludeElement(E))
+     {
+       int wasSmd,
+           xmax =-2147483648,
+           xmin = 2147483647,
+           ymax = xmax,
+           ymin = xmin;
+       
+        wasSmd = 0;
+       
+          E.package.contacts(C) {
+            if (C.smd && C.smd.layer == 1) {
+              wasSmd = 1;
+       
+              if (C.x > xmax) xmax = C.x;
+              if (C.y > ymax) ymax = C.y;
+              if (C.x < xmin) xmin = C.x;
+              if (C.y < ymin) ymin = C.y;
+            }
           }
-        }
-
-       if (wasSmd)
-         printf("%s %5.2f %5.2f %3.0f %s %s\n",
-         E.name, u2mm((xmin + xmax)/2), u2mm((ymin + ymax)/2),
-         E.angle, E.value, E.package.name);
+       
+         if (wasSmd)
+           printf("%s %5.2f %5.2f %3.0f %s %s\n",
+           E.name, u2mm((xmin + xmax)/2), u2mm((ymin + ymax)/2),
+           E.angle, E.value, E.package.name);
+     }
    }
  }
 
@@ -60,29 +80,32 @@ if (board) board(B) {
 
    B.elements(E) if (E.populate) {
 
-     int wasSmd,
-         xmax =-2147483648,
-         xmin = 2147483647,
-         ymax = xmax,
-         ymin = xmin;
-
-      wasSmd = 0;
-
-        E.package.contacts(C) {
-          if (C.smd && C.smd.layer == 16) {
-           wasSmd = 1;
-
-            if (C.x > xmax) xmax = C.x;
-            if (C.y > ymax) ymax = C.y;
-            if (C.x < xmin) xmin = C.x;
-            if (C.y < ymin) ymin = C.y;
-          }
-         }
-
-       if (wasSmd)
-         printf("%s %5.2f %5.2f %3.0f %s %s\n",
-         E.name, u2mm((xmin + xmax)/2), u2mm((ymin + ymax)/2),
-         E.angle, E.value, E.package.name);
+     if (IncludeElement(E))
+     {
+       int wasSmd,
+           xmax =-2147483648,
+           xmin = 2147483647,
+           ymax = xmax,
+           ymin = xmin;
+       
+        wasSmd = 0;
+       
+          E.package.contacts(C) {
+            if (C.smd && C.smd.layer == 16) {
+             wasSmd = 1;
+       
+              if (C.x > xmax) xmax = C.x;
+              if (C.y > ymax) ymax = C.y;
+              if (C.x < xmin) xmin = C.x;
+              if (C.y < ymin) ymin = C.y;
+            }
+           }
+       
+         if (wasSmd)
+           printf("%s %5.2f %5.2f %3.0f %s %s\n",
+           E.name, u2mm((xmin + xmax)/2), u2mm((ymin + ymax)/2),
+           E.angle, E.value, E.package.name);
+     }
    }
  }
 }
