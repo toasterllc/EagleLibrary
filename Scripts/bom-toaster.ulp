@@ -250,14 +250,9 @@ void SaveList (void)
   FileName = dlgFileSave ("Save Bill Of Material", FileName);
   if (FileName)
   {
-    string a [];
-    if (!fileglob (a, FileName) || dlgMessageBox ("File '" + FileName +
-        "' exists\n\nOverwrite?", "+&Overwrite", "-&Cancel") == 0)
+    output (FileName, "wt")
     {
-      output (FileName, "wt")
-      {
-        printf ("%s", MakeList ()); // using "%s" to avoid problems if list contains any '%'
-      }
+      printf ("%s", MakeList ());
     }
   }
 }
