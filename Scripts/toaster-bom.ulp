@@ -3,21 +3,7 @@
 //
 // - Toaster 2023-6-10
 
-#require 6.5100
-
-string Version = "1.11";
-
-char   Separator = ';'; // 2012-12-04
-
-#usage "en: <b>Export a Bill Of Material</b>\n"
-           "<p>"
-           "Generates a project's <i>Bill Of Material</i>&nbsp;&nbsp;including the attributes introduced in"
-           " version 5.0.0."
-           "<p>"
-           "<author>Author: support@cadsoft.de</author><br>"
-           "<author>Modified to use the new attributes by Carsten Wille.</author><br>"
-           "<author>.csv export added by Christian Schlittler.</author>"
-           "<author>Select variant and switch on/off attributes alf@cadsoft.de</author>"
+char Separator = ';';
 
 if (!schematic)
 {
@@ -29,61 +15,13 @@ string SeparatorString;
 int     NumParts;
 numeric string Lines[];
 numeric string PartName[];
-string  PartValue[], PartDevice[], PartPackage[], PartHeadline[], PartNumber[];
-numeric string PartDescription [];
-int     PartValueOn[];
-int     Selected;
+string  PartNumber[];
 
-string CurrentVariant = "";
-string Variants[] = { "" };  // 2012-04-16
-int    cntVD = 0;
-int    VDsel = 0;
-
-
-// cwi: Added arrays for an arbitraty number of attributes.
 int FoundAttributes = 0;            // # of different attribute names found in schematic.
 numeric string AttributesList[];    // Sorted list of all attributes found in the schematic.
 numeric string PartAttributes[];    // Adjusted list of attributes per part.
 
-enum { ltParts, ltValues };         // List Types
-int ListType = 0;
-
-
-string StripWhiteSpace (string s)
-{
-  while (s && isspace (s[0]))
-    s = strsub (s, 1);
-  while (s && isspace (s[strlen (s) - 1]))
-    s = strsub (s, 0, strlen (s) - 1);
-  return s;
-}
-
-string ReplaceTabs(string s)
-{
-  int i;
-  while ((i = strchr(s, '\t')) >= 0)
-        s = strsub(s, 0, i) + "\\t" + strsub(s, i + 1);
-  return s;
-}
-
-// Collect part data from the schematic.
-//
-// Arguments: -
-//
-// Returns:   NumParts            - # of found parts
-//            PartName[]
-//            PartValue[]
-//            PartDevice[]
-//            PartPackage[]
-//            PartHeadline[]
-//            PartNumber[]
-//            PartDescription []
-//            PartValueOn[]      - 0=part value off, 1= part value on, 2=override with attr. VAL
-//            FoundAttributes     - # of different attribute names found in schematic.
-//            AttributesList[]   - Sorted list of all attributes found in the schematic.
-//            PartAttributes[]   - Adjusted list of attributes per part.
-
-void CollectPartData (string var)
+void CollectPartData ()
 {
   int Found = 0;
   int i;
@@ -144,13 +82,6 @@ void CollectPartData (string var)
         if (P.populate)
         {
           PartName[NumParts] = P.name;
-          PartValue[NumParts] = P.value;
-          PartDevice[NumParts] = P.device.name;
-          PartPackage[NumParts] = P.device.package.name;
-          PartHeadline[NumParts] = ReplaceTabs(P.device.headline);
-          // currently not used:
-          // PartDescription[NumParts] = ReplaceTabs(P.device.description);
-          PartValueOn[NumParts] = P.device.value == "On";
           // Zero all strings
           for (i = 0; i < FoundAttributes; i ++)
             attr[i] = "";
@@ -167,10 +98,6 @@ void CollectPartData (string var)
               {
                 PartNumber[NumParts] = A.value;
               }
-              
-            if ("VALUE" == A.name && 0 < strlen (A.value))
-             // Override old fashioned value information!
-            PartValueOn[NumParts] = 2;
           }
           PartAttributes[NumParts] = strjoin(attr, Separator);
           NumParts ++;
@@ -245,13 +172,8 @@ string MakeList (void)
 
 void SaveList (void)
 {
-  // 2008-11-24 cwi:
-  // - Added new format extension .csv
-  // - Changed from .bom to .txt for text format.
   string FileName;
-  string FileExt = ".csv";
-
-  schematic(SCH) FileName = filesetext (SCH.name, FileExt);
+  schematic(SCH) FileName = filesetext (SCH.name, ".csv");
   FileName = dlgFileSave ("Save Bill Of Material", FileName);
   if (FileName)
   {
@@ -265,15 +187,8 @@ void SaveList (void)
 
 schematic(SCH) {
   sprintf(SeparatorString, "%c", Separator);
-  CurrentVariant = variant();
-  SCH.variantdefs(VD) {
-    if (CurrentVariant == VD.name) VDsel = cntVD;
-    sprintf(Variants[cntVD], "%s", VD.name);
-    cntVD++;
-  }
 }
 
-setvariant(CurrentVariant);
-CollectPartData(CurrentVariant);
+CollectPartData();
 GenerateList();
 SaveList();
