@@ -1,55 +1,8 @@
 #require 6.5100
 
-// Revision history:
-//
-// 1.00
-// - Initial release
-//
-// 1.01
-// - Dialog mask for text or html output selection corrected
-//
-// 1.02
-// - CSV export added after a suggestion of Christian Schlittler
-// - File extension for text file output changed from .bom to .txt
-//
-// 1.03
-// - Added missing description column in value mode.
-//
-// 1.04
-// - List also Packages bei Value
-//
-// 1.05
-// - 2012-03-01 change PartValue[], PartDevice[], PartPackage[], PartHeadline[], PartDescription[] to normal string. alf@cadsoft.de
-//   numeric strings with only numericasl characters, sorts up to 8 characters!
-//
-// 1.06
-// - 2012-05-25 support now populated variants
-//              switch on/off attributes
-//              is now the standard bom.ulp  alf@cadsoft.de
-//
-// 1.07
-// - 2012-06-22 set correct variant
-//
-// 1.08
-// - 2012-11-08 list different values of attributes
-//
-// 1.09
-// - 2012-12-04 now can change the separator character for CSV files.
-//              change the character in line Separator = ',';
-//
-// 1.10
-// - 2014-08-07 extended to V7 hierarchical schematic
-//
-// 1.11
-// - 2015-12-10 fixed handling descriptions containing TAB characters
-//
-// Revision: 1.11
-//
-
 string Version = "1.11";
 
 char   Separator = ';'; // 2012-12-04
-
 
 #usage "en: <b>Export a Bill Of Material</b>\n"
            "<p>"
@@ -59,170 +12,11 @@ char   Separator = ';'; // 2012-12-04
            "<author>Author: support@cadsoft.de</author><br>"
            "<author>Modified to use the new attributes by Carsten Wille.</author><br>"
            "<author>.csv export added by Christian Schlittler.</author>"
-           "<author>Select variant and switch on/off attributes alf@cadsoft.de</author>",
-       "de: <b>Stückliste exportieren</b>\n"
-           "<p>"
-           "Erzeugt die <i>Stückliste</i> (Bill Of Material) eines Projekts, einschließlich der"
-           " mit Version 5.0.0 neu eingeführten Attribute."
-           "<p>"
-           "<author>Autor: support@cadsoft.de</author><br>"
-           "<author>Modifiziert von Carsten Wille, um die neuen Attribute zu nutzen.</author><br>"
-           "<author>Export als .csv-Datei durch Christian Schlittler hinzugefügt.</author>"
-           "<author>Auswählen von Bestückungs-Varianten und Attribute können ein/ausgeschaltet werden alf@cadsoft.de</author>"
-
-// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
-
-string HelpTextEN =
-  "<b>How to generate the Bill Of Material</b>\n"
-  "<p>\n"
-  "<b>List type</b>\n"
-  "<p>\n"
-  "The <i>Bill Of Material</i> can be generated either as a list\n"
-  "of parts (where every part is listed on a line of its own),\n"
-  "or as a list of values, where all parts with the same value are grouped\n"
-  "together in one line. Use the <b><u>P</u>arts</b> and <b><u>V</u>alues</b>\n"
-  "radio buttons to select the list type.\n"
-  "<p>\n"
-  "<b>Output format</b>\n"
-  "<p>\n"
-  "Choose between pure ASCII <b><u>T</u>ext</b> format, <b><u>C</u>SV</b> or <b><u>H</u>TML</b>.\n"
-  ;
-
-string HelpTextDE =
-  "<b>Erzeugen der Stückliste</b>\n"
-  "<p>\n"
-  "<b>Listen-Typ</b>\n"
-  "<p>\n"
-  "Die <i>Stückliste</i> kann entweder als Liste der Bauteile generiert werden\n"
-  "(wobei jedes Bauteil in einer eigenen Zeile aufgeführt wird),\n"
-  "oder als Liste der Werte, wobei alle Bauteile mit dem gleichen Wert in einer Zeile\n"
-  "zusammengefasst werden. Mit den Radio-Buttons <b><u>B</u>auteile</b> und <b><u>W</u>erte</b>\n"
-  "kann zwischen den beiden Listen-Typen gewählt werden.\n"
-  "<p>\n"
-  "<b>Ausgabeformat</b>\n"
-  "<p>\n"
-  "Wählen Sie zwischen reinem ASCII-<b><u>T</u>ext</b>, <b><u>C</u>SV</b> oder <b><u>H</u>TML</b>"
-  "-Format.\n"
-  ;
-
-string I18N[] = {
-  "en\v"
-  "de\v"
-  ,
-  "<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.\v"
-  "<hr><b>FEHLER: Kein Schaltplan!</b><p>\nDieses Programm kann nur in einem Schaltplan verwendet"
-  " werden.\v"
-  ,
-  "Part\tValue\tDevice\tPackage\tDescription\v"
-  "Bauteil\tWert\tDevice\tPackage\tDescription\v"
-  ,
-  "Qty\tValue\tDevice\tPackage\tParts\v"      // 2011-04-08
-  "Menge\tWert\tDevice\tGehäuse\tBauteile\v"  // 2011-04-08
-  ,
-  "Partlist exported from %s at %s\v"
-  "Stückliste exportiert aus %s am %s\v"
-  ,
-  "Bill Of Material - Preview\v"
-  "Stückliste - Vorschau\v"
-  ,
-  "-Close\v"
-  "-Schließen\v"
-  ,
-  "Save Bill Of Material\v"
-  "Stückliste speichern\v"
-  ,
-  "File '\v"
-  "Datei '\v"
-  ,
-  "' exists\n\nOverwrite?\v"
-  "' existiert\n\nÜberschreiben?\v"
-  ,
-  "+&Yes\v"
-  "+&Ja\v"
-  ,
-  "-&No\v"
-  "-&Nein\v"
-  ,
-  "&No\v"
-  "&Nein\v"
-  ,
-  "Name already defined!\v"
-  "Name ist bereits definiert!\v"
-  ,
-  " Header\v"
-  " Spaltenüberschrift\v"
-  ,
-  "&Name:\v"
-  "&Name:\v"
-  ,
-  "+OK\v"
-  "+OK\v"
-  ,
-  "Name can't be empty!\v"
-  "Name kann nicht leer sein!\v"
-  ,
-  "-Cancel\v"
-  "-Abbrechen\v"
-  ,
-  "&Headers\v"
-  "&Spaltenüberschriften\v"
-  ,
-  "Bill Of Material - Help\v"
-  "Stückliste - Hilfe\v"
-  ,
-  "Bill Of Material\v"
-  "Stückliste\v"
-  ,
-  "List type\v"
-  "Listen-Typ\v"
-  ,
-  "&Parts\v"
-  "&Bauteile\v"
-  ,
-  "&Values\v"
-  "&Werte\v"
-  ,
-  "Output format\v"
-  "Ausgabeformat\v"
-  ,
-  "&Text\v"
-  "&Text\v"
-  ,
-  "&CSV\v"
-  "&CSV\v"
-  ,
-  "&HTML\v"
-  "&HTML\v"
-  ,
-  "+Vie&w\v"
-  "+&Vorschau\v"
-  ,
-  "&Save...\v"
-  "&Speichern...\v"
-  ,
-  "H&elp\v"
-  "H&ilfe\v"
-  ,
-  "Current &variant \v"
-  "Aktuelle &Variante \v"
-  ,
-  "List &attributes\v"
-  "&Attribute auflisten\v"
-  };
-int Language = strstr (I18N [0], language ()) / 3;
-
-
-string tr (string s)
-{
-  string t = lookup (I18N, s, Language, '\v');
-  return t ? t : s;
-}
-
+           "<author>Select variant and switch on/off attributes alf@cadsoft.de</author>"
 
 if (!schematic)
 {
-  dlgMessageBox (usage + tr ("<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in"
-                 " the schematic editor."));
+  dlgMessageBox (usage + "<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.");
   exit (1);
 }
 
@@ -389,7 +183,7 @@ void GenerateList (void)
 
   s = strjoin(AttributesList, '\t');
 
-  Lines[NumLines ++] = tr ("Qty\tParts\t") + s;
+  Lines[NumLines ++] = "Quantity\tParts\t" + s;
   sort (NumParts, Index, PartNumber, PartName, PartAttributes);
   for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
   {
@@ -424,16 +218,6 @@ void GenerateList (void)
   Lines[NumLines] = "";
 }
 
-
-string MakeListHeader (void)
-{
-  string s;
-  schematic(SCH)
-    sprintf (s, tr ("Partlist exported from %s at %s"), SCH.name, t2string (time ()));
-  return s;
-}
-
-
 string MakeList (void)
 {
   string List;
@@ -454,28 +238,6 @@ string MakeList (void)
   return List;
 }
 
-
-void ViewList (void)
-{
-  dlgDialog (tr ("Bill Of Material - Preview"))
-  {
-    string s = MakeList ();
-    s = "<pre>" + s + "</pre>";
-    dlgHBoxLayout dlgSpacing (400);
-    dlgHBoxLayout
-    {
-      dlgVBoxLayout dlgSpacing (300);
-      dlgTextView (s);
-    }
-    dlgHBoxLayout
-    {
-      dlgStretch (1);
-      dlgPushButton (tr ("-Close")) dlgReject ();
-    }
-  };
-}
-
-
 void SaveList (void)
 {
   // 2008-11-24 cwi:
@@ -485,12 +247,12 @@ void SaveList (void)
   string FileExt = ".csv";
 
   schematic(SCH) FileName = filesetext (SCH.name, FileExt);
-  FileName = dlgFileSave (tr ("Save Bill Of Material"), FileName);
+  FileName = dlgFileSave ("Save Bill Of Material", FileName);
   if (FileName)
   {
     string a [];
-    if (!fileglob (a, FileName) || dlgMessageBox (tr ("File '") + FileName +
-        tr ("' exists\n\nOverwrite?"), tr("+&Yes"), tr("-&No")) == 0)
+    if (!fileglob (a, FileName) || dlgMessageBox ("File '" + FileName +
+        "' exists\n\nOverwrite?", "+&Overwrite", "-&Cancel") == 0)
     {
       output (FileName, "wt")
       {
@@ -498,26 +260,6 @@ void SaveList (void)
       }
     }
   }
-}
-
-
-void DisplayHelp (void)
-{
-  dlgDialog (tr ("Bill Of Material - Help"))
-  {
-    dlgHBoxLayout dlgSpacing (400);
-    dlgHBoxLayout
-    {
-      dlgVBoxLayout dlgSpacing (300);
-      dlgTextView (language () == "de" ? HelpTextDE : HelpTextEN);
-    }
-    dlgHBoxLayout
-    {
-      dlgStretch (1);
-      dlgPushButton (tr ("-Close"))
-      dlgReject ();
-    }
-  };
 }
 
 
