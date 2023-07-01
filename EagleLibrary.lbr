@@ -5271,7 +5271,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <vertex x="4.9" y="-3.8"/>
 <vertex x="4.9" y="3.35"/>
 </polygon>
-<wire x1="-5.35" y1="-0.1" x2="5.35" y2="-0.1" width="0" layer="20"/>
+<wire x1="-5.45" y1="-0.1" x2="5.45" y2="-0.1" width="0" layer="20"/>
 <text x="-0.778759375" y="-0.5138" size="0.254" layer="27" font="vector">PCB edge</text>
 <wire x1="-2" y1="0" x2="2" y2="0" width="0" layer="27"/>
 <text x="-0.778759375" y="0.1862" size="0.254" layer="27" font="vector">Overhang</text>
