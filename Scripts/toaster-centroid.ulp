@@ -1,0 +1,76 @@
+// This is a modified version of the mountsmd.ulp script, which only outputs elements whose AS-MOUNT-FAB attribute is '1'.
+//
+// - Toaster 2023-6-10
+
+int TopLayer    = 1;
+int BottomLayer = 16;
+
+int Element_ContainsSMDLayer(UL_ELEMENT elm, int layer) {
+    elm.package.contacts(c) {
+        if (c.smd && c.smd.layer==layer) return 1;
+    }
+    return 0;
+}
+
+int Element_ShouldInclude(UL_ELEMENT elm, int layer) {
+    if (!elm.populate) return 0;
+    
+    if (!Element_ContainsSMDLayer(elm, layer)) return 0;
+    
+    elm.attributes(attr) {
+        if (attr.name=="AS-MOUNT-FAB" && strtol(attr.value)) {
+            return 1;
+        }
+    }
+    
+    return 0;
+}
+
+string Layer_String(int layer) {
+    if (layer == TopLayer)      return "T";
+    if (layer == BottomLayer)   return "B";
+    return "?";
+}
+
+void Board_OutputElements(UL_BOARD b, int layer) {
+    b.elements(elm) {
+        if (!Element_ShouldInclude(elm, layer)) continue;
+        
+        int xmax = -2147483648,
+            xmin =  2147483647,
+            ymax =  xmax,
+            ymin =  xmin;
+        
+        elm.package.contacts(C) {
+            if (C.x > xmax) xmax = C.x;
+            if (C.y > ymax) ymax = C.y;
+            if (C.x < xmin) xmin = C.x;
+            if (C.y < ymin) ymin = C.y;
+        }
+        
+        printf("%s,%.4f,%.4f,%s,%.0f\n",
+            elm.name,
+            u2mm((xmin + xmax)/2),
+            u2mm((ymin + ymax)/2),
+            Layer_String(layer),
+            elm.angle
+        );
+    }
+}
+
+if (!board) {
+    dlgMessageBox("Run from board\n");
+    exit(0);
+}
+
+board(b) {
+    // Get filename
+    string fileName = dlgFileSave("Save File", filesetext(b.name, "-Centroid.csv"), "*.csv");
+    if (!fileName) exit(0);
+    
+    output(fileName) {
+        printf("Designator,Mid X,Mid Y,Layer,Rotation\n");
+        Board_OutputElements(b, TopLayer);
+        Board_OutputElements(b, BottomLayer);
+    }
+}
