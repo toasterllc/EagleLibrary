@@ -1,3 +1,35 @@
+* Products 2025-11-10
+
+    - Flux
+
+        Chip Quik SMD4300
+        "REL0 No-Clean Water-Washable Tack Flux"
+    
+        https://www.mouser.com/ProductDetail/910-SMD4300-10M
+
+
+    - Solder wire
+
+        Chip Quik SMDSWLF.020
+        "Solder Wire SAC305 No-Clean with 2.2% Flux Core"
+    
+        https://www.mouser.com/ProductDetail/910-SMDSWLF.0208OZ
+
+
+    - Solder paste
+
+        Chip Quik SMD4300SNL10T5
+        "Solder Paste Water-Washable SAC305, T5 Mesh"
+    
+        https://www.mouser.com/ProductDetail/910-SMD4300SNL10T5
+    
+    
+    - Rationale
+        - AMTECH products are hard to get; Mouser stocks Chip Quik
+        - SAC305 is more common than SN100C, and the SAC305 solderpaste we've used works fine
+
+
+
 * Lead-free solder: SN100C
     Rationale
         https://www.eevblog.com/forum/beginners/lead-free-solder-recommendations/
